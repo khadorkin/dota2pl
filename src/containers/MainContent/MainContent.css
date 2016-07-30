@@ -1,0 +1,26 @@
+@import '../../variables.css';
+.Container{
+    flex: 1;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    transition: .45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.pullLeft{
+    composes: Container;
+    margin-left: 255px;
+}
+
+
+.pullRight{
+    composes: Container;
+    margin-right: 340px;
+}
+
+.pullBoth{
+    composes: Container;
+    margin-right: 340px;
+    margin-left: 255px;
+}

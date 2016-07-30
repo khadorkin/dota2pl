@@ -1,0 +1,69 @@
+
+
+@keyframes ImageLogo {
+    0% { transform: translateX(-15%); opacity:0; }
+    60%{ opacity: 1;}
+    100% { transform: translateX(0); opacity:1; }
+}
+
+@keyframes CaptionLogo {
+    0% { opacity:0; filter:blur(5px); }
+    60%{ opacity: 1;}
+    100% { opacity:1; filter:blur(0px); }
+}
+
+
+.Container{
+    font-size: 1em;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+
+    position:relative;
+    /*background: hsla(190, 35%, 7%, 0.83);*/
+    /*filter: blur(5px);*/
+    padding: 1em;
+}
+
+.Caption{
+    color: white;
+    opacity: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .8);
+    animation: CaptionLogo 1s .8s ease-in-out forwards;
+
+}
+
+.ImageContainer {
+    width: 5em;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: .5em;
+}
+
+.Image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: .5s ease-out;
+    opacity:0;
+    animation: ImageLogo 1s .8s ease-in-out forwards;
+}
+
+.Heading {
+    margin: 0;
+    font-size: 3.5em;
+    line-height:1;
+    padding: 0;
+}
+
+.Subtitle{
+    font-size: 1.2em;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height:1.4;
+    padding: 0;
+
+}
