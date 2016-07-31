@@ -31,9 +31,9 @@ export const auth = {
   jwt: { secret: process.env.JWT_SECRET || 'React Starter Kit' },
 
   steam: {
-    apiKey: production ? '224005D0A88D70329CD02B21158E0816' : '9592670902AA7579FF6CF7DCD0D3D69F',
-    returnURL: production ? `http://tspeak.dota2.pl/auth/steam/return` : `http://${host}/auth/steam/return`,
-    realm: production ?  `http://tspeak.dota2.pl/` : `http://${host}/`
+    apiKey: production ? 'BF0CA1E805372C5A0F62CC32E28C9CC7' : '9592670902AA7579FF6CF7DCD0D3D69F',
+    returnURL: production ? `http://tspeak.dota2.pl:3000/auth/steam/return` : `http://${host}/auth/steam/return`,
+    realm: production ?  `http://tspeak.dota2.pl:3000/` : `http://${host}/`
 
   },
   // https://developers.facebook.com/
