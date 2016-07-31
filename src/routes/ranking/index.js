@@ -12,7 +12,7 @@ import Login from './Login';
 
 export default {
 
-  path: '/regulamin',
+  path: '/ranking',
 
   action() {
     return <Login />;

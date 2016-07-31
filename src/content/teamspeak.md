@@ -2,45 +2,19 @@
 title: TeamSpeak
 component: ContentPage
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat
-tortor fermentum mi fermentum dignissim. Nullam vel ipsum ut ligula elementum
-lobortis. Maecenas aliquam, massa laoreet lacinia pretium, nisi urna venenatis
-tortor, nec imperdiet tellus libero efficitur metus. Fusce semper posuere
-ligula, et facilisis metus bibendum interdum. Mauris at mauris sit amet sem
-pharetra commodo a eu leo. Nam at est non risus cursus maximus. Nam feugiat
-augue libero, id consectetur tortor bibendum non. Quisque nec fringilla lorem.
-Nullam efficitur vulputate mauris, nec maximus leo dignissim id.
+Posiadamy publiczny serwer głosowy TeamSpeak 3, z którym można połączyć się za pomocą adresu: [tspeak.dota2.pl](tspeak.dota2.pl)
 
-In hac habitasse platea dictumst. Duis sagittis dui ac ex suscipit maximus.
-Morbi pellentesque venenatis felis sed convallis. Nulla varius, nibh vitae
-placerat tempus, mauris sem elementum ipsum, eget sollicitudin nisl est vel
-purus. Fusce malesuada odio velit, non cursus leo fermentum id. Cras pharetra
-sodales fringilla. Etiam quis est a dolor egestas pellentesque. Maecenas non
-scelerisque purus, congue cursus arcu. Donec vel dapibus mi. Mauris maximus
-posuere placerat. Sed et libero eu nibh tristique mollis a eget lectus. Donec
-interdum augue sollicitudin vehicula hendrerit. Vivamus justo orci, molestie
-ac sollicitudin ac, lobortis at tellus. Etiam rhoncus ullamcorper risus eu
-tempor. Sed porttitor, neque ac efficitur gravida, arcu lacus pharetra dui, in
-consequat elit tellus auctor nulla. Donec placerat elementum diam, vitae
-imperdiet lectus luctus at.
+Aplikację TeamSpeak 3 można pobrać ze strony producenta dostępnej pod adresem: [teamspeak.com/downloads](teamspeak.com/downloads)
 
-Nullam eu feugiat mi. Quisque nec tristique nisl, dignissim dictum leo. Nam
-non quam nisi. Donec rutrum turpis ac diam blandit, id pulvinar mauris
-suscipit. Pellentesque tincidunt libero ultricies risus iaculis, sit amet
-consequat velit blandit. Fusce quis varius nulla. Nullam nisi nisi, suscipit
-ut magna quis, feugiat porta nibh. Sed id enim lectus. Suspendisse elementum
-justo sapien, sit amet consequat orci accumsan et. Aliquam ornare ullamcorper
-sem sed finibus. Nullam ac lacus pulvinar, egestas felis ut, accumsan est.
+## Chcę mieć u was własny kanał 
+Skontaktuj się z jednym z administratorów TeamSpeaka *(rozpoznasz ich na serwerze dzięki logo Dota2.pl widniejącym przy ich profilach oraz randze Administrator Serwera)*. 
 
-Pellentesque sagittis vehicula sem quis luctus. Proin sodales magna in lorem
-hendrerit aliquam. Integer eu varius orci. Vestibulum ante ipsum primis in
-faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ante ipsum
-primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut at mauris
-nibh. Suspendisse maximus ac eros at vestibulum.
+Jeżeli w danej chwili nie ma nas na serwerze, możesz spróbować skontaktować się z nami poprzez platformę Steam:  [mr0](steam://friends/add/76561197984866361), [mnick](steam://friends/add/76561197984866361) *(klikniecie w odnośnik spowoduje wysłanie zaproszenia do grona znajomych poprzez platformę Steam)*.
 
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque egestas
-tortor et dui consequat faucibus. Nunc vitae odio ornare, venenatis ligula a,
-vulputate nisl. Aenean congue varius ex, sit amet bibendum odio posuere at.
-Nulla facilisi. In finibus, nulla vitae tincidunt ornare, sapien nulla
-fermentum mauris, sed consectetur tortor arcu eget arcu. Vestibulum vel quam
-enim.
+## Kanały tymczasowe
+
+Każdy użytkownik może utworzyć tymczasowy kanał w podgrupie kanałów publicznych. Kanał taki może posiadać własne hasło, na kanale może przebywać nieograniczona ilość osób. Kanał tymczasowy znika wraz z ostatnim gościem.
+
+## Email
+
+Kontakt z administratorem serwera TeamSpeak pod adresem mailowym: [teamspeak@dota2.pl](mailto:teamspeak@dota2.pl)
