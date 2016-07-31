@@ -15,8 +15,8 @@ import fetch from './lib/fetch';
 // For more information visit http://gitolite.com/deploy.html
 const getRemote = (slot) => ({
   name: slot || 'production',
-  url: `https://github.com/mnickkk/prodota_compiled.git`,
-  website: `http://github.com/mnickkk/prodota_compiled`,
+  url: `https://github.com/mnickkk/dota2pl-prod.git`,
+  website: `http://github.com/mnickkk/dota2pl-prod`,
 });
 
 /**

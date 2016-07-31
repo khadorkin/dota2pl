@@ -1,0 +1,14 @@
+@import '../../variables.css';
+.root{
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  color: #bbb;
+  background: rgba(10, 1, 1, 0.4);
+  text-align: center;
+  padding: 0 3em;
+  font-family: var(--font-family-headers);
+  align-items: center;
+  font-size: 3em;
+
+}

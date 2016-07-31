@@ -28,7 +28,6 @@ class Content extends Component {
   }
 
   render() {
-    console.log(this.props.content);
     return (
       <div className={s.root}>
         <div className={s.container}>

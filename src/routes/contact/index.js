@@ -12,7 +12,7 @@ import Contact from './Contact';
 
 export default {
 
-  path: '/ranking',
+  path: '/qwe',
 
   action() {
     return <Contact />;

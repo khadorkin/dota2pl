@@ -47,6 +47,7 @@ class TextInput extends React.Component {
                   backgroundColor="#e53935"
                   hoverColor="#e53935"
                   rippleColor="#480a09"
+                  labelStyle={{fontWeight: '700', textShadow: '0px 1px 1px rgba(0,0,0,.7)', color: 'white'}}
                   onClick={this.send}/>
 
 

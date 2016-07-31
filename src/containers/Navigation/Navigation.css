@@ -12,6 +12,20 @@
 .root {
   font-family: var(--font-family-headers);
   position: relative;
+
+  //opacity: 1;
+  //align-items: flex-start;
+  //position: fixed;
+  //left: 0;
+  //top: 0;
+  //bottom: 0;
+  //right: 0;
+  //background: black;
+  //display: flex;
+  //flex-flow: column-reverse nowrap;
+  //padding: 2em;
+  //justify-content: flex-start;
+  //font-size: 2em;
 }
 
 .link {

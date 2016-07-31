@@ -8,14 +8,14 @@
  */
 
 import React from 'react';
-import Login from './Login';
+import Ranking from './Ranking';
 
 export default {
 
   path: '/ranking',
 
   action() {
-    return <Login />;
+    return <Ranking />;
   },
 
 };

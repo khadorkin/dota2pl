@@ -23,7 +23,7 @@ function Navigation({ className }) {
       <Link className={s.link} to="/">Strona główna</Link>
       <Link className={s.link} to="/ranking">Ranking graczy</Link>
       <Link className={s.link} to="/teamspeak">Teamspeak</Link>
-      <Link className={s.link} to="/liga">PRODOTA</Link>
+      <Link className={s.link} to="/prodota">PRODOTA</Link>
       <a className={s.link} href="https://twitch.tv/dota2pl" target="_blank">Stream</a>
       <a className={s.link} href="http://forum.dota2.pl">Forum</a>
 

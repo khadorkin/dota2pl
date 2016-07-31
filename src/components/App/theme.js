@@ -8,8 +8,8 @@ export default {
   palette: {
     primary1Color: c.red600,
     accent1Color: c.pinkA200,
-    textColor: c.grey50,
-    canvasColor: 'hsla(203,17%,13%,1)',
+    textColor: '#bbb',
+    canvasColor: '#0f1316',
 
 
     shadowColor: c.grey900,

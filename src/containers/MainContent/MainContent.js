@@ -86,9 +86,7 @@ class MainContent extends React.Component {
     return (
       <div className={containerClass()} ref="chatMessages">
         <Header/>
-          <div className={s.contentWrapper}>
         {children}
-            </div>
       </div>
     );
   }

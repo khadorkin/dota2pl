@@ -13,10 +13,7 @@
 
 @import '../../variables.css';
 
-a {
-  color: green;
-  transform: translateY(-22deg);
-}
+
 /*
  * Base styles
  * ========================================================================== */
@@ -30,11 +27,24 @@ html {
 }
 
 a {
-  color: #0074c2;
+  color: #e53935;
+  text-decoration: none;
 }
 
+p a:hover{
+  text-decoration: underline;
+}
 
+em {
+  color: #848484;
+}
+strong {
+  font-weight: 700;
+}
 
+h1, h2, h3, h4, h5{
+  //text-shadow: 0px .05em .1em black;
+}
 
 body:before{
   content: "";

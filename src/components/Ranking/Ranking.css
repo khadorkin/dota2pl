@@ -1,0 +1,57 @@
+@import '../../variables.css';
+
+:root{
+  --headingColor: rgb(141, 40, 40);  /* Extra small screen / phone */
+}
+.root{
+    font-size: .8em;
+    display: flex;
+    flex-flow: column;
+    overflow:hidden;
+  border-radius: 3px;
+
+    & table {
+       margin: 1em 0;
+       flex: 1;
+       font-family: var(--font-family-headers));
+       min-width: 100%;
+       table-layout: fixed;
+       border-collapse: collapse;
+
+    }
+    & thead {
+      background: color(var(--headingColor) blackness(99%) saturation(0%));
+
+      //background: #e53935;
+        user-select: none;
+        & th {
+          padding: .6em 0em;
+          text-transform: capitalize;
+          text-shadow: 0 1px 1px black;
+          color: white;
+          font-size: 1.2em;
+          cursor: default;
+          transition: var(--animation);
+          &:hover{
+           background: var(--headingColor);
+
+          }
+        }
+    }
+
+    & tbody {
+      & tr {
+        transition: var(--animation);
+        &:hover {
+          background: hsla(1,6%,12%,0.6);
+
+        }
+      }
+      & th {
+        cursor: default;
+        padding: .7em 0;
+      }
+    }
+
+
+}

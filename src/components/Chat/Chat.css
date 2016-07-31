@@ -45,11 +45,11 @@
 
 .Message{
     padding: .7em 1em;
-    background: hsl(205, 17%, 7.5%);
+    background: hsl(220, 17%, 7.5%);
 }
 
 .Message:nth-child(2n) {
-    background: hsl(205, 17%, 8%)
+    background: hsl(220, 17%, 8%)
 }
 
 .Author{

@@ -7,20 +7,26 @@
     height: 100%;
     overflow: hidden;
     transition: .45s cubic-bezier(0.23, 1, 0.32, 1);
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 1300;
 }
 .pullLeft{
     composes: Container;
-    margin-left: 255px;
+    @media(--screen-m1440) {
+        margin-left: 255px;
+
+    }
 }
 
 
 .pullRight{
     composes: Container;
-    margin-right: 340px;
+    @media(--screen-m1440) {
+        margin-right: 340px;
+    }
 }
 
 .pullBoth{
-    composes: Container;
-    margin-right: 340px;
-    margin-left: 255px;
+    composes: Container pullLeft pullRight;
 }

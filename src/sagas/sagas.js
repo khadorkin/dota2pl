@@ -9,8 +9,9 @@ import { seedChat, addMessage } from '../reducers/chat';
 
 const connectionPathFactory = (user) => {
   const {userName} = user;
-  const host = process.env.NODE_ENV === 'development' ? document.location.hostname : document.location.host;
+  const host = process.env.NODE_ENV === 'development' ? document.location.hostname + ':3000' : document.location.hostname;
   const connectionPath = `${document.location.protocol}//${host}/${userName ? 'authorized' : 'public'}`
+  console.log(process.env.NODE_ENV, connectionPath);
   return connectionPath;
 }
 

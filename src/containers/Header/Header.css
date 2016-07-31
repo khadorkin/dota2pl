@@ -68,7 +68,7 @@
           ),
           url(./doom.jpg) !important;
 
-
+background-image: linear-gradient(to right, rgba(60,89,92,0.3) 41%,rgba(23,3,3,1) 100%),url(http://dota2walls.com/wp-content/uploads/2015/08/stunning-huskar-wallpaper.jpg)!important;
 
 
 
@@ -77,6 +77,7 @@
 
   background-size: cover;
   height: 20em;
+  flex: 0 0 20em;
   display: flex;
   flex-flow: column nowrap;
   position: relative;
@@ -87,7 +88,7 @@
   background-color: rgba(11, 21, 23, 0.83) !important;
   display: flex;
   align-items: center;
-  height: 3em;
+  height: 4em;
 }
 
 .FixLeftStyling{
