@@ -24,20 +24,28 @@ const options = {
   realm: config.steam.realm,
   apiKey: config.steam.apiKey
 };
-console.log(`steam-passport options:`, options)
 
 const SteamStrategy = passportSteam.Strategy;
 
+passport.serializeUser(function(user, done) {
+  done(null, user);
+});
+
+passport.deserializeUser(function(obj, done) {
+  done(null, obj);
+});
+
+
 passport.use(new SteamStrategy(options,
   async (identifier, profile, done) => {
-    // asynchronous verification, for effect...
-      console.log(`Request hit back from steam, awaiting database response...`);
+      // asynchronous verification, for effect...
+      console.log(`[Login/Register] Request hit back from steam, awaiting database response...`);
       let user = await Models.User.findOne({steamId: profile.id});
-      console.log(`User returned from the database..`);
+      console.log(`[Login/Register] User returned from the database..`);
       if(!user) {
-        console.log(`Didn't find user, trying to create`);
+        console.log(`[Login/Register] Didn't find user, trying to create`);
         try {
-          user = Models.User.create({
+          user = await Models.User.create({
             steamId: profile.id,
             userName: profile.displayName,
             country: profile._json.loccountrycode,
@@ -50,6 +58,7 @@ passport.use(new SteamStrategy(options,
           console.log(`Error: `, e)
         }
       }
+      console.log(`[Login/Register] Fetched user from the database: `,user.userName);
       profile.identifier = identifier;
       return done(null, user);
   }
