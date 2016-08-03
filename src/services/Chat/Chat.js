@@ -98,7 +98,7 @@ export default class Chat {
   }
 
   _onConnectExchange(s, user = null) {
-      console.log(`Sending content to the user`);
+      // console.log(`[Chat] Sending content to the user`);
       // Get latest messages.
       this._getInitialMessages(s);
 
@@ -111,7 +111,7 @@ export default class Chat {
   async _getInitialMessages(s) {
     try {
       const messages = await this.pub.lrangeAsync('chat:messages',-49, -1);
-      console.log(`Initial messages requested, sending last 50 messages!`);
+      console.log(`[Chat] Initial messages requested, sending last 50 messages!`);
       const parsedMessages = messages.map(m => JSON.parse(m));
       s.emit('chat:messages', parsedMessages);
     } catch (e) {

@@ -15,18 +15,29 @@
 
 import passport from 'passport';
 import passportSteam from 'passport-steam';
+import passportTwitch from 'passport-twitch';
+
 import { auth as config, port, host } from '../config';
 import * as Models from '../data/models'
 
 
-const options = {
+const steamOptions = {
   returnURL: config.steam.returnURL,
   realm: config.steam.realm,
   apiKey: config.steam.apiKey
 };
 
-const SteamStrategy = passportSteam.Strategy;
+const twitchOptions = {
+  clientID: config.twitch.clientID,
+  clientSecret: config.twitch.clientSecret,
+  callbackURL: config.twitch.callbackURL,
+  scope: config.twitch.scope,
 
+};
+
+
+const SteamStrategy = passportSteam.Strategy;
+const TwitchStrategy = passportTwitch.Strategy;
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
@@ -36,7 +47,7 @@ passport.deserializeUser(function(obj, done) {
 });
 
 
-passport.use(new SteamStrategy(options,
+passport.use(new SteamStrategy(steamOptions,
   async (identifier, profile, done) => {
       // asynchronous verification, for effect...
       console.log(`[Login/Register] Request hit back from steam, awaiting database response...`);
@@ -61,6 +72,21 @@ passport.use(new SteamStrategy(options,
       console.log(`[Login/Register] Fetched user from the database: `,user.userName);
       profile.identifier = identifier;
       return done(null, user);
+  }
+));
+
+
+
+passport.use(new TwitchStrategy(twitchOptions,
+  async (accessToken, refreshToken, profile, done) => {
+    let user = await Models.User.findOne({twitchId: profile.id});
+    if(!user) {
+      return done(null, profile);
+    } else {
+      return done(null, false, { message: 'To konto Twitch.tv zostało już kiedyś połączone z istniejącym kontem.' });
+    }
+
+    // });
   }
 ));
 

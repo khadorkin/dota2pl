@@ -5,7 +5,7 @@
     font-family: var(--font-family-headers);
     /*color:#e8e8e8;*/
     color: #e9e9e9;
-    background: rgba(30, 30, 30, .85);
+    background: rgb(16, 21, 23);
 
     padding: .5em;
     /*border-radius: .5em;*/
@@ -16,7 +16,6 @@
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
-    composes: mediumCard;
     font-size: .9em;
 }
 

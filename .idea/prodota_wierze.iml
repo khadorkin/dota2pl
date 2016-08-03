@@ -16,6 +16,5 @@
     <orderEntry type="library" name="react-router-redux-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="socket.io-client-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="socket.io-DefinitelyTyped" level="application" />
-    <orderEntry type="library" name="Nodejs" level="application" />
   </component>
 </module>

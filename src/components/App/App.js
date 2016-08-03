@@ -19,24 +19,12 @@ import LeftPanel from '../../containers/LeftPanel/LeftPanel.js';
 import MainContent from '../../containers/MainContent/MainContent.js';
 import RightPanel from '../../containers/RightPanel/RightPanel.js';
 import rootSaga from '../../sagas/sagas'
-import socket from 'socket.io-client'
+import Navigation from '../../containers/Navigation/Navigation';
 
 import prodotaTheme from './theme.js'
 
-import {green100, green500, green700} from 'material-ui/styles/colors';
 
 const muiTheme = getMuiTheme(prodotaTheme);
-// const muiTheme = getMuiTheme({
-//   palette: {
-//     primary1Color: green500,
-//     primary2Color: green700,
-//     primary3Color: green100,
-//   },
-// }, {
-//   avatar: {
-//     borderColor: null,
-//   },
-// });
 
 class App extends Component {
 
@@ -79,37 +67,6 @@ class App extends Component {
       console.log(`In Server environment, we're not going to run sagas! (component\\App\\App.js)`);
     }
 
-
-    if(process.env.BROWSER) {
-      // console.log(`We're in browser, launching webSocket connections`);
-      // const {userName} = store.getState().auth;
-      // const port = process.env.NODE_ENV === 'development' ? ':3000' : '';
-      // const connectionPath = `${document.location.protocol}//${document.location.hostname}${port}/${userName ? 'authorized' : 'public'}`
-      //
-      // console.log(connectionPath);
-      // const io = socket(connectionPath);
-      // io.on('connect', (s) => {
-      //   console.log(`Eastblished ${userName ? 'private' : 'public'} wS connection!`);
-      //   io.emit('chat:message', 'Czesc z Polski');
-      //
-      //   io.on('chat:message', (m) => {
-      //     console.log(`Recieved message from server: ${m}`)
-      //   })
-      //   io.on('chat:messages', (m) => {
-      //     console.log(`Recieved initial messages from server: ${m}`)
-      //   })
-      //
-      //   io.on('chat:join', (m) => {
-      //     console.log(`${m.userName} has joined the channel`);
-      //   })
-      //
-      //   io.on('chat:leave', (m) => {
-      //     console.log(`${m.userName} has left the channel`);
-      //   })
-      //
-      //
-      // })
-    }
   }
 
   componentWillUnmount() {
@@ -134,8 +91,9 @@ class App extends Component {
             {this.props.children}
           </MainContent>
             <LeftPanel/>
-            <RightPanel/>  
-        </div>
+            <RightPanel/>
+            <Navigation />
+          </div>
 
 
         </MuiThemeProvider>

@@ -20,35 +20,41 @@ class MainContent extends React.Component {
   options = {handlers: ['click-rail', 'drag-scrollbar', 'keyboard', 'wheel', 'touch', 'selection']};
   scrollbar = null;
   ps = null;
+  shouldUseCustomScroll = false;
+  enabled = false;
+
+
+  shallEnableScrollbar = () => {
+    if(window.screen.width >= 960) {
+      this.shouldUseCustomScroll = true;
+      this.buildScrollbar();
+    } else {
+      this.shouldUseCustomScroll = false;
+      this.destroyScrollbar();
+    }
+  }
 
   buildScrollbar = () => {
-    const container = this.refs.chatMessages;
-    if(process.env.BROWSER) {
-      if(container) {
-        this.ps = require('perfect-scrollbar');
-        this.ps.initialize(container, this.options);
+    if(!this.enabled && this.shouldUseCustomScroll) {
+      if(process.env.BROWSER) {
+        this.ps.initialize(this.scrollbar, this.options);
+        this.enabled = true;
       }
     }
   }
-
   destroyScrollbar  = () => {
-    const container = this.refs.chatMessages;
-    if(process.env.BROWSER) {
-      if(container) {
-        this.ps.destroy(container);
-      }
-    }
-  }
-  updateScrollbar = () => {
-    const container = this.refs.chatMessages;
-    if(process.env.BROWSER) {
-      if(container) {
-        this.ps.destroy(container);
+    if(this.enabled) {
+      if(process.env.BROWSER) {
+        this.ps.destroy(this.scrollbar);
+        this.enabled = false;
       }
     }
   }
 
   componentDidMount() {
+    if(!this.ps) this.ps = require('perfect-scrollbar');
+    if(!this.scrollbar) this.scrollbar = this.refs.scroll;
+    this.shallEnableScrollbar();
     this.buildScrollbar();
   }
 
@@ -58,7 +64,6 @@ class MainContent extends React.Component {
 
   componentDidUpdate(prevProps, prevState, prevContext) {
     if(this.props.panels !== prevProps.panels) {
-      console.log(`Pannels toggled, going to update scrollbar`);
       this.destroyScrollbar();
       this.buildScrollbar();
     }
@@ -84,7 +89,7 @@ class MainContent extends React.Component {
     const {children} = {...this.props}
 
     return (
-      <div className={containerClass()} ref="chatMessages">
+      <div className={containerClass()} ref="scroll">
         <Header/>
         {children}
       </div>

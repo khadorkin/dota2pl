@@ -14,16 +14,16 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Chat from '../../components/Chat/Chat'
 import s from './RightPanel.css'
 const RightPanel = ({status}) => {
+  const containerClass= () => {
+    if(status.right) {
+      return s.RightContainerActive;
+    }
+    return s.RightContainer;
+  }
   return (
-    <Drawer
-      width={340}
-      containerClassName={s.Container}
-      openSecondary={true}
-      open={status.right}>
-    <Chat/>
-
-      </Drawer>
-
+    <div className={containerClass()}>
+      <Chat/>
+    </div>
   );
 }
 export default connect(state => ({status: state.panels}))(withStyles(s)(RightPanel));

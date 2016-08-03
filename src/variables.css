@@ -9,13 +9,13 @@
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&subset=latin-ext';
 @import 'https://fonts.googleapis.com/css?family=Roboto:500,700&subset=latin-ext';
-
+@import 'https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,700i&subset=latin-ext';
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,500&subset=latin-ext';
-
+@import 'https://fonts.googleapis.com/css?family=Amiko|Hind|Noto+Sans|Work+Sans&subset=latin-ext';
 
 @custom-media --screen-m480 (width >= 30em);
-@custom-media --screen-m600 (width >= 37,5em);
-@custom-media --screen-m840 (width >= 52,5em);
+@custom-media --screen-m600 (width >= 37.5em);
+@custom-media --screen-m840 (width >= 52.5em);
 @custom-media --screen-m960 (width >= 60em);
 @custom-media --screen-m1280 (width >= 80em);
 @custom-media --screen-m1440 (width >= 90em);
@@ -32,8 +32,8 @@
    * Typography
    * ======================================================================== */
 
-  --font-family-base: 'Open Sans', sans-serif;
-  --font-family-headers: 'Roboto', sans-serif;
+  --font-family-base: 'Noto Sans', sans-serif;
+  --font-family-headers: 'Work Sans', sans-serif;
 
   /*
    * Layout
@@ -52,17 +52,54 @@
 }
 
 
+.pullFromLeft {
+  @media(--screen-m1440) {
+    margin-left: 255px !important;
+
+  }
+}
+
+.pullFromRight {
+  @media(--screen-m1440) {
+    margin-right: 340px !important;
+  }
+}
+.pullNavFromLeft {
+  @media(--screen-m1600) {
+    margin-left: 255px !important;
+
+  }
+}
+
+.pullNavFromRight {
+  @media(--screen-m1600) {
+    margin-right: 340px !important;
+  }
+}
+
+
+
+
 
 
 .mediumCard{
   background: #0f1316;
     color: #bbbbbb;
+
+  padding: .5em 1em;
+  border-top: 1px solid rgba(80, 79, 79, 0.14);
+  border-bottom: 1px solid rgba(80, 79, 79, 0.14);
+
   box-shadow: 0 1px 4px rgba(0,0,0,.08);
-  border: 1px solid rgba(80, 79, 79, 0.14);
-  border-radius: 3px;
-  padding: 0 2em;
 
+  @media(--screen-m960) {
+    border-left: 1px solid rgba(80, 79, 79, 0.14);
+    border-right: 1px solid rgba(80, 79, 79, 0.14);
 
+    border-radius: .3em;
+    padding: 2em 4em;
+
+  }
 }
 
 

@@ -1,4 +1,4 @@
-
+@import '../../variables.css';
 
 @keyframes ImageLogo {
     0% { transform: translateX(-15%); opacity:0; }
@@ -14,17 +14,20 @@
 
 
 .Container{
-    font-size: 1em;
+    font-size: .5em;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: stretch;
-
     position:relative;
-    /*background: hsla(190, 35%, 7%, 0.83);*/
-    /*filter: blur(5px);*/
     padding: 1em;
+    @media(--screen-m600) {
+        font-size: .9em;
+    }
+    @media(--screen-m1440) {
+        font-size: 1em;
+    }
 }
 
 .Caption{

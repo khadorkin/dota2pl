@@ -36,6 +36,7 @@
     "passport": "0.3.2",
     "passport-facebook": "2.1.1",
     "passport-steam": "^1.0.5",
+    "passport-twitch": "^1.0.3",
     "passport.socketio": "^3.6.2",
     "perfect-scrollbar": "^0.6.12",
     "pretty-error": "2.0.0",

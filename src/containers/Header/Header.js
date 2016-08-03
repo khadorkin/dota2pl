@@ -53,18 +53,18 @@ const LeftIcon = ({children}) => (
 const Header = ({toggleLeftPanel, toggleRightPanel}) => {
   return (
     <div className={s.Header}>
-    <AppBar
-      iconStyleLeft={{margin: '0px', display: 'flex', alignItems: 'center'}}
-      iconStyleRight={{margin: '0px', display: 'flex', alignItems: 'center'}}
-      iconElementLeft={<LeftIcon><LeftPannelToggler/></LeftIcon>}
-      iconElementRight={<Navigation />}
-      className={s.AppBar}/>
+    {/*<AppBar*/}
+      {/*iconStyleLeft={{margin: '0px', display: 'flex', alignItems: 'center'}}*/}
+      {/*iconStyleRight={{margin: '0px', display: 'flex', alignItems: 'center'}}*/}
+      {/*iconElementLeft={<LeftIcon><LeftPannelToggler/></LeftIcon>}*/}
+      {/*iconElementRight={<Navigation />}*/}
+      {/*className={s.AppBar}/>*/}
     <div className={s.ControlPanel}>
       <Brand />
 
       <UserProfile />
     </div>
-      <FloatingIcon/>
+      {/*<FloatingIcon/>*/}
      </div>
 
   );

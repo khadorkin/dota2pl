@@ -11,22 +11,91 @@
 
 .root {
   font-family: var(--font-family-headers);
-  position: relative;
+  transition: .45s cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(17, 19, 24);
 
-  //opacity: 1;
-  //align-items: flex-start;
-  //position: fixed;
-  //left: 0;
-  //top: 0;
-  //bottom: 0;
-  //right: 0;
-  //background: black;
-  //display: flex;
-  //flex-flow: column-reverse nowrap;
-  //padding: 2em;
-  //justify-content: flex-start;
-  //font-size: 2em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 4em;
+  //margin-left: 0;
+  //margin-right: 0;
+  z-index: 3000;
+  padding: 0 .5em;
+  box-shadow: 0px -1px 7px 0px rgb(12, 13, 16);
+  @media(--screen-m1440) {
+    bottom: unset;
+    top: 0;
+    box-shadow: 0px 3px 7px 0px rgba(12, 13, 16, 0.73);
+  }
+  @media(--screen-m1600) {
+    background: rgb(17, 19, 24);
+    bottom: unset;
+    top:0;
+  }
+
 }
+
+.navigation{
+
+
+  display: none;
+  @media(--screen-m960) {
+    display: flex;
+  }
+}
+.navToggle {
+  display: flex;
+  @media(--screen-m960) {
+    display: none !important;
+  }
+}
+.navigationActive{
+  composes: navigation;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 4rem;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.5em;
+  background: rgb(17, 19, 24);
+  right: 0;
+  @media(--screen-m960) {
+    background: unset;
+    position: static;
+    font-size: 1em;
+    flex-flow: row wrap;
+    padding: 0;
+  }
+
+}
+
+
+
+.pullBoth {
+  composes: root pullNavFromLeft pullNavFromRight;
+}
+.pullLeft {
+  composes: root pullNavFromLeft;
+
+}
+.pullRight {
+  composes: root pullNavFromRight;
+
+}
+
+
+
 
 .link {
   display: inline-block;
@@ -69,8 +138,16 @@
   transform: translate(0);
   opacity: 1;
 
-
 }
+.linkActive{
+  composes: link;
+
+  &:before{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
 
 .highlight {
   margin-right: 8px;

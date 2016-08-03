@@ -1,20 +1,20 @@
 @import '../../variables.css';
 
-.RightContainer{
+.LeftContainer{
   position: absolute;
   background: rgb(15, 19, 22);
-  right: 0;
-  width: 340px;
+  left: 0;
+  width: 255px;
   top: 0;
   bottom: 0;
   display: flex;
   flex-flow: column nowrap;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition: var(--animation);
 }
 
-.RightContainerActive {
-  composes: RightContainer;
+.LeftContainerActive {
+  composes: LeftContainer;
   transform: translateX(0);
 
 }

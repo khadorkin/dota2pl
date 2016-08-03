@@ -27,11 +27,9 @@ class ChatMessages extends React.Component{
     if(process.env.BROWSER) {
       if(container) {
         const ps = require('perfect-scrollbar');
-        console.log(ps)
         ps.initialize(container, {
           handlers: ['click-rail', 'drag-scrollbar', 'keyboard', 'wheel', 'touch', 'selection'],
         });
-        console.log(`Perfect scrollbar probably intialized`);
       }
     }
   }

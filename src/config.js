@@ -10,6 +10,7 @@
 /* eslint-disable max-len */
 
 const production = process.env.NODE_ENV === 'production';
+console.log(production);
 export const port = process.env.PORT || 3000;
 export const host = process.env.WEBSITE_HOSTNAME || `localhost:${port}`;
 
@@ -34,6 +35,12 @@ export const auth = {
     apiKey: production ? 'BF0CA1E805372C5A0F62CC32E28C9CC7' : '9592670902AA7579FF6CF7DCD0D3D69F',
     returnURL: production ? `http://tspeak.dota2.pl:3000/auth/steam/return` : `http://${host}/auth/steam/return`,
     realm: production ?  `http://tspeak.dota2.pl:3000/` : `http://${host}/`
+  },
+  twitch: {
+    clientID: production ? '8fgjwskxu45u5o5vjeryggkmcytxxxg' : 'hvep6tlzyg9p0c2mnfdqbnbodzwjl1l',
+    clientSecret: production ? '4ff1bl6ulemmj17vnet9lbxkqmtffd8' : '3ha422mn6wffy4flookkbi1leps7u9c',
+    callbackURL: production ? 'http://tspeak.dota2.pl:3000/auth/twitch/return' : "http://localhost:3000/auth/twitch/return",
+    scope: "user_read"
 
   },
   // https://developers.facebook.com/
@@ -55,4 +62,3 @@ export const auth = {
   },
 
 };
-console.log(auth);

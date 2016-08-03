@@ -6,6 +6,7 @@ import io from 'socket.io-client';
 import { eventChannel } from 'redux-saga';
 import { fork, take, call, put, cancel, select } from 'redux-saga/effects';
 import { seedChat, addMessage } from '../reducers/chat';
+import { updateStreamList } from '../reducers/stream';
 
 const connectionPathFactory = (user) => {
   const {userName} = user;
@@ -25,38 +26,62 @@ const connect = (user) => {
   });
 }
 
-function* read(socket) {
-  console.log(`Read socket initialization`);
-  const channel = yield call(subscribe, socket);
+function* readChat(socket) {
+  console.log(`[Chat] Opened socket channel`);
+  const channel = yield call(subscribeChat, socket);
   socket.emit('chat:getInitial');
   while (true) {
     let action = yield take(channel);
     yield put(action);
   }
 }
+function* readStreams(socket) {
+  console.log(`[StreamService] Initialized`);
+  const channel = yield call(subscribeStream, socket);
+  socket.emit('stream:getInitial');
+  while (true) {
+    let action = yield take(channel);
+    yield put(action);
+  }
+}
+
+
 
 function* write(socket) {
   while (true) {
     let { payload } = yield take('SEND_MESSAGE_SOCKET');
     console.log(payload);
-    console.log(`Intercepted redux action, going to emit a message to a socket connection`);
     socket.emit('chat:message', payload);
   }
 }
 
-function* handleChat(socket) {
-  yield fork(read, socket);
+function* handleSockets(socket) {
+  yield fork(readChat, socket);
+  yield fork(readStreams, socket);
   yield fork(write, socket);
 }
 
 
-function subscribe(socket) {
+function subscribeStream(socket) {
+  return eventChannel(emit => {
+    socket.on('stream:list', e => {
+      // console.log(`[Stream] received list from server:`,e);
+      emit(updateStreamList(e));
+    });
+
+
+    return () => {};
+  });
+}
+
+
+function subscribeChat(socket) {
   return eventChannel(emit => {
     socket.on('chat:messages', e => {
       emit(seedChat(e));
     });
     socket.on('chat:message', e => {
-      console.log(`[Chat] Recieved message from server:`, e);
+      // console.log(`[Chat] Recieved message from server:`, e);
       if(e) emit(addMessage(e));
     });
 
@@ -69,7 +94,7 @@ export function* socketSaga() {
   const selector = (state) => (state.auth)
   const user = yield select(selector);
   const socket = yield call(connect, user);
-  const task = yield fork(handleChat, socket);
+  const task = yield fork(handleSockets, socket);
 }
 
 

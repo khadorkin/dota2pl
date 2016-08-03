@@ -78,7 +78,7 @@
     display: flex;
     flex: 1 0 auto;
     align-items: flex-start;
-    composes: mediumCard;
+    padding: 0 .6em;
     background: rgba(5, 7, 8, 0.39);
     border-radius: 0;
 

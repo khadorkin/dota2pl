@@ -53,20 +53,16 @@ body:before{
   right: 0;
   z-index: -1;
   display: block;
-  background-image: linear-gradient( rgba(16, 21, 23, 0.87), rgba(16, 21, 23, 0.95) ), url(http://d1hw6n3yxknhky.cloudfront.net/023980645_prevstill.jpeg) !important;
-  background-image: linear-gradient( rgba(16, 21, 23, 0.87), rgba(16, 21, 23, 0.95) ), url(http://www.freeimageslive.co.uk/files/images009/embers.jpg) !important;
-  background-image: linear-gradient( rgba(16, 21, 23, 0.87), rgba(16, 21, 23, 0.95) ), url(http://tclarson.com/wp-content/uploads/2014/05/Fire-spark-flame.jpg) !important;
+  //background-image: linear-gradient( rgba(16, 21, 23, 0.87), rgba(16, 21, 23, 0.95) ), url(http://tclarson.com/wp-content/uploads/2014/05/Fire-spark-flame.jpg) !important;
 
 
 
-  -webkit-background-size: cover;
   background-size: cover;
-  background-position: 0px calc(20% - 8.3em);
-  width: 130%;
+  background-position: center center;
+  width: 100%;
+  transform: scale(1.1);
   background-color: #101517;
-  height: 130%;
-  left: -15%;
-  right: -15%;
+  height: 100%;
   -webkit-filter: blur(5px);
 }
 
@@ -249,9 +245,18 @@ p {
   flex-flow: row nowrap;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 4em;
   left: 0;
   right: 0;
   overflow: hidden;
+  @media(--screen-m1440) {
+    bottom: 0;
+    top:4em;
+  }
+  @media(--screen-m1600) {
+    bottom: 0;
+    top:0;
+  }
+
 }
 

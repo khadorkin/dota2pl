@@ -9,6 +9,12 @@
   padding: 0 3em;
   font-family: var(--font-family-headers);
   align-items: center;
-  font-size: 3em;
+  font-size: 1.3em;
+  @media(--screen-m600) {
+    font-size: 2em;
+  }
+  @media(--screen-m960) {
+    font-size: 2.5em;
+  }
 
 }

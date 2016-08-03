@@ -35,6 +35,7 @@ import assets from './assets'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
 import { loginUser, logoutUser } from './reducers/auth';
 import { port, auth, dbConnectionOptions } from './config';
+import * as Models from './data/models'
 
 
 
@@ -63,6 +64,7 @@ app.use(bodyParser.json());
 
 
 // const connection = mongoose.createConnection(dbConnectionOptions);
+mongoose.set('debug', true);
 mongoose.connect(dbConnectionOptions);
 
 // Session configuration
@@ -81,12 +83,16 @@ import webSockets from './websockets/socketio';
 
 // Returns whole socket followed by two namespace instances, structure:
 // {socket, pubNs, privNs}
-
-
 const io = webSockets(server, mongoSessionStore);
+
 import redisConnection from './redis/redis';
 const redis = redisConnection();
+
 import Chat from './services/Chat/Chat'
+import Stream from './services/Chat/Stream';
+
+// Initialize services
+const dota2plStream = new Stream({redis, io});
 const prodotaChat = new Chat({redis, io});
 
 
@@ -95,62 +101,68 @@ const prodotaChat = new Chat({redis, io});
 
 
 
-passport.serializeUser(function(user, done) {
-  done(null, user);
-});
-
-passport.deserializeUser(function(obj, done) {
-  done(null, obj);
-});
 
 app.use(passport.initialize());
 app.use(passport.session());
 
 
-//
-// Authentication
-// -----------------------------------------------------------------------------
-// app.use(expressJwt({
-//   secret: auth.jwt.secret,
-//   credentialsRequired: false,
-//   getToken: req => req.cookies.id_token,
-// }));
 
 app.get('/auth/steam', passport.authenticate('steam'));
-
-function authenticateSteamResponse(req) {
-  return new Promise((res, rej) => {
-    passport.authenticate('steam', (err, usr) => {
-      if (err) {
-        rej(err);
-      } else {
-        res(usr);
-      }
-    })(req);
-  });
-}
-
-// app.get('/auth/steam/return', async (req, res) => {
-//   try {
-//     const user = await authenticateSteamResponse(req);
-//
-//     // res.json(user);
-//     const expiresIn = 60 * 60 * 24 * 180; // 180 days
-//     // const token = jwt.sign({userName: user.userName, userId: user.steamId}, auth.jwt.secret, { expiresIn });
-//     // res.cookie('id_token', token, { maxAge: 1000 * expiresIn, httpOnly: true });
-//     res.redirect('/');
-//   } catch (e) {
-//     res.json({ token: false });
-//   }
-//
-// });
-
 app.get('/auth/steam/return',
   passport.authenticate('steam', { failureRedirect: '/' }),
   function(req, res) {
     // Successful authentication, redirect home.
     res.redirect('/');
   });
+
+
+app.get("/auth/twitch", (req,res, next) => {
+  if(!req.user) {
+    res.redirect('/');
+    return;
+  } else if(req.user.twitchId) {
+    res.redirect('/');
+    return;
+  }
+  next();
+});
+app.get("/auth/twitch", passport.authenticate("twitch"));
+app.get('/auth/twitch/return', async (req,res,next) => {
+  passport.authenticate('twitch', async (e,user,info) => {
+    if(e) {
+      res.json(e.message);
+      return;
+    }
+    console.log(`[Twitch sync] Session user ID: `,req.user._id);
+    const userFromDb = await Models.User.findById(req.user._id);
+    console.log(`[Twitch sync] Got user from database: `,userFromDb);
+    userFromDb.twitchId = user.id;
+    try {
+      await userFromDb.save();
+    } catch (err) {
+      res.json(err.message);
+    }
+    console.log(`[Twitch sync] successfully synced ${req.user.userName} with ${user.id}`);
+    req.login(userFromDb, (err) => {
+      if(err) {
+        res.json(err.message);
+        return;
+      }
+      return res.redirect('/');
+    });
+  })(req,res,next);
+});
+
+
+
+// app.get("/auth/twitch/return", passport.authenticate("twitch", { failureRedirect: "/" }), function(req, res) {
+//   // Successful authentication, redirect home.
+//   console.log(`Should be fine`);
+//   res.json({ok: 'What the hell'});
+//
+//   // res.redirect("/");
+// });
+
 
 
 app.get('/logout', async (req, res) => {
@@ -186,7 +198,7 @@ app.get('*', async (req, res, next) => {
 
     const user = req.user;
     if(user) {
-      store.dispatch(loginUser(user.userName, user.steamId, user.avatarUrl))
+      store.dispatch(loginUser(user.userName, user.steamId, user.avatarUrl, user.admin, user.twitchId));
 
     } else {
       store.dispatch(logoutUser());
