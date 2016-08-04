@@ -104,9 +104,9 @@
   text-decoration: none;
   font-weight: 500;
   transition: .15s ease-in;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
-  font-size: 1em; /* ~18px */
+  font-size: 1.05em; /* ~18px */
 }
 
 .link,
@@ -116,6 +116,18 @@
   color: rgba(255, 255, 255, 1);
 }
 
+
+
+
+
+.link:active{
+  &:before{
+    background: rgba(255,255,255, .28);
+
+  }
+
+}
+
 .link:before{
   content: '';
   position: absolute;
@@ -123,9 +135,9 @@
   right:0;
   bottom:0;
   top:0;
-  border:2px solid white;
+  //border-right:1px solid white;
   z-index:-1;
-  background: rgba(255,255,255, .15);
+  background: rgba(255,255,255, .20);
   transform: translateX(0px) translateY(3px);
   opacity: 0;
   transform-origin: 100% 50%;

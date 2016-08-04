@@ -5,7 +5,7 @@ import s from './Chat.css';
 
 const Message = ({user, message})  => (<div className={s.Message}>
   <span className={s.Author}>{user.userName}</span><span className={s.Contents}>{message}</span>
-
+  <div className={s.ControlPanel}></div>
 </div>);
 
 export default withStyles(s)(Message)

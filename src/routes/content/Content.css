@@ -17,15 +17,14 @@
   composes: mediumCard;
 
   max-width: var(--max-content-width);
-
-  background: #0f1316;
-  color: #bbbbbb;
+  background: white;
+  //background: #0f1316;
+  //color: #bbbbbb;
   font-size: 1em;
-  max-width: 50em;
   margin: 0 auto;
 
   & h1, & h2, & h3, & h4, & h5  {
-    color: #ddd;
+    color: rgba(0,0,0,.8);
   }
   & p {
     line-height: 2;
