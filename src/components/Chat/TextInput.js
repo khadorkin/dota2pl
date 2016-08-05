@@ -12,6 +12,13 @@ class TextInput extends React.Component {
     value: ''
   }
 
+  componentDidUpdate(prevProps, prevState, prevContext) {
+    findDOMNode(this.refs.textInput).focus();
+  }
+
+
+
+
   handleChange = (e) => {
     this.setState({value: e.target.value})
   };

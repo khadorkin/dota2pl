@@ -55,7 +55,7 @@ class ChatMessages extends React.Component{
       <div className={cx(s.ChatMessagesWrapper)} ref="chatMessages" >
         <div className={s.ChatMessages} >{messages.map((m) => {
           const {time, ...rest} = m;
-          return (<Message key={time} {...rest}/>)
+          return (<Message key={time} time={time} {...rest}/>)
         })}</div>
 
       </div>

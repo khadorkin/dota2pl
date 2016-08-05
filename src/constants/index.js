@@ -9,6 +9,9 @@ export const LOGIN_USER = 'LOGIN_USER ';
 export const LOGOUT_USER = 'LOGOUT_USER';
 
 // Chat control constants
+export const TIMEOUT_REQUEST = 'TIMEOUT_REQUEST';
+export const BAN_REQUEST = 'BAN_REQUEST';
+export const DELETE_MESSAGE_REQUEST = 'DELETE_MESSAGE_REQUEST';
 export const DELETE_MESSAGE = 'DELETE_MESSAGE';
 export const SEND_MESSAGE_SOCKET = 'SEND_MESSAGE_SOCKET'
 export const PUSH_MESSAGE = 'PUSH_MESSAGE';

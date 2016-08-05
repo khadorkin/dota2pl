@@ -1,6 +1,6 @@
 import {TOGGLE_LEFT, TOGGLE_RIGHT, TOGGLE_NAV } from '../constants';
 
-const reducer = (state = {left: false, right: false, nav: false}, action) => {
+const reducer = (state = {left: true, right: true, nav: false}, action) => {
   switch(action.type) {
     case TOGGLE_LEFT:
       return {

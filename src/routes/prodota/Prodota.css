@@ -3,8 +3,8 @@
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
-  color: #bbb;
-  background: rgba(10, 1, 1, 0.4);
+  color: rgba(0, 0, 0, 0.81);
+  //background: rgba(10, 1, 1, 0.1);
   text-align: center;
   padding: 0 3em;
   font-family: var(--font-family-headers);

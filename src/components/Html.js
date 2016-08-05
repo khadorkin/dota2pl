@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { analytics } from '../config';
 
-function Html({ title, description, style, script, children, state }) {
+function Html({ title, description, style, script, children, state}) {
   return (
     <html className="no-js" lang="">
       <head>
@@ -12,6 +12,7 @@ function Html({ title, description, style, script, children, state }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
         <style id="css" dangerouslySetInnerHTML={{ __html: style }} />
       </head>
       <body>

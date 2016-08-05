@@ -5,13 +5,22 @@
 import io from 'socket.io-client';
 import { eventChannel } from 'redux-saga';
 import { fork, take, call, put, cancel, select } from 'redux-saga/effects';
-import { seedChat, addMessage } from '../reducers/chat';
+import { seedChat, addMessage, deleteMessage } from '../reducers/chat';
 import { updateStreamList } from '../reducers/stream';
+import {PUSH_MESSAGE, DELETE_MESSAGE, SEED_CHAT, SEND_MESSAGE_SOCKET} from '../constants';
+
 
 const connectionPathFactory = (user) => {
   const {userName} = user;
-  const host = process.env.NODE_ENV === 'development' ? document.location.hostname + ':3000' : document.location.hostname;
-  const connectionPath = `${document.location.protocol}//${host}/${userName ? 'authorized' : 'public'}`
+  let host = null;
+  let connectionPath = null;
+  try {
+    host = process.env.NODE_ENV === 'development' ? document.location.hostname + ':3000' : document.location.hostname;
+    connectionPath = `${document.location.protocol}//${host}/${userName ? 'authorized' : 'public'}`
+  } catch(e) {
+    connectionPath = `http://localhost:3000/${userName ? 'authorized' : 'public'}`
+  }
+
   console.log(process.env.NODE_ENV, connectionPath);
   return connectionPath;
 }
@@ -29,7 +38,7 @@ const connect = (user) => {
 function* readChat(socket) {
   console.log(`[Chat] Opened socket channel`);
   const channel = yield call(subscribeChat, socket);
-  socket.emit('chat:getInitial');
+  socket.emit(SEED_CHAT);
   while (true) {
     let action = yield take(channel);
     yield put(action);
@@ -49,9 +58,9 @@ function* readStreams(socket) {
 
 function* write(socket) {
   while (true) {
-    let { payload } = yield take('SEND_MESSAGE_SOCKET');
-    console.log(payload);
-    socket.emit('chat:message', payload);
+    let {type, payload} = yield take(action => action.remote);
+    console.log(type, payload);
+    socket.emit(type, payload);
   }
 }
 
@@ -77,12 +86,14 @@ function subscribeStream(socket) {
 
 function subscribeChat(socket) {
   return eventChannel(emit => {
-    socket.on('chat:messages', e => {
+    socket.on(SEED_CHAT, e => {
       emit(seedChat(e));
     });
-    socket.on('chat:message', e => {
-      // console.log(`[Chat] Recieved message from server:`, e);
+    socket.on(PUSH_MESSAGE, e => {
       if(e) emit(addMessage(e));
+    });
+    socket.on(DELETE_MESSAGE, e => {
+      if(e) emit(deleteMessage(e));
     });
 
     return () => {};

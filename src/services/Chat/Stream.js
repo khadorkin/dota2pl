@@ -14,7 +14,7 @@ export default class Stream {
     this.streams = null;
     this._configureStream();
     this.fetchStreamList()
-    const fetchInLoop = setInterval(this.fetchStreamList, 15000);
+    const fetchInLoop = setInterval(this.fetchStreamList, 70000);
   }
 
   _configureStream() {
