@@ -130,11 +130,12 @@ export default class Chat {
     if(isBanned) return;
     if(isTimedOut) return;
 
+      moment.locale('pl');
     message = this.sanitize(message);
-    const time = new Date().getTime();
-
+      // const time = new Date();
+      const time = Date.now() / 1000;
     const t = moment.unix(time);
-    console.log(`[Chat] (${t.format('h:mm:ss')}) ${user.userName}: ${message}`);
+      console.log(`[Chat] (${t.format('hh:mm:ss')}) ${user.userName}: ${message}`);
     const generatedId = uuid.v1();
 
     const flatMessageObject = {message,time, userName: user.userName, steamId: user.steamId, id: generatedId};
@@ -145,7 +146,7 @@ export default class Chat {
     const messageInList = `${MESSAGE}:${generatedId}`;
     this.pub.hmset(messageInList, flatMessageObject);
     this.pub.rpush(key,messageInList);
-    this.pub.ltrim(key, -200, -1);
+      this.pub.ltrim(key, -400, -1);
 
     this.pub.publish(PUSH_MESSAGE, str);
 
@@ -154,6 +155,8 @@ export default class Chat {
   _handleJoin(s){
     const {user} = s.request || null;
     s.on('disconnect', () => this._handlePart(user));
+
+      // console.log(s.server.eio.clients);
 
     this._attachPublicHandlers(s);
     if(user){
@@ -218,7 +221,7 @@ export default class Chat {
     try {
       // TODO: get channelId from socket channel
       const roomId = 1;
-      const numberOfMessages = -50;
+        const numberOfMessages = -200;
       const channel = `${CHATROOM}:${roomId}`;
       const results = await this.getMessagesFromRedis(channel, numberOfMessages);
       // const chatMessages =  await this.pub.lrangeAsync(`${CHATROOM}:${roomId}`,-50, -1);

@@ -22,6 +22,8 @@ import {
   windowScrollY,
 } from './core/DOMUtils';
 
+import ApolloClient from 'apollo-client';
+
 const context = {
   store: null,
   insertCss: (...styles) => {

@@ -8,7 +8,8 @@
  */
 
 import User from './User';
-export { User }
+import Article from './Article';
+export {User, Article}
 
 // import sequelize from '../sequelize';
 // import User from './User';

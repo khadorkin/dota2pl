@@ -17,6 +17,7 @@ import ranking from './ranking';
 import register from './register';
 import content from './content';
 import error from './error';
+import newsfeed from './newsfeed';
 import prodota from './prodota';
 
 export default {
@@ -24,17 +25,16 @@ export default {
   path: '/',
 
   children: [
-    home,
-    contact,
-    register,
     prodota,
     ranking,
-    content,
+      newsfeed,
     error,
   ],
 
   async action({ next, render, context }) {
     const component = await next();
+      // console.log(next,render,context, component);
+
     if (component === undefined) return component;
     return render(
       <App context={context}>{component}</App>

@@ -13,7 +13,13 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import expressJwt from 'express-jwt';
+
+/*
+ * Graphql
+ * */
+import {apolloExpress, graphiqlExpress} from 'apollo-server';
 import expressGraphQL from 'express-graphql';
+
 import jwt from 'jsonwebtoken';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
@@ -154,33 +160,29 @@ app.get('/auth/twitch/return', async (req,res,next) => {
 });
 
 
-
-// app.get("/auth/twitch/return", passport.authenticate("twitch", { failureRedirect: "/" }), function(req, res) {
-//   // Successful authentication, redirect home.
-//   console.log(`Should be fine`);
-//   res.json({ok: 'What the hell'});
-//
-//   // res.redirect("/");
-// });
-
-
-
 app.get('/logout', async (req, res) => {
-  res.clearCookie('id_token');
+    req.logout();
   res.redirect('/');
 })
 
 //
 // Register API middleware
 // -----------------------------------------------------------------------------
-app.use('/graphql', expressGraphQL(req => ({
-  schema,
-  graphiql: true,
-  rootValue: { request: req },
-  pretty: process.env.NODE_ENV !== 'production',
+import Mocks from './data/Mocks'
+app.use('/graphql', bodyParser.json(), apolloExpress(req => ({
+    schema: schema,
+    context: {user: req.user}
 })));
+app.use('/graphiql', graphiqlExpress({
+    endpointURL: '/graphql',
+}));
 
-
+// app.use('/graphql', expressGraphQL(req => ({
+//   schema,
+//   graphiql: true,
+//   rootValue: { request: req },
+//   pretty: process.env.NODE_ENV !== 'production',
+// })));
 
 
 //
@@ -204,16 +206,7 @@ app.get('*', async (req, res, next) => {
       store.dispatch(logoutUser());
 
     }
-    // const token = req.cookies.id_token || null;
 
-    // store.dispatch('END');
-    // if(token) {
-    //   const userData = await jwt.verify(token, auth.jwt.secret);
-    //   store.dispatch(loginUser(userData.userName, userData.userId))
-    // } else {
-    //   store.dispatch(logoutUser());
-    // }
-    //
 
     await UniversalRouter.resolve(routes, {
       path: req.path,

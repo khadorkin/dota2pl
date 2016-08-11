@@ -20,6 +20,7 @@ import MainContent from '../../containers/MainContent/MainContent.js';
 import RightPanel from '../../containers/RightPanel/RightPanel.js';
 import rootSaga from '../../sagas/sagas'
 import Navigation from '../../containers/Navigation/Navigation';
+import {ApolloProvider} from 'react-apollo';
 
 import prodotaTheme from './theme.js'
 
@@ -82,7 +83,7 @@ class App extends Component {
 
 
     return (
-      <Provider store={store}>
+        <ApolloProvider store={store} client={store.apolloClient}>
         <MuiThemeProvider muiTheme={muiTheme}>
 
 
@@ -98,7 +99,7 @@ class App extends Component {
 
         </MuiThemeProvider>
 
-      </Provider>
+        </ApolloProvider>
     );
   }
 

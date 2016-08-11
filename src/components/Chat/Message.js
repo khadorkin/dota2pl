@@ -6,7 +6,8 @@ import {connect} from 'react-redux';
 import {compose} from 'redux';
 import IconButton from 'material-ui/IconButton';
 import { deleteMessageRequest, timeoutUser, banUser } from '../../reducers/chat';
-
+import ReactMarkdown from 'react-markdown';
+import moment from 'moment';
 const MessageTools = ({
   id,
   deleteMessageRequest,
@@ -49,14 +50,28 @@ const ConnectedMessageTools = MessageToolsConnector(MessageTools);
 class Message extends React.Component {
   state = {
     active: false,
+
 }
   toggleMessage = () => {
     this.setState({active: !this.state.active})
   }
-  render () {
+
+
+    render() {
     const {userName, steamId, id, message, admin, time} = this.props;
+        moment.locale('pl');
+        const newTime = moment.unix(time).calendar();
     return (<div className={s.Message} >
-           <span className={admin ? s.AuthorClickable : s.Author} onClick={this.toggleMessage}>{userName}</span><span className={s.Contents}>{message}</span>
+        <div className={s.AuthorAndTime}>
+            <span className={admin ? s.AuthorClickable : s.Author} onClick={this.toggleMessage}>{userName}</span>
+            <em>{newTime}</em>
+        </div>
+
+
+        <ReactMarkdown
+            source={message}
+            skipHtml={true}
+            className={s.Contents}/>
            {admin && this.state.active ? <ConnectedMessageTools id={id} steamId={steamId} onClick={this.toggleMessage}/> : null}
          </div>)
   }

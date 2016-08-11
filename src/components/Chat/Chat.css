@@ -51,13 +51,19 @@
 }
 
 .Message:nth-child(2n) {
-    background: hsl(220, 17%, 8%)
+  background: hsl(220, 17%, 9%)
 }
 
 .Author{
     font-weight: bold;
     color: #e53935;
     margin-right: .4em;
+  display: flex;
+}
+
+.AuthorAndTime {
+  display: flex;
+  justify-content: space-between;
 }
 
 .Author:after{
@@ -75,6 +81,23 @@
 
 .Contents{
     word-break: break-all;
+  display: inline-flex;
+  & * {
+    font-size: 1em;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  & img {
+    max-height: 2em;
+  }
+  & a {
+  }
+  & a img {
+    float: left;
+    max-height: 5.3em;
+    padding-right: .5em;
+  }
 }
 
 .TextInput{

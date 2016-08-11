@@ -21,7 +21,7 @@ let RightPanelSmallControl = ({toggleRightPanel, state}) => (
     iconStyle={{
       transition: '.2s ease-in-out',
       color: state ? 'rgb(229, 57, 53)' : 'white'}}>
-    chat_bubble
+      forum
   </IconButton>
 );
 RightPanelSmallControl = connect(state => ({state: state.panels.right}), PanelAC)(RightPanelSmallControl);

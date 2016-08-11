@@ -8,16 +8,19 @@
  */
 
 import React from 'react';
-import Home from './Home';
-import Content from '../content/Content.js'
-import fetch from '../../core/fetch';
+import Article from '../../components/Article/Article'
+import Connector from '../../components/Article/ConnectedArticle';
+
 
 export default {
 
-  path: '/',
+    path: '/article/:id',
 
-  async action({ path }) { // eslint-disable-line react/prop-types
-    return <Content {...data.content} />;
-  },
+    async action({params}) {
+
+        const GraphQLConnectedComponent = Connector(params.id, true)(Article);
+
+        return <GraphQLConnectedComponent/>;
+    },
 
 };

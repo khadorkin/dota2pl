@@ -38,15 +38,16 @@ function Navigation(props) {
   }
   return (
     <div className={containerClass()} role="navigation">
+        <div className={s.navigationItems}>
       <LeftPanelToggler/>
-    <div className={panels.nav ? s.navigationActive : s.navigation} onClick={toggleNavigation}>
-      <Link className={s.link} activeClass={s.linkActive} to="/">Strona główna</Link>
-      <Link className={s.link} activeClass={s.linkActive} to="/ranking">Ranking graczy</Link>
-      <Link className={s.link} activeClass={s.linkActive} to="/teamspeak">Teamspeak</Link>
-      <Link className={s.link} activeClass={s.linkActive} to="/prodota">PRODOTA</Link>
-      <a className={s.link} href="https://twitch.tv/dota2pl" target="_blank">Stream</a>
-      <a className={s.link} href="http://forum.dota2.pl">Forum</a>
-    </div>
+            <div className={panels.nav ? s.navigationActive : s.navigation} onClick={toggleNavigation}>
+                <Link className={s.link} activeClass={s.linkActive} to="/">Strona główna</Link>
+                <Link className={s.link} activeClass={s.linkActive} to="/ranking">Ranking graczy</Link>
+                <Link className={s.link} activeClass={s.linkActive} to="/teamspeak">Teamspeak</Link>
+                <Link className={s.link} activeClass={s.linkActive} to="/prodota">PRODOTA</Link>
+                <a className={s.link} href="https://twitch.tv/dota2pl" target="_blank">Stream</a>
+                <a className={s.link} href="http://forum.dota2.pl">Forum</a>
+            </div>
       <IconButton
         iconClassName="material-icons"
         iconStyle={{color: 'white'}}
@@ -55,6 +56,7 @@ function Navigation(props) {
         menu
       </IconButton>
       <RightPanelSmallControl/>
+        </div>
 
     </div>
   );

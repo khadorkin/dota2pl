@@ -4,9 +4,17 @@ import panels from './panels';
 import auth from './auth';
 import chat from './chat';
 import stream from './stream';
+import ApolloClient from 'apollo-client';
+
+const client = new ApolloClient();
+
+
 export default combineReducers({
   panels,
   auth,
   chat,
-  stream
+    stream,
+    apollo: client.reducer()
+
+
 });

@@ -78,7 +78,7 @@ class StreamFeed extends React.Component {
       <div className={s.Container} ref="stream">
         { stream.length ? stream.map(e => {
           return (<Stream {...e} key={e.id} />);
-        }) : <p>Should never appear, included for brevity</p>}
+        }) : <p>If this appeared, I fucked up.</p>}
       </div>
     );
   }

@@ -8,7 +8,7 @@
  */
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&subset=latin-ext';
-@import 'https://fonts.googleapis.com/css?family=Roboto:500,700&subset=latin-ext';
+@import 'https://fonts.googleapis.com/css?family=Raleway|Roboto:500,700&subset=latin-ext';
 @import 'https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,700i&subset=latin-ext';
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,500&subset=latin-ext';
 @import 'https://fonts.googleapis.com/css?family=Amiko|Hind|Noto+Sans|Work+Sans&subset=latin-ext';
@@ -32,14 +32,14 @@
    * Typography
    * ======================================================================== */
 
-  --font-family-base: 'Noto Sans', sans-serif;
+  --font-family-base: 'Open Sans', sans-serif;
   --font-family-headers: 'Titillium Web', sans-serif;
 
   /*
    * Layout
    * ======================================================================== */
   --animation: .45s cubic-bezier(0.23, 1, 0.32, 1);
-  --max-content-width: 1000px;
+  --max-content-width: 60em;
 
   /*
    * Media queries breakpoints
@@ -77,15 +77,33 @@
   }
 }
 
+:root {
+  --content-Box {
+    max-width: var(--max-content-width);
+    @media(--screen-m1600) {
+      max-width: calc(var(--max-content-width) * 1.1);
 
+    }
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
 
+.contentWrapper {
+  max-width: var(--max-content-width);
+  @media(--screen-m1600) {
+    max-width: calc(var(--max-content-width) * 1.1);
 
-
+  }
+  box-sizing: border-box;
+  margin: 0 auto;
+}
 
 .mediumCard{
   //background: #0f1316;
   //  color: #bbbbbb;
-
+  @apply --content-box;
+  composes: contentWrapper;
   padding: .5em 1em;
   border-top: 1px solid rgba(80, 79, 79, 0.14);
   border-bottom: 1px solid rgba(80, 79, 79, 0.14);
@@ -105,7 +123,4 @@
 
 
 
-.contentWrapper{
-  max-width: var(--max-content-width);
-  margin: 0 auto;
-}
+

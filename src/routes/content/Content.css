@@ -16,7 +16,6 @@
 .container {
   composes: mediumCard;
 
-  max-width: var(--max-content-width);
   background: white;
   //background: #0f1316;
   //color: #bbbbbb;

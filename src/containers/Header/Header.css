@@ -62,23 +62,18 @@
 .Header{
   font-family: var(--font-family-headers);
 background-image: linear-gradient(to right, rgba(60,89,92,0.3) 41%,rgba(2, 8, 14, 0.68) 100%),url(http://dota2walls.com/wp-content/uploads/2015/08/stunning-huskar-wallpaper.jpg)!important;
+  background-image: linear-gradient(to right, rgba(60, 89, 92, 0.3) 41%, rgba(2, 8, 14, 0.68) 100%), url(http://1920x1080hdwallpapers.com/image/201602/games/4174/dota-2-forest-ursa-tiny-rikimaru-art.jpg) !important;
 
-
-
-  background-position: 0% 20%;
+  background-position: 0% 36%;
 
   background-size: cover;
   min-height: 20em;
   box-sizing: border-box;
-  flex: 0 0 20em;
+  flex: 0 0 100%;
   display: flex;
   flex-flow: column nowrap;
   position: relative;
   box-shadow: 0px 3px 7px 0px rgba(12, 13, 16, 0.73);
-  @media(--screen-m1600) {
-    padding-top: 4em;
-  }
-
 
 }
 .AppBar{

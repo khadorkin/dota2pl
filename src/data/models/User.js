@@ -16,10 +16,7 @@ const userSchema = new Schema({
     medium: String,
     big: String
   },
-  mmr: {
-    solo: {type: Number, default: null},
-    party: {type: Number, default: null},
-  }
+    articles: [{type: Schema.Types.ObjectId, ref: 'Article'}]
 })
 
 export default mongoose.model('User', userSchema);

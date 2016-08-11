@@ -2,22 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f7cb915-c50d-4570-bcb0-eb95491a7df6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Article/Article.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Article/Article.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Article/ConnectedArticle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Article/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/NewsFeed/NewsFeed.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/NewsFeed/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Sidebar/Sidebar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/containers/Sidebar/Sidebar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/Mocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/models/Article.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/newsfeed/article.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/routes/newsfeed/feed.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/prodota_wierze.iml" afterPath="$PROJECT_DIR$/.idea/prodota_wierze.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/client.js" afterPath="$PROJECT_DIR$/src/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/App/App.css" afterPath="$PROJECT_DIR$/src/components/App/App.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/App/App.js" afterPath="$PROJECT_DIR$/src/components/App/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Chat/Chat.css" afterPath="$PROJECT_DIR$/src/components/Chat/Chat.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Chat/ChatMessages.js" afterPath="$PROJECT_DIR$/src/components/Chat/ChatMessages.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Chat/Message.js" afterPath="$PROJECT_DIR$/src/components/Chat/Message.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Chat/TextInput.js" afterPath="$PROJECT_DIR$/src/components/Chat/TextInput.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Html.js" afterPath="$PROJECT_DIR$/src/components/Html.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/constants/index.js" afterPath="$PROJECT_DIR$/src/constants/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/chat.js" afterPath="$PROJECT_DIR$/src/reducers/chat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/RightPanelToggler.js" afterPath="$PROJECT_DIR$/src/components/RightPanelToggler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/StreamFeed/StreamFeed.js" afterPath="$PROJECT_DIR$/src/components/StreamFeed/StreamFeed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/UserProfile/UserProfile.css" afterPath="$PROJECT_DIR$/src/components/UserProfile/UserProfile.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/UserProfile/UserProfile.js" afterPath="$PROJECT_DIR$/src/components/UserProfile/UserProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Header/Header.css" afterPath="$PROJECT_DIR$/src/containers/Header/Header.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/MainContent/MainContent.css" afterPath="$PROJECT_DIR$/src/containers/MainContent/MainContent.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Navigation/Navigation.css" afterPath="$PROJECT_DIR$/src/containers/Navigation/Navigation.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/Navigation/Navigation.js" afterPath="$PROJECT_DIR$/src/containers/Navigation/Navigation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/RightPanel/RightPanel.css" afterPath="$PROJECT_DIR$/src/containers/RightPanel/RightPanel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/models/User.js" afterPath="$PROJECT_DIR$/src/data/models/User.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/models/index.js" afterPath="$PROJECT_DIR$/src/data/models/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/schema.js" afterPath="$PROJECT_DIR$/src/data/schema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducers/panels.js" afterPath="$PROJECT_DIR$/src/reducers/panels.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/content/Content.css" afterPath="$PROJECT_DIR$/src/routes/content/Content.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/error/ErrorPage.js" afterPath="$PROJECT_DIR$/src/routes/error/ErrorPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/home/index.js" afterPath="$PROJECT_DIR$/src/routes/home/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/index.js" afterPath="$PROJECT_DIR$/src/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/routes/prodota/Prodota.css" afterPath="$PROJECT_DIR$/src/routes/prodota/Prodota.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sagas/sagas.js" afterPath="$PROJECT_DIR$/src/sagas/sagas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server.js" afterPath="$PROJECT_DIR$/src/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/Chat/Chat.js" afterPath="$PROJECT_DIR$/src/services/Chat/Chat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/services/Chat/Stream.js" afterPath="$PROJECT_DIR$/src/services/Chat/Stream.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/configureStore.js" afterPath="$PROJECT_DIR$/src/store/configureStore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/variables.css" afterPath="$PROJECT_DIR$/src/variables.css" />
     </list>
     <ignored path="prodota_wierze.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,100 +65,12 @@
     <favorites_list name="prodota_wierze" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sagas.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sagas/sagas.js">
+    <leaf>
+      <file leaf-file-name="UserProfile.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/UserProfile/UserProfile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2604">
-              <caret line="95" column="30" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="30" />
-              <folding>
-                <element signature="e#44#78#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chat.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/reducers/chat.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-224">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding>
-                <element signature="e#1#162#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/Chat/Chat.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="764">
-              <caret line="143" column="26" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#146#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chat.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Chat/Chat.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextInput.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Chat/TextInput.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stream.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/Chat/Stream.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="34" column="121" selection-start-line="34" selection-start-column="121" selection-end-line="34" selection-end-column="121" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Prodota.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/routes/prodota/Prodota.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_redis_redis.d.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_redis_redis.d.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="189" column="8" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/constants/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="216">
+              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -148,62 +88,70 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="mnickkk" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/data/schema.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Ranking/Ranking.css" />
-        <option value="$PROJECT_DIR$/src/components/Ranking/Ranking.js" />
-        <option value="$PROJECT_DIR$/src/content/test.html" />
-        <option value="$PROJECT_DIR$/src/routes/home/Home.js" />
-        <option value="$PROJECT_DIR$/src/routes/contact/prodota/Prodota.js" />
-        <option value="$PROJECT_DIR$/src/routes/index.js" />
-        <option value="$PROJECT_DIR$/src/routes/prodota/index.js" />
-        <option value="$PROJECT_DIR$/src/routes/prodota/Prodota.js" />
-        <option value="$PROJECT_DIR$/src/data/models/User.js" />
-        <option value="$PROJECT_DIR$/src/reducers/auth.js" />
-        <option value="$PROJECT_DIR$/src/config.js" />
-        <option value="$PROJECT_DIR$/src/core/passport.js" />
-        <option value="$PROJECT_DIR$/src/server.js" />
-        <option value="$PROJECT_DIR$/src/reducers/index.js" />
-        <option value="$PROJECT_DIR$/src/reducers/stream.js" />
-        <option value="$PROJECT_DIR$/src/containers/RightPanel/RightPanel.js" />
-        <option value="$PROJECT_DIR$/src/actions/panels.js" />
-        <option value="$PROJECT_DIR$/src/containers/MainContent/MainContent.css" />
-        <option value="$PROJECT_DIR$/src/containers/MainContent/MainContent.js" />
-        <option value="$PROJECT_DIR$/src/components/StreamFeed/StreamFeed.js" />
-        <option value="$PROJECT_DIR$/src/components/LeftPanelToggler.js" />
-        <option value="$PROJECT_DIR$/src/components/RightPanelToggler.js" />
-        <option value="$PROJECT_DIR$/src/containers/Navigation/Navigation.js" />
-        <option value="$PROJECT_DIR$/src/containers/Header/Header.js" />
-        <option value="$PROJECT_DIR$/src/containers/Link/Link.js" />
-        <option value="$PROJECT_DIR$/src/components/Logo/Logo.css" />
-        <option value="$PROJECT_DIR$/src/containers/RightPanel/RightPanel.css" />
-        <option value="$PROJECT_DIR$/src/containers/LeftPanel/LeftPanel.css" />
-        <option value="$PROJECT_DIR$/src/containers/LeftPanel/LeftPanel.js" />
-        <option value="$PROJECT_DIR$/src/content/index.html" />
-        <option value="$PROJECT_DIR$/src/content/index.md" />
-        <option value="$PROJECT_DIR$/src/components/UserProfile/UserProfile.css" />
-        <option value="$PROJECT_DIR$/src/components/StreamFeed/StreamFeed.css" />
-        <option value="$PROJECT_DIR$/src/containers/Header/Header.css" />
-        <option value="$PROJECT_DIR$/src/containers/Navigation/Navigation.css" />
-        <option value="$PROJECT_DIR$/src/components/App/App.css" />
-        <option value="$PROJECT_DIR$/src/routes/content/Content.css" />
-        <option value="$PROJECT_DIR$/src/variables.css" />
-        <option value="$PROJECT_DIR$/src/components/Chat/Chat.css" />
         <option value="$PROJECT_DIR$/src/components/Chat/ChatMessages.js" />
-        <option value="$PROJECT_DIR$/src/services/Chat/Stream.js" />
-        <option value="$PROJECT_DIR$/src/reducers/panels.js" />
         <option value="$PROJECT_DIR$/src/sagas/sagas.js" />
-        <option value="$PROJECT_DIR$/src/components/App/App.js" />
         <option value="$PROJECT_DIR$/src/constants/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Chat/Message.js" />
         <option value="$PROJECT_DIR$/src/components/Html.js" />
         <option value="$PROJECT_DIR$/src/reducers/chat.js" />
-        <option value="$PROJECT_DIR$/src/routes/prodota/Prodota.css" />
-        <option value="$PROJECT_DIR$/src/services/Chat/Chat.js" />
         <option value="$PROJECT_DIR$/src/components/Chat/TextInput.js" />
+        <option value="$PROJECT_DIR$/src/containers/Navigation/Navigation.js" />
+        <option value="$PROJECT_DIR$/src/containers/Navigation/Navigation.css" />
+        <option value="$PROJECT_DIR$/src/routes/content/Content.css" />
+        <option value="$PROJECT_DIR$/src/components/UserProfile/steam-logo.svg" />
+        <option value="$PROJECT_DIR$/src/components/UserProfile/UserProfile.js" />
+        <option value="$PROJECT_DIR$/src/containers/RightPanel/RightPanel.css" />
+        <option value="$PROJECT_DIR$/src/components/RightPanelToggler.js" />
+        <option value="$PROJECT_DIR$/src/components/StreamFeed/StreamFeed.js" />
+        <option value="$PROJECT_DIR$/src/services/Chat/Stream.js" />
+        <option value="$PROJECT_DIR$/src/routes/error/ErrorPage.js" />
+        <option value="$PROJECT_DIR$/src/routes/ranking/index.js" />
+        <option value="$PROJECT_DIR$/src/components/NewsFeed/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Logo/Article/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Logo/Article/Article.js" />
+        <option value="$PROJECT_DIR$/src/components/Logo/Article/Article.css" />
+        <option value="$PROJECT_DIR$/src/variables.css" />
+        <option value="$PROJECT_DIR$/src/routes/prodota/Prodota.css" />
+        <option value="$PROJECT_DIR$/src/components/Chat/Chat.css" />
+        <option value="$PROJECT_DIR$/src/components/Chat/Message.js" />
+        <option value="$PROJECT_DIR$/src/data/Mocks.js" />
+        <option value="$PROJECT_DIR$/src/data/models/index.js" />
+        <option value="$PROJECT_DIR$/src/data/models/User.js" />
+        <option value="$PROJECT_DIR$/src/server.js" />
+        <option value="$PROJECT_DIR$/src/data/models/Article.js" />
+        <option value="$PROJECT_DIR$/src/reducers/index.js" />
+        <option value="$PROJECT_DIR$/src/client.js" />
+        <option value="$PROJECT_DIR$/src/components/App/App.js" />
+        <option value="$PROJECT_DIR$/src/store/configureStore.js" />
+        <option value="$PROJECT_DIR$/src/services/Chat/Chat.js" />
+        <option value="$PROJECT_DIR$/src/reducers/panels.js" />
+        <option value="$PROJECT_DIR$/src/components/App/App.css" />
+        <option value="$PROJECT_DIR$/src/containers/Header/Header.css" />
+        <option value="$PROJECT_DIR$/src/containers/MainContent/MainContent.css" />
+        <option value="$PROJECT_DIR$/src/components/NewsFeed/NewsFeed.css" />
+        <option value="$PROJECT_DIR$/src/routes/home/index.js" />
+        <option value="$PROJECT_DIR$/src/routes/index.js" />
+        <option value="$PROJECT_DIR$/src/routes/newsfeed/article.js" />
+        <option value="$PROJECT_DIR$/src/components/Article/ConnectedArticle.js" />
+        <option value="$PROJECT_DIR$/src/components/Article/Article.css" />
+        <option value="$PROJECT_DIR$/src/components/Article/Article.js" />
+        <option value="$PROJECT_DIR$/src/data/schema.js" />
+        <option value="$PROJECT_DIR$/src/routes/newsfeed/index.js" />
+        <option value="$PROJECT_DIR$/src/routes/newsfeed/feed.js" />
+        <option value="$PROJECT_DIR$/src/components/NewsFeed/NewsFeed.js" />
+        <option value="$PROJECT_DIR$/src/components/UserProfile/UserProfile.css" />
       </list>
     </option>
   </component>
@@ -221,9 +169,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="22" />
+    <option name="y" value="32" />
     <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -233,35 +181,54 @@
             <id />
           </State>
           <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
             <id>CSS</id>
           </State>
           <State>
-            <id>Code style issuesCSS</id>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Control FlowPHP</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
           </State>
           <State>
             <id>GeneralJavaScript</id>
           </State>
           <State>
-            <id>HTML</id>
-          </State>
-          <State>
-            <id>Invalid elementsCSS</id>
+            <id>GeneralPHP</id>
           </State>
           <State>
             <id>JavaScript</id>
           </State>
           <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
             <id>Probable bugsCSS</id>
           </State>
           <State>
-            <id>Sass/SCSS</id>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>SQL</id>
           </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>AngularJS</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -276,96 +243,134 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
-      <showMembers />
+      <showMembers Scope="true" ProjectPane="false" />
       <showModules />
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
+      <autoscrollFromSource Scope="true" />
+      <sortByType Scope="true" />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="Changed Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prodota_wierze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prodota_wierze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prodota_wierze" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prodota_wierze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prodota_wierze" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prodota_wierze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prodota_wierze" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chat" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prodota_wierze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="prodota_wierze" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="prodota_wierze">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="prodota_wierze">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="prodota_wierze">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="routes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="prodota_wierze">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="routes">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="newsfeed">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="prodota_wierze">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="data">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="prodota_wierze">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches">
+        <subPane />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,7 +380,7 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="C:\Users\micha\Desktop\prodota_wierze\node_modules\mocha" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Custom" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptPreferStrict" value="true" />
@@ -384,11 +389,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\micha\Desktop\prodota_wierze\src\components" />
       <recent name="C:\Users\micha\Desktop\prodota_wierze\src\routes" />
       <recent name="C:\Users\micha\Desktop\prodota_wierze\src\content" />
       <recent name="C:\Users\micha\Desktop\prodota_wierze\src\components\Chat" />
       <recent name="C:\Users\micha\Desktop\prodota_wierze\src" />
-      <recent name="C:\Users\micha\Desktop\prodota_wierze\src\containers" />
     </key>
   </component>
   <component name="RunManager">
@@ -464,21 +469,30 @@
       <workItem from="1469772797763" duration="19000" />
       <workItem from="1469775575750" duration="60029000" />
       <workItem from="1470074845710" duration="81121000" />
+      <workItem from="1470429244449" duration="32995000" />
+      <workItem from="1470646750571" duration="7767000" />
+      <workItem from="1470659031064" duration="766000" />
+      <workItem from="1470661167863" duration="51744000" />
+      <workItem from="1470935570105" duration="471000" />
+      <workItem from="1470936058725" duration="706000" />
+      <workItem from="1470940283806" duration="1402000" />
+      <workItem from="1470941893928" duration="68000" />
+      <workItem from="1470941974827" duration="3188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="339823000" />
+    <option name="totallyTimeSpent" value="438930000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24166666" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33541667" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" x="628" y="77" width="644" height="968" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08167331" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -492,6 +506,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08167331" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -527,6 +542,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/build" />
+    </ignored-roots>
+    <MESSAGE value="Implemented basic graphql fetching" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented basic graphql fetching" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -546,13 +570,8 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/data/schema.js</url>
-          <line>9</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Chat/Message.js</url>
-          <line>75</line>
+          <line>90</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -582,258 +601,78 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/containers/RightPanel/RightPanel.js</url>
           <line>9</line>
-          <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Logo/Logo.js</url>
+          <line>4</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/core/passport.js">
+    <entry file="file://$PROJECT_DIR$/src/routes/ranking/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="504">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/start.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28">
-          <caret line="78" column="62" selection-start-line="78" selection-start-column="62" selection-end-line="78" selection-end-column="62" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#262#301#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/fetch/fetch.server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#262#293#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/stream.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/material-ui/IconButton/IconButton.js">
+    <entry file="file://$PROJECT_DIR$/src/routes/register/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Logo/Logo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainContent/MainContent.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/MainContent/MainContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/panels.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Navigation/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Link/Link.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-          <folding>
-            <marker date="1470162895659" expanded="false" signature="0:260" ph="/** React Starter Kit (https://www.reactstarterkit.com/) ...*/" />
-            <marker date="1470162895659" expanded="true" signature="269:806" ph="..." />
-            <marker date="1470162895659" expanded="true" signature="840:906" ph="&lt;xml/&gt;" />
-            <marker date="1470162895659" expanded="true" signature="1110:1231" ph="&lt;xml/&gt;" />
-            <marker date="1470162895659" expanded="true" signature="1122:1205" ph="{...}" />
-            <marker date="1470162895659" expanded="true" signature="1291:1807" ph="{...}" />
-            <marker date="1470162895659" expanded="true" signature="1308:1799" ph="&lt;xml/&gt;" />
-            <marker date="1470162895659" expanded="true" signature="1340:1351" ph="/*...*/" />
-            <marker date="1470162895659" expanded="true" signature="1360:1434" ph="/*...*/" />
-            <marker date="1470162895659" expanded="true" signature="1443:1518" ph="/*...*/" />
-            <marker date="1470162895659" expanded="true" signature="1527:1590" ph="/*...*/" />
-            <marker date="1470162895659" expanded="true" signature="1599:1636" ph="/*...*/" />
-            <marker date="1470162895659" expanded="true" signature="1645:1671" ph="/*...*/" />
-            <marker date="1470162895659" expanded="true" signature="1677:1759" ph="&lt;xml/&gt;" />
-            <marker date="1470162895659" expanded="true" signature="1767:1786" ph="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/StreamFeed/StreamFeed.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <marker date="1470161256416" expanded="true" signature="8:395" ph="..." />
-            <marker date="1470161256416" expanded="true" signature="456:926" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="468:923" ph="&lt;xml/&gt;" />
-            <marker date="1470161256416" expanded="true" signature="554:914" ph="&lt;xml/&gt;" />
-            <marker date="1470161256416" expanded="true" signature="633:851" ph="&lt;xml/&gt;" />
-            <marker date="1470161256416" expanded="true" signature="666:845" ph="&lt;xml/&gt;" />
-            <marker date="1470161256416" expanded="true" signature="1002:2174" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1079:1302" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1147:1298" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1169:1292" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1332:1477" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1400:1473" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1422:1467" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1504:1649" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1572:1645" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1594:1639" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1673:1757" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1784:1818" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1876:1882" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1895:2172" ph="{...}" />
-            <marker date="1470161256416" expanded="true" signature="1950:2161" ph="&lt;xml/&gt;" />
-            <marker date="1470161256416" expanded="true" signature="2035:2095" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/RightPanel/RightPanel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1470164860245" expanded="true" signature="47:262" ph="{...}" />
-            <marker date="1470164860245" expanded="true" signature="286:346" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/LeftPanel/LeftPanel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/LeftPanelToggler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/RightPanel/RightPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <marker date="1470155477846" expanded="false" signature="0:260" ph="/** React Starter Kit (https://www.reactstarterkit.com/) ...*/" />
-            <marker date="1470155477846" expanded="true" signature="269:510" ph="..." />
-            <marker date="1470155477846" expanded="true" signature="544:758" ph="{...}" />
-            <marker date="1470155477846" expanded="true" signature="576:676" ph="{...}" />
-            <marker date="1470155477846" expanded="true" signature="599:643" ph="{...}" />
-            <marker date="1470155477846" expanded="true" signature="692:751" ph="&lt;xml/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/prodota/Prodota.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <marker date="1469989869554" expanded="true" signature="7:154" ph="..." />
-            <marker date="1469989869554" expanded="true" signature="188:364" ph="{...}" />
-            <marker date="1469989869554" expanded="true" signature="201:362" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/LeftPanel/LeftPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="6" column="60" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
-          <folding>
-            <element signature="e#262#288#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/content/index.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="28">
+            <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/prodota/Prodota.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="140">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/Chat/Stream.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="33" column="74" selection-start-line="33" selection-start-column="74" selection-end-line="33" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Chat/Chat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1820">
+          <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/queries/content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -841,41 +680,195 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/queries/content.js">
+    <entry file="file://$PROJECT_DIR$/src/data/types/UserType.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="49" column="50" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="50" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/schema.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/graphql-tools/dist/schemaGenerator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-          <folding>
-            <element signature="e#262#350#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="1372">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Logo/Logo.css">
+    <entry file="file://$PROJECT_DIR$/src/data/types/ContentType.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        <state relative-caret-position="252">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/models/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/models/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="266" column="13" selection-start-line="266" selection-start-column="11" selection-end-line="266" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/configureStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/react.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="165" column="8" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Article/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/models/Article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/Chat/Chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="223" column="35" selection-start-line="223" selection-start-column="35" selection-end-line="223" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/panels.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Chat/Message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UserProfile/UserProfile.css">
+    <entry file="file://$PROJECT_DIR$/src/sagas/sagas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/variables.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="93" column="15" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Navigation/Navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-560">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/Header/Header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="69" column="19" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MainContent/MainContent.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/prodota/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-motion/lib/react-motion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/NewsFeed/NewsFeed.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
@@ -883,216 +876,557 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Navigation/Navigation.css">
+    <entry file="file://$PROJECT_DIR$/src/components/Article/Article.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+        <state relative-caret-position="308">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/content/Content.css">
+    <entry file="file://$PROJECT_DIR$/src/components/Article/ConnectedArticle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/StreamFeed/StreamFeed.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/variables.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1771">
-          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/Header/Header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-786">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Chat/Chat.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <marker date="1470343965312" expanded="true" signature="1074:1198" ph="{...}" />
-            <marker date="1470343965312" expanded="true" signature="1577:2020" ph="{...}" />
-            <marker date="1470343965312" expanded="true" signature="2137:2305" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Chat/ChatMessages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/RightPanelToggler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        <state relative-caret-position="1428">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
           <folding>
             <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/redis/redis.js">
+    <entry file="file://$PROJECT_DIR$/.flowconfig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Article/Article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="false" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/panels.js">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_react_react.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+        <state relative-caret-position="208">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#262#314#0" expanded="true" />
+            <marker date="1467366685403" expanded="true" signature="0:267" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="295:95214" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="302:404" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="630:656" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="709:738" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="770:865" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="919:948" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="1135:1197" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="1372:1422" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="1516:1523" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="1601:1608" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="1614:1711" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="1738:1822" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="1852:1934" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="2010:2101" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="2339:2432" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="2521:2528" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="2601:2608" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="2614:2771" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="3067:3168" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="5810:5911" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="6075:6879" ph="{...}" />
+            <marker date="1467366685403" expanded="true" signature="6349:6721" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="6820:6872" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="6942:7074" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="7115:7153" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="7159:7263" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="7342:7541" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="7575:7836" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="7903:8017" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="8023:8257" ph="/** We use an intersection type to infer multiple type parameters from ...*/" />
+            <marker date="1467366685403" expanded="true" signature="8424:8541" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="8582:9025" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="9086:9411" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="9136:9179" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="9467:9549" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="9555:9655" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="9686:10044" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="10098:10142" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="10198:10227" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="10272:10315" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="10365:10408" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="10457:10464" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="10517:10846" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="10896:11286" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="11336:11592" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="11639:11698" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="11744:11850" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="11904:12002" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="12057:12154" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="12160:12267" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="12322:12355" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="13116:13226" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="13232:13726" ph="/** @deprecated. This was used to allow clients to pass `ref` and `key` ...*/" />
+            <marker date="1467366685403" expanded="true" signature="13750:13828" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="13900:13907" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="13983:13990" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="14020:17268" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="14086:14125" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="17274:17404" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="17433:81470" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="17444:17650" ph="/** Aligns a flex container's lines within the flex container when there is extra space in the cross-axis, similar to how justify-content aligns individual items within the main-axis. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="17688:17897" ph="/** Sets the default alignment in the cross axis for all of the flex container's items, including anonymous flex items, similarly to how justify-content aligns items along the main axis. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="17933:18032" ph="/** Allows the default alignment to be overridden for individual flex items. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="18067:18473" ph="/** This property allows precise alignment of elements, such as graphics, that do not have a baseline-table or lack the desired baseline in their baseline-table. With the alignment-adjust property, the position of the baseline identified by the alignment-baseline can be explicitly determined. It also determines precisely the alignment point for each glyph within a textual element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="18548:18709" ph="/** Defines a length of time to elapse before an animation starts, allowing an animation to begin execution some time after it is applied. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="18749:18849" ph="/** Defines whether an animation should run in reverse on some or all cycles. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="18893:18976" ph="/** Specifies how many times an animation cycle should play. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="19025:19109" ph="/** Defines the list of animations that apply to the element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="19148:19225" ph="/** Defines whether an animation is running or paused. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="19269:19388" ph="/** Allows changing the style of any element to platform-based interface elements or vice versa. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="19424:19552" ph="/** Determines whether or not the “back” side of a transformed element is visible when facing the viewer. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="19596:19868" ph="/** Shorthand property to set the values for one or more of: ...*/" />
+            <marker date="1467366685403" expanded="true" signature="19904:20117" ph="/** If a background-image is specified, this property determines ...*/" />
+            <marker date="1467366685403" expanded="true" signature="20188:20695" ph="/** This property describes how the element's background images should blend with each other and the element's background color. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="20740:20807" ph="/** Sets the background color of an element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="20884:21052" ph="/** Applies one or more background images to an element. These can be any valid CSS image, including url() paths to image files or CSS gradients. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="21093:21183" ph="/** Specifies what the background-position property is relative to. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="21225:21292" ph="/** Sets the position of a background image. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="21336:21476" ph="/** Background-repeat defines if and how background images will be repeated after they have been sized and positioned ...*/" />
+            <marker date="1467366685403" expanded="true" signature="21518:21586" ph="/** Obsolete - spec retired, not implemented. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="21625:21734" ph="/** Non standard. Sets or retrieves the location of the Dynamic HTML (DHTML) behavior. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="21768:22006" ph="/** Shorthand property that defines the different properties of all four sides of an element's border in a single declaration. It can be used to set border-width, border-style and border-color, or a subset of these. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="22038:22176" ph="/** Shorthand that sets the values of border-bottom-color, ...*/" />
+            <marker date="1467366685403" expanded="true" signature="22214:22291" ph="/** Sets the color of the bottom border of an element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="22334:22419" ph="/** Defines the shape of the border of the bottom-left corner. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="22467:22553" ph="/** Defines the shape of the border of the bottom-right corner. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="22602:22679" ph="/** Sets the line style of the bottom border of a box. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="22722:22982" ph="/** Sets the width of an element's bottom border. To set all four borders, use the border-width shorthand property which sets the values simultaneously for border-top-width, border-right-width, border-bottom-width, and border-left-width. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="23025:23126" ph="/** Border-collapse can be used for collapsing the borders between table cells ...*/" />
+            <marker date="1467366685403" expanded="true" signature="23166:23868" ph="/** The CSS border-color property sets the color of an element's four borders. This property can have from one to four values, made up of the elementary properties:     •       border-top-color ...*/" />
+            <marker date="1467366685403" expanded="true" signature="23905:24133" ph="/** Specifies different corner clipping effects, such as scoop (inner curves), bevel (straight cuts) or notch (cut-off rectangles). Works along with border-radius to specify the size of each corner effect. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="24176:24357" ph="/** The property border-image-source is used to set the image to be used instead of the border style. If this is set to none the border-style is used instead. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="24400:24772" ph="/** The border-image-width CSS property defines the offset to use for dividing the border image in nine parts, the top-left corner, central top edge, top-right-corner, central right edge, bottom-right corner, central bottom edge, bottom-left corner, and central right edge. They represent inward distance from the top, right, bottom, and left edges. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="24814:25152" ph="/** Shorthand property that defines the border-width, border-style and border-color of an element's left border in a single declaration. Note that you can use the corresponding longhand properties to set specific individual properties of the left border — border-left-width, border-left-style and border-left-color. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="25188:25559" ph="/** The CSS border-left-color property sets the color of an element's left border. This page explains the border-left-color value, but often you will find it more convenient to fix the border's left color as part of a shorthand set, either border-left or border-color. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="25600:25868" ph="/** Sets the style of an element's left border. To set all four borders, use the shorthand property, border-style. Otherwise, you can set the borders individually with border-top-style, border-right-style, border-bottom-style, border-left-style. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="25909:26167" ph="/** Sets the width of an element's left border. To set all four borders, use the border-width shorthand property which sets the values simultaneously for border-top-width, border-right-width, border-bottom-width, and border-left-width. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="26208:26551" ph="/** Shorthand property that defines the border-width, border-style and border-color of an element's right border in a single declaration. Note that you can use the corresponding longhand properties to set specific individual properties of the right border — border-right-width, border-right-style and border-right-color. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="26588:26928" ph="/** Sets the color of an element's right border. This page explains the border-right-color value, but often you will find it more convenient to fix the border's right color as part of a shorthand set, either border-right or border-color. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="26970:27239" ph="/** Sets the style of an element's right border. To set all four borders, use the shorthand property, border-style. Otherwise, you can set the borders individually with border-top-style, border-right-style, border-bottom-style, border-left-style. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="27281:27540" ph="/** Sets the width of an element's right border. To set all four borders, use the border-width shorthand property which sets the values simultaneously for border-top-width, border-right-width, border-bottom-width, and border-left-width. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="27582:27670" ph="/** Specifies the distance between the borders of adjacent cells. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="27709:28090" ph="/** Sets the style of an element's four borders. This property can have from one to four values. With only one value, the value will be applied to all four borders; otherwise, this works as a shorthand property for each of border-top-style, border-right-style, border-bottom-style, border-left-style, where each border style may be assigned a separate value. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="28127:28460" ph="/** Shorthand property that defines the border-width, border-style and border-color of an element's top border in a single declaration. Note that you can use the corresponding longhand properties to set specific individual properties of the top border — border-top-width, border-top-style and border-top-color. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="28495:28827" ph="/** Sets the color of an element's top border. This page explains the border-top-color value, but often you will find it more convenient to fix the border's top color as part of a shorthand set, either border-top or border-color. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="28867:28950" ph="/** Sets the rounding of the top-left corner of the element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="28995:29079" ph="/** Sets the rounding of the top-right corner of the element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="29125:29392" ph="/** Sets the style of an element's top border. To set all four borders, use the shorthand property, border-style. Otherwise, you can set the borders individually with border-top-style, border-right-style, border-bottom-style, border-left-style. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="29432:29689" ph="/** Sets the width of an element's top border. To set all four borders, use the border-width shorthand property which sets the values simultaneously for border-top-width, border-right-width, border-bottom-width, and border-left-width. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="29729:29997" ph="/** Sets the width of an element's four borders. This property can have from one to four values. This is a shorthand property for setting values simultaneously for border-top-width, border-right-width, border-bottom-width, and border-left-width. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="30034:30421" ph="/** This property specifies how far an absolutely positioned box's bottom margin edge is offset above the bottom edge of the box's containing block. For relatively positioned boxes, the offset is with respect to the bottom edges of the box itself (i.e., the box is given a position in the normal flow, then offset from that position according to these properties). ...*/" />
+            <marker date="1467366685403" expanded="true" signature="30453:30489" ph="/** Obsolete. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="30523:30742" ph="/** Breaks a box into fragments creating new borders, padding and repeating backgrounds or lets it stay as a continuous box on a page break, column break, or, for inline elements, at a line break. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="30786:30823" ph="/** Deprecated ...*/" />
+            <marker date="1467366685403" expanded="true" signature="30861:31101" ph="/** Do not use. This property has been replaced by the flex-wrap property. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="31145:31392" ph="/** Do not use. This property has been replaced by the flex-wrap property. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="31426:31712" ph="/** Do not use. This property has been replaced by flex-order. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="31753:31791" ph="/** Deprecated. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="31827:31865" ph="/** Deprecated. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="31906:32335" ph="/** The CSS break-after property allows you to force a break on multi-column layouts. More specifically, it allows you to force a break after an element. It allows you to determine if a break should occur, and what type of break it should be. The break-after CSS property describes how the page, column or region break behaves after the generated box. If there is no generated box, the property is ignored. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="32371:32466" ph="/** Control page/column/region breaks that fall above a block of content ...*/" />
+            <marker date="1467366685403" expanded="true" signature="32503:32599" ph="/** Control page/column/region breaks that fall within a block of content ...*/" />
+            <marker date="1467366685403" expanded="true" signature="32636:32816" ph="/** The clear CSS property specifies if an element can be positioned next to or must be positioned below the floating elements that precede it in the markup. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="32847:33062" ph="/** Deprecated; see clip-path. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="33092:33365" ph="/** Clipping crops an graphic, so that only a portion of the graphic is rendered, or filled. This clip-rule property, when used with the clip-path property, defines which clip rule, or algorithm, to use when filling the different parts of a graphics. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="33399:33594" ph="/** The color property sets the color of an element's foreground content (usually text), accepting any standard CSS color from keywords and hex values to RGB(a) and HSL(a). ...*/" />
+            <marker date="1467366685403" expanded="true" signature="33625:33699" ph="/** Describes the number of columns of the element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="33739:33821" ph="/** Specifies how to fill columns (balanced or sequential). ...*/" />
+            <marker date="1467366685403" expanded="true" signature="33857:33979" ph="/** The column-gap property controls the width of the gap between columns in multi-column elements. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="34014:34102" ph="/** Sets the width, style, and color of the rule between columns. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="34138:34213" ph="/** Specifies the color of the rule between columns. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="34254:34329" ph="/** Specifies the width of the rule between columns. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="34370:34588" ph="/** The column-span CSS property makes it possible for an element to span across all columns when its value is set to all. An element that spans more than one column is called a spanning element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="34624:34707" ph="/** Specifies the width of columns in multi-column elements. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="34744:34854" ph="/** This property is a shorthand property for setting column-width and/or column-count. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="34887:35187" ph="/** The counter-increment property accepts one or more names of counters (identifiers), each one optionally followed by an integer which specifies the value by which the counter should be incremented (e.g. if the value is 2, the counter increases by 2 each time it is invoked). ...*/" />
+            <marker date="1467366685403" expanded="true" signature="35229:35524" ph="/** The counter-reset property contains a list of one or more names of counters, each one optionally followed by an integer (otherwise, the integer defaults to 0.) Each time the given element is invoked, the counters specified by the property are set to the given integer. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="35562:36015" ph="/** The cue property specifies sound files (known as an &quot;auditory icon&quot;) to be played by speech media agents before and after presenting an element's content; if only one file is specified, it is played both before and after. The volume at which the file(s) should be played, relative to the volume of the main element, may also be specified. The icon files may also be set separately with the cue-before and cue-after properties. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="36044:36385" ph="/** The cue-after property specifies a sound file (known as an &quot;auditory icon&quot;) to be played by speech media agents after presenting an element's content; the volume at which the file should be played may also be specified. The shorthand property cue sets cue sounds for both before and after the element is presented. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="36419:36525" ph="/** Specifies the mouse cursor displayed when the mouse pointer is over an element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="36557:36733" ph="/** The direction CSS property specifies the text direction/writing direction. The rtl is used for Hebrew or Arabic text, the ltr is for other languages. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="36768:36927" ph="/** This property specifies the type of rendering box used for an element. It is a shorthand property for many other display properties. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="36960:37403" ph="/** The ‘fill’ property paints the interior of the given graphical element. The area to be painted consists of any areas inside the outline of the shape. To determine the inside of the shape, all subpaths are considered, and the interior is determined according to the rules associated with the current value of the ‘fill-rule’ property. The zero-width geometric outline of a shape is included in the area to be painted. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="37433:37549" ph="/** SVG: Specifies the opacity of the color or the content the current object is filled with. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="37589:38104" ph="/** The ‘fill-rule’ property indicates the algorithm which is to be used to determine what parts of the canvas are included inside the shape. For a simple, non-intersecting path, it is intuitively clear what region lies &quot;inside&quot;; however, for a more complex path, such as a path that intersects itself or where one subpath encloses another, the interpretation of &quot;inside&quot; is not so obvious. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="38138:38292" ph="/** Applies various image processing effects. This property is largely unsupported. See Compatibility section for more information. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="38324:38410" ph="/** Shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="38452:38689" ph="/** Obsolete, do not use. This property has been renamed to align-items. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="38724:38954" ph="/** The flex-basis CSS property describes the initial main size of the flex item before any free space is distributed according to the flex factors described in the flex property (flex-grow and flex-shrink). ...*/" />
+            <marker date="1467366685403" expanded="true" signature="38989:39166" ph="/** The flex-direction CSS property describes how flex items are placed in the flex container, by setting the direction of the flex container's main axis. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="39205:39384" ph="/** The flex-flow CSS property defines the flex container's main and cross axis. It is a shorthand property for the flex-direction and flex-wrap properties. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="39418:39491" ph="/** Specifies the flex grow factor of a flex item. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="39528:39740" ph="/** Do not use. This property has been renamed to align-self ...*/" />
+            <marker date="1467366685403" expanded="true" signature="39779:40049" ph="/** Do not use. This property has been renamed to align-content. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="40087:40265" ph="/** Gets or sets a value that specifies the ordinal group that a flexbox element belongs to. This ordinal value identifies the display order for the group. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="40300:40375" ph="/** Specifies the flex shrink factor of a flex item. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="40414:40820" ph="/** Elements which have the style float are floated horizontally. These elements can move as far to the left or right of the containing element. All elements after the floating element will flow around it, but elements before the floating element are not impacted. If several floating elements are placed after each other, they will float next to each other as long as there is room. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="40851:41019" ph="/** Flows content from a named flow (specified by a corresponding flow-into) through selected elements to form a dynamic chain of layout regions. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="41053:41300" ph="/** The font property is shorthand that allows you to do one of two things: you can either set up six of the most mature font properties in one line, or you can set one of a choice of keywords to adopt a system font setting. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="41330:41663" ph="/** The font-family property allows one or more font family names and/or generic family names to be specified for usage on the selected element(s)' text. The browser then goes through the list; for each character in the selection it applies the first font family that has an available glyph for that character. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="41699:41999" ph="/** The font-kerning property allows contextual adjustment of inter-glyph spacing, i.e. the spaces between the characters in text. This property controls &lt;bold&gt;metric kerning&lt;/bold&gt; - that utilizes adjustment data contained in the font. Optical Kerning is not supported as yet. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="42036:42127" ph="/** Specifies the size of the font. Used to compute em and ex units. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="42173:42427" ph="/** The font-size-adjust property adjusts the font-size of the fallback fonts defined with font-family, so that the x-height is the same no matter what font is used. This preserves the readability of the text when fallback happens. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="42467:42585" ph="/** Allows you to expand or condense the widths for a normal, condensed, or expanded font face. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="42622:42931" ph="/** The font-style property allows normal, italic, or oblique faces to be selected. Italic forms are generally cursive in nature while oblique faces are typically sloped versions of the regular face. Oblique faces can be simulated by artificially sloping the glyphs of the regular face. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="42966:43135" ph="/** This value specifies whether the user agent is allowed to synthesize bold or oblique font faces when a font family lacks bold or italic faces. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="43174:43290" ph="/** The font-variant property enables you to select the small-caps font within a font family. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="43327:43511" ph="/** Fonts can provide alternate glyphs in addition to default glyph for a character. This property provides control over the selection of these alternate glyphs. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="43558:43630" ph="/** Specifies the weight or boldness of the font. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="43712:43909" ph="/** Lays out one or more grid items bound by 4 grid lines. Shorthand for setting grid-column-start, grid-column-end, grid-row-start, and grid-row-end in a single declaration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="43943:44147" ph="/** Controls a grid item's placement in a grid area, particularly grid position and a grid span. Shorthand for setting grid-column-start and grid-column-end in a single declaration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="44183:44479" ph="/** Controls a grid item's placement in a grid area as well as grid position and a grid span. The grid-column-end property (with grid-row-start, grid-row-end, and grid-column-start) determines a grid item's placement by specifying the grid lines of a grid item's grid area. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="44518:44792" ph="/** Determines a grid item's placement by specifying the starting grid lines of a grid item's grid area . A grid item's placement in a grid area consists of a grid position and a grid span. See also ( grid-row-start, grid-row-end, and grid-column-end) ...*/" />
+            <marker date="1467366685403" expanded="true" signature="44833:45027" ph="/** Gets or sets a value that indicates which row an element within a Grid should appear in. Shorthand for setting grid-row-start and grid-row-end in a single declaration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="45060:45414" ph="/** Determines a grid item’s placement by specifying the block-end. A grid item's placement in a grid area consists of a grid position and a grid span. The grid-row-end property (with grid-row-start, grid-column-start, and grid-column-end) determines a grid item's placement by specifying the grid lines of a grid item's grid area. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="45450:45669" ph="/** Specifies a row position based upon an integer location, string value, or desired row size. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="45738:46082" ph="/** Specifies named grid areas which are not associated with any particular grid item, but can be referenced from the grid-placement properties. The syntax of the grid-template-areas property also provides a visualization of the structure of the grid, making the overall layout of the grid container easier to understand. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="46125:46440" ph="/** Specifies (with grid-template-rows) the line names and track sizing functions of the grid. Each sizing function can be specified as a length, a percentage of the grid container’s size, a measurement of the contents occupying the column or row, or a fraction of the free space in the grid. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="46485:46803" ph="/** Specifies (with grid-template-columns) the line names and track sizing functions of the grid. Each sizing function can be specified as a length, a percentage of the grid container’s size, a measurement of the contents occupying the column or row, or a fraction of the free space in the grid. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="46845:47006" ph="/** Sets the height of an element. The content area of the element height does not include the padding, border, and margin of the element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="47038:47128" ph="/** Specifies the minimum number of characters in a hyphenated word ...*/" />
+            <marker date="1467366685403" expanded="true" signature="47173:47325" ph="/** Indicates the maximum number of successive hyphenated lines in an element. The ‘no-limit’ value means that there is no limit. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="47370:47602" ph="/** Specifies the maximum amount of trailing whitespace (before justification) that may be left in a line before hyphenation is triggered to pull part of a word from the next line back up into the current one. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="47646:47789" ph="/** Specifies whether or not words in a sentence can be split by the use of a manual or automatic hyphenation mechanism. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="47997:48056" ph="/** Sets the left edge of an element ...*/" />
+            <marker date="1467366685403" expanded="true" signature="48086:48200" ph="/** The letter-spacing CSS property specifies the spacing behavior between text characters. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="48239:48380" ph="/** Deprecated. Gets or sets line-breaking rules for text in selected languages such as Japanese, Chinese, and Korean. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="48444:48525" ph="/** Specifies the height of an inline block level element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="48573:48721" ph="/** Shorthand property that sets the list-style-type, list-style-position and list-style-image properties in one declaration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="48756:49057" ph="/** This property sets the image that will be used as the list item marker. When the image is available, it will replace the marker set with the 'list-style-type' marker. That also means that if the image is not available, it will show the style specified by list-style-property ...*/" />
+            <marker date="1467366685403" expanded="true" signature="49097:49208" ph="/** Specifies if the list-item markers should appear inside or outside the content flow. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="49251:49327" ph="/** Specifies the type of list-item marker in a list. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="49366:49615" ph="/** The margin property is shorthand to allow you to set all four margins of an element at once. Its equivalent longhand properties are margin-top, margin-right, margin-bottom and margin-left. Negative values are also allowed. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="49647:49725" ph="/** margin-bottom sets the bottom margin of an element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="49763:49837" ph="/** margin-left sets the left margin of an element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="49873:49949" ph="/** margin-right sets the right margin of an element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="49986:50058" ph="/** margin-top sets the top margin of an element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="50093:50210" ph="/** The marquee-direction determines the initial direction in which the marquee content moves. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="50252:50350" ph="/** The 'marquee-style' property determines a marquee's scrolling behavior. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="50388:50627" ph="/** This property is shorthand for setting mask-image, mask-mode, mask-repeat, mask-position, mask-clip, mask-origin, mask-composite and mask-size. Omitted values are set to their original properties' initial values. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="50657:50893" ph="/** This property is shorthand for setting mask-border-source, mask-border-slice, mask-border-width, mask-border-outset, and mask-border-repeat. Omitted values are set to their original properties' initial values. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="50929:51289" ph="/** This property specifies how the images for the sides and the middle part of the mask image are scaled and tiled. The first keyword applies to the horizontal sides, the second one applies to the vertical ones. If the second keyword is absent, it is assumed to be the same as the first, similar to the CSS border-image-repeat property. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="51331:51763" ph="/** This property specifies inward offsets from the top, right, bottom, and left edges of the mask image, dividing it into nine regions: four corners, four edges, and a middle. The middle image part is discarded and treated as fully transparent black unless the fill keyword is present. The four values set the top, right, bottom and left offsets in that order, similar to the CSS border-image-slice property. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="51804:51996" ph="/** Specifies an image to be used as a mask. An image that is empty, fails to download, is non-existent, or cannot be displayed is ignored and does not mask the element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="52038:52164" ph="/** This property sets the width of the mask box image, similar to the CSS border-image-width property. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="52205:52385" ph="/** Determines the mask painting area, which defines the area that is affected by the mask. The painted content of an element may be restricted to this area. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="52419:52721" ph="/** For elements rendered as a single box, specifies the mask positioning area. For elements rendered as multiple boxes (e.g., inline boxes on several lines, boxes on several pages) specifies which boxes box-decoration-break operates on to determine the mask positioning area(s). ...*/" />
+            <marker date="1467366685403" expanded="true" signature="52757:53059" ph="/** This property must not be used. It is no longer included in any standard or standard track specification, nor is it implemented in any browser. It is only used when the text-align-last property is set to size. It controls allowed adjustments of font-size to fit line content. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="53096:53316" ph="/** Sets the maximum height for an element. It prevents the height of the element to exceed the specified value. If min-height is specified and is greater than max-height, max-height is overridden. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="53351:53497" ph="/** Sets the maximum width for an element. It limits the width property to be larger than the value specified in max-width. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="53531:53737" ph="/** Sets the minimum height for an element. It prevents the height of the element to be smaller than the specified value. The value of min-height overrides both max-height and height. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="53772:53922" ph="/** Sets the minimum width of an element. It limits the width property to be not smaller than the value specified in min-width. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="53956:54024" ph="/** Specifies the transparency of an element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="54060:54234" ph="/** Specifies the order used to lay out flex items in their flex container. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="54268:54437" ph="/** In paged media, this property defines the minimum number of lines in ...*/" />
+            <marker date="1467366685403" expanded="true" signature="54473:55174" ph="/** The CSS outline property is a shorthand property for setting one or more of the individual outline properties outline-style, outline-width and outline-color in a single rule. In most cases the use of this shortcut is preferable and more convenient. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="55207:55413" ph="/** The outline-color property sets the color of the outline of an element. An outline is a line that is drawn around elements, outside the border edge, to make the element stand out. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="55451:55561" ph="/** The outline-offset property offsets the outline and draw it beyond the border edge. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="55600:55853" ph="/** The overflow property controls how extra content exceeding the bounding box of an element is rendered. It can be used in conjunction with an element that has a fixed width and height, to eliminate text-induced page distortion. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="55887:55983" ph="/** Specifies the preferred scrolling methods for elements that overflow. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="56022:56143" ph="/** Controls how extra content exceeding the x-axis of the bounding box of an element is rendered. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="56178:56299" ph="/** Controls how extra content exceeding the y-axis of the bounding box of an element is rendered. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="56334:56857" ph="/** The padding optional CSS property sets the required padding space on one to four sides of an element. The padding area is the space between an element and its border. Negative values are not allowed but decimal values are permitted. The element size is treated as fixed, and the content of the element shifts toward the center as padding is increased. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="56890:57185" ph="/** The padding-bottom CSS property of an element sets the padding space required on the bottom of an element. The padding area is the space between the content of the element and its border. Contrary to margin-bottom values, negative values of padding-bottom are invalid. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="57224:57516" ph="/** The padding-left CSS property of an element sets the padding space required on the left side of an element. The padding area is the space between the content of the element and its border. Contrary to margin-left values, negative values of padding-left are invalid. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="57553:57849" ph="/** The padding-right CSS property of an element sets the padding space required on the right side of an element. The padding area is the space between the content of the element and its border. Contrary to margin-right values, negative values of padding-right are invalid. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="57887:58170" ph="/** The padding-top CSS property of an element sets the padding space required on the top of an element. The padding area is the space between the content of the element and its border. Contrary to margin-top values, negative values of padding-top are invalid. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="58206:58451" ph="/** The page-break-after property is supported in all major browsers. With CSS3, page-break- properties are only aliases of the break- properties. The CSS3 Fragmentation spec defines breaks for all CSS box fragmentation. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="58491:58752" ph="/** The page-break-before property sets the page-breaking behavior before an element. With CSS3, page-break- properties are only aliases of the break- properties. The CSS3 Fragmentation spec defines breaks for all CSS box fragmentation. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="58793:59023" ph="/** Sets the page-breaking behavior inside an element. With CSS3, page-break- properties are only aliases of the break- properties. The CSS3 Fragmentation spec defines breaks for all CSS box fragmentation. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="59064:59270" ph="/** The pause property determines how long a speech media agent should pause before and after presenting an element. It is a shorthand for the pause-before and pause-after properties. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="59301:59527" ph="/** The pause-after property determines how long a speech media agent should pause after presenting an element. It may be replaced by the shorthand property pause, which sets pause time before and after. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="59563:59791" ph="/** The pause-before property determines how long a speech media agent should pause before presenting an element. It may be replaced by the shorthand property pause, which sets pause time before and after. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="59828:60578" ph="/** The perspective property defines how far an element is placed from the view on the z-axis, from the screen to the viewer. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="60615:61559" ph="/** The perspective-origin property establishes the origin for the perspective property. It effectively sets the X and Y position at which the viewer appears to be looking at the children of the element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="61602:61765" ph="/** The pointer-events property allows you to control whether an element can be the target for the pointing device (e.g, mouse, pen) events. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="61804:62051" ph="/** The position property controls the type of positioning used by an element within its parent elements. The effect of the position property depends on a lot of factors, for example the position property of parent elements. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="62085:62362" ph="/** Obsolete: unsupported. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="62403:62487" ph="/** Sets the type of quotation marks for embedded quotations. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="62519:62756" ph="/** Controls whether the last region in a chain displays additional 'overset' content according its default overflow property, or if it displays a fragment of content as if it were flowing into a subsequent region. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="62796:63083" ph="/** The rest-after property determines how long a speech media agent should pause after presenting an element's main content, before presenting that element's exit cue sound. It may be replaced by the shorthand property rest, which sets rest time before and after. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="63118:63412" ph="/** The rest-before property determines how long a speech media agent should pause after presenting an intro cue sound for an element, before presenting that element's main content. It may be replaced by the shorthand property rest, which sets rest time before and after. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="63448:63565" ph="/** Specifies the position an element in relation to the right side of the containing element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="63651:63908" ph="/** Defines the alpha channel threshold used to extract a shape from an image. Can be thought of as a &quot;minimum opacity&quot; threshold; that is, a value of 0.5 means that the shape will enclose all the pixels that are more than 50% opaque. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="63953:64244" ph="/** A future level of CSS Shapes will define a shape-inside property, which will define a shape to wrap content within the element. See Editor's Draft &lt;http://dev.w3.org/csswg/css-shapes/&gt; and CSSWG wiki page on next-level plans &lt;http://wiki.csswg.org/spec/css-shapes&gt; ...*/" />
+            <marker date="1467366685403" expanded="true" signature="64281:64751" ph="/** Adds a margin to a shape-outside. In effect, defines a new shape that is the smallest contour around all the points that are the shape-margin distance outward perpendicular to each point on the underlying shape. For points where a perpendicular direction is not defined (e.g., a triangle corner), takes all points on a circle centered at the point and with a radius of the shape-margin distance. This property accepts only non-negative values. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="64788:65034" ph="/** Declares a shape around which text should be wrapped, with possible modifications from the shape-margin property. The shape defined by shape-outside and shape-margin changes the geometry of a float element's float area. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="65072:65208" ph="/** The speak property determines whether or not a speech synthesizer will read aloud the contents of an element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="65239:65518" ph="/** The speak-as property determines how the speech synthesizer interprets the content: words as whole words or as a sequence of letters, numbers as a numerical value or a sequence of digits, punctuation as pauses in speech or named punctuation characters. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="65551:65642" ph="/** SVG: Specifies the opacity of the outline on the current object. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="65684:65773" ph="/** SVG: Specifies the width of the outline on the current object. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="65813:65925" ph="/** The tab-size CSS property is used to customise the width of a tab (U+0009) character. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="65958:66087" ph="/** The 'table-layout' property controls the algorithm used to lay out the table cells, rows, and columns. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="66124:66352" ph="/** The text-align CSS property describes how inline content like text is aligned in its parent block element. text-align does not control the alignment of block elements itself, only their inline content. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="66387:66561" ph="/** The text-align-last CSS property describes how the last line of a block element or a line before line break is aligned in its parent block element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="66600:66840" ph="/** The text-decoration CSS property is used to set the text formatting to underline, overline, line-through or blink. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="66880:66997" ph="/** Sets the color of any text decoration, such as underlines, overlines, and strike throughs. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="67042:67164" ph="/** Sets what kind of line decorations are added to an element, such as underlines, overlines, etc. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="67324:67447" ph="/** Specifies what parts of an element’s content are skipped over when applying any text decoration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="67491:67701" ph="/** This property specifies the style of the text decoration line drawn on the specified element. The intended meaning for the values are the same as those of the border-style-properties. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="67786:68097" ph="/** The text-emphasis property will apply special emphasis marks to the elements text. Slightly similar to the text-decoration property only that this property can have affect on the line-height. It also is noted that this is shorthand for text-emphasis-style and for text-emphasis-color. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="68135:68248" ph="/** The text-emphasis-color property specifies the foreground color of the emphasis marks. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="68291:68403" ph="/** The text-emphasis-style property applies special emphasis marks to an element's text. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="68446:68853" ph="/** This property helps determine an inline box's block-progression dimension, derived from the text-height and font-size properties for non-replaced elements, the height or the width for replaced elements, and the stacked block-progression dimension for inline-block elements. The block-progression dimension determines the position of the padding, border and margin for the element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="68889:69149" ph="/** Specifies the amount of space horizontally that should be left on the first line of the text of an element. This horizontal spacing is at the beginning of the first line and is in respect to the left edge of the containing block box. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="69250:69464" ph="/** The text-line-through property is a shorthand property for text-line-through-style, text-line-through-color and text-line-through-mode. (Considered obsolete; use text-decoration instead.) ...*/" />
+            <marker date="1467366685403" expanded="true" signature="69505:69664" ph="/** Specifies the line colors for the line-through text decoration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="69710:69933" ph="/** Sets the mode for the line-through text decoration, determining whether the text decoration affects the space characters or not. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="69978:70132" ph="/** Specifies the line style for line-through text decoration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="70178:70267" ph="/** Specifies the line width for the line-through text decoration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="70313:70652" ph="/** The text-overflow shorthand CSS property determines how overflowed content that is not displayed is signaled to the users. It can be clipped, display an ellipsis ('…', U+2026 HORIZONTAL ELLIPSIS) or a Web author-defined string. It covers the two long-hand properties text-overflow-mode and text-overflow-ellipsis ...*/" />
+            <marker date="1467366685403" expanded="true" signature="70690:70866" ph="/** The text-overline property is the shorthand for the text-overline-style, text-overline-width, text-overline-color, and text-overline-mode properties. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="70904:70989" ph="/** Specifies the line color for the overline text decoration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="71032:71183" ph="/** Sets the mode for the overline text decoration, determining whether the text decoration affects the space characters or not. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="71225:71306" ph="/** Specifies the line style for overline text decoration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="71349:71434" ph="/** Specifies the line width for the overline text decoration. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="71477:71669" ph="/** The text-rendering CSS property provides information to the browser about how to optimize when rendering text. Options are: legibility, speed or geometric precision. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="71708:71757" ph="/** Obsolete: unsupported. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="71793:72034" ph="/** The CSS text-shadow property applies one or more drop shadows to the text and &lt;text-decorations&gt; of an element. Each shadow is specified as an offset from the text, along with optional color and blur radius values. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="72070:72194" ph="/** This property transforms text for styling purposes. (It has no effect on the underlying content.) ...*/" />
+            <marker date="1467366685403" expanded="true" signature="72233:72379" ph="/** Unsupported. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="72426:72647" ph="/** After review this should be replaced by text-decoration should it not? ...*/" />
+            <marker date="1467366685403" expanded="true" signature="72691:73069" ph="/** This property specifies how far an absolutely positioned box's top margin edge is offset below the top edge of the box's containing block. For relatively positioned boxes, the offset is with respect to the top edges of the box itself (i.e., the box is given a position in the normal flow, then offset from that position according to these properties). ...*/" />
+            <marker date="1467366685403" expanded="true" signature="73098:73240" ph="/** Determines whether touch input may trigger default behavior supplied by the user agent, such as panning or zooming. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="73277:73553" ph="/** CSS transforms allow elements styled with CSS to be transformed in two-dimensional or three-dimensional space. Using this property, elements can be translated, rotated, scaled, and skewed. The value list may consist of 2D and/or 3D transform values. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="73588:73738" ph="/** This property defines the origin of the transformation axes relative to the element to which the transformation is applied. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="73779:73921" ph="/** This property allows you to define the relative position of the origin of the transformation grid along the z-axis. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="73963:74084" ph="/** This property specifies how nested elements are rendered in 3D space relative to their parent. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="74124:74367" ph="/** The transition CSS property is a shorthand property for transition-property, transition-duration, transition-timing-function, and transition-delay. It allows to define the transition between two states of an element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="74403:74693" ph="/** Defines when the transition will start. A value of ‘0s’ means the transition will execute as soon as the property is changed. Otherwise, the value specifies an offset from the moment the property is changed, and the transition will delay execution by that offset. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="74734:74866" ph="/** The 'transition-duration' property specifies the length of time a transition animation takes to complete. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="74910:75046" ph="/** The 'transition-property' property specifies the name of the CSS property to which the transition is applied. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="75090:75160" ph="/** Sets the pace of action within a transition ...*/" />
+            <marker date="1467366685403" expanded="true" signature="75210:75344" ph="/** The unicode-bidi CSS property specifies the level of embedding with respect to the bidirectional algorithm. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="75381:75575" ph="/** unicode-range allows you to set a specific range of characters to be downloaded from a font (embedded using @font-face) and made available for use on the current page. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="75613:75680" ph="/** This is for all the high level UX stuff. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="75715:75767" ph="/** For inputing user content ...*/" />
+            <marker date="1467366685403" expanded="true" signature="75802:76047" ph="/** The vertical-align property controls how inline elements or text are vertically aligned compared to the baseline. If this property is used on table-cells it controls the vertical alignment of content of the table cell. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="76086:76202" ph="/** The visibility property specifies whether the boxes generated by an element are rendered. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="76238:76379" ph="/** The voice-balance property sets the apparent position (in stereo sound) of the synthesized voice for spoken media. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="76417:76809" ph="/** The voice-duration property allows the author to explicitly set the amount of time it should take a speech synthesizer to read an element's content, for example to allow the speech to be synchronized with other media. With a value of auto (the default) the length of time it takes to read the content is determined by the content itself and the voice-rate property. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="76848:77389" ph="/** The voice-family property sets the speaker's voice used by a speech media agent to read an element. The speaker may be specified as a named character (to match a voice option in the speech reading software) or as a generic description of the age and gender of the voice. Similar to the font-family property for visual media, a comma-separated list of fallback options may be given in case the speech reader does not recognize the character name or cannot synthesize the requested combination of generic properties. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="77426:77676" ph="/** The voice-pitch property sets pitch or tone (high or low) for the synthesized speech when reading an element; the pitch may be specified absolutely or relative to the normal pitch for the voice-family used to read the text. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="77712:78172" ph="/** The voice-range property determines how much variation in pitch or tone will be created by the speech synthesize when reading an element. Emphasized text, grammatical structures and punctuation may all be rendered as changes in pitch, this property determines how strong or obvious those changes are; large ranges are associated with enthusiastic or emotional speech, while small ranges are associated with flat or mechanical speech. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="78208:78347" ph="/** The voice-rate property sets the speed at which the voice synthesized by a speech media agent will read content. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="78382:78522" ph="/** The voice-stress property sets the level of vocal emphasis to be used for synthesized speech reading the element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="78559:78707" ph="/** The voice-volume property sets the volume for spoken content in speech media. It replaces the deprecated volume property. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="78744:78931" ph="/** The white-space property controls whether and how white space inside the element is collapsed, and whether lines may wrap at unforced &quot;soft wrap&quot; opportunities. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="78967:79016" ph="/** Obsolete: unsupported. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="79061:79213" ph="/** In paged media, this property defines the mimimum number of lines ...*/" />
+            <marker date="1467366685403" expanded="true" signature="79248:79432" ph="/** Specifies the width of the content area of an element. The content area of the element width does not include the padding, border, and margin of the element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="79463:79820" ph="/** The word-break property is often used when there is long generated content that is strung together without and spaces or hyphens to beak apart. A common case of this is when there is a long URL that does not have any hyphens. This case could potentially cause the breaking of the layout as it could extend past the parent element. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="79855:79959" ph="/** The word-spacing CSS property specifies the spacing behavior between &quot;words&quot;. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="79996:80163" ph="/** An alias of css/properties/overflow-wrap, word-wrap defines whether to break words when the content exceeds the boundaries of its container. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="80197:80392" ph="/** Specifies how exclusions affect inline content within block-level elements. Elements lay out their inline content in their content area but wrap around exclusion areas. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="80426:80626" ph="/** Set the value that is used to offset the inner wrap shape from other shapes. Inline content that intersects a shape with this property will be pushed by this shape's margin. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="80662:80835" ph="/** Obsolete and unsupported. Do not use. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="80871:81037" ph="/** writing-mode specifies if lines of text are laid out horizontally or vertically, and the direction which lines of text and blocks progress. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="81074:81259" ph="/** The z-index property specifies the z-order of an element and its descendants. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="81303:81394" ph="/** Sets the initial zoom factor of a document defined by @viewport. ...*/" />
+            <marker date="1467366685403" expanded="true" signature="81523:85615" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="85668:87346" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="87352:87449" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="87474:92988" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="92994:93097" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="93126:93197" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="93249:93290" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="93323:93367" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="93398:94042" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="94048:94150" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="94180:94515" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="94521:94707" ph="//..." />
+            <marker date="1467366685403" expanded="true" signature="94736:94803" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="94825:95035" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="95061:95212" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="95239:95264" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="95288:102506" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="95438:95476" ph="..." />
+            <marker date="1467366685403" expanded="true" signature="95708:102504" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.js">
+    <entry file="file://$PROJECT_DIR$/src/routes/newsfeed/article.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="904">
-          <caret line="104" column="16" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="480">
+          <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+          <folding>
+            <marker date="1470946928822" expanded="true" signature="0:260" ph="/** React Starter Kit (https://www.reactstarterkit.com/) ...*/" />
+            <marker date="1470946928822" expanded="true" signature="269:410" ph="..." />
+            <marker date="1470946928822" expanded="true" signature="428:622" ph="{...}" />
+            <marker date="1470946928822" expanded="true" signature="485:618" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Html.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/graphql-tools/dist/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="3" column="66" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
-          <folding />
+        <state relative-caret-position="168">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <marker date="1470646450721" expanded="true" signature="60:77" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="184:279" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="228:277" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="337:438" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="381:436" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="506:617" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="550:615" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="667:760" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="711:758" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="809:901" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="853:899" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="962:1066" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1006:1064" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1131:1239" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1175:1237" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1302:1408" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1346:1406" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1475:1585" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1519:1583" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1652:1762" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1696:1760" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1825:1931" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="1869:1929" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="2026:2120" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="2070:2118" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="2166:2244" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="2210:2242" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="2292:2372" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="2336:2370" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="2471:2561" ph="{...}" />
+            <marker date="1470646450721" expanded="true" signature="2515:2559" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Chat/Message.js">
+    <entry file="file://$PROJECT_DIR$/src/data/schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <marker date="1470946928775" expanded="true" signature="7:128" ph="..." />
+            <marker date="1470946928775" expanded="true" signature="148:1853" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="169:904" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="230:900" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="375:737" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="481:539" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="748:835" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="916:1272" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="959:1119" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="1151:1268" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="1285:1745" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="1300:1349" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="1372:1741" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="1404:1656" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="1667:1735" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="1754:1851" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="1778:1847" ph="{...}" />
+            <marker date="1470946928775" expanded="true" signature="1872:2464" ph="[...]" />
+            <marker date="1470946928775" expanded="true" signature="2503:2530" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/newsfeed/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1470946527044" expanded="true" signature="0:260" ph="/** React Starter Kit (https://www.reactstarterkit.com/) ...*/" />
+            <marker date="1470946527044" expanded="false" signature="269:347" ph="..." />
+            <marker date="1470946527044" expanded="true" signature="364:570" ph="{...}" />
+            <marker date="1470946527044" expanded="true" signature="393:408" ph="[...]" />
+            <marker date="1470946527044" expanded="true" signature="453:567" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/constants/index.js">
+    <entry file="file://$PROJECT_DIR$/src/routes/newsfeed/feed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sagas/sagas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2604">
-          <caret line="95" column="30" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="30" />
+        <state relative-caret-position="300">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <element signature="e#44#78#0" expanded="true" />
+            <marker date="1470946928615" expanded="true" signature="0:260" ph="/** React Starter Kit (https://www.reactstarterkit.com/) ...*/" />
+            <marker date="1470946928615" expanded="true" signature="269:338" ph="..." />
+            <marker date="1470946928615" expanded="true" signature="354:490" ph="{...}" />
+            <marker date="1470946928615" expanded="true" signature="421:486" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/prodota/Prodota.css">
+    <entry file="file://$PROJECT_DIR$/src/components/NewsFeed/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_redis_redis.d.ts">
+    <entry file="file://$PROJECT_DIR$/src/components/NewsFeed/NewsFeed.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="189" column="8" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/Chat/Stream.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="34" column="121" selection-start-line="34" selection-start-column="121" selection-end-line="34" selection-end-column="121" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="312">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
-            <element signature="e#1#162#0" expanded="true" />
+            <marker date="1470946734443" expanded="true" signature="7:362" ph="..." />
+            <marker date="1470946734443" expanded="true" signature="413:686" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="427:684" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="642:680" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="725:1518" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="742:1512" ph="&lt;xml/&gt;" />
+            <marker date="1470946734443" expanded="true" signature="816:906" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="921:974" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="1015:1485" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="1143:1473" ph="&lt;xml/&gt;" />
+            <marker date="1470946734443" expanded="true" signature="1194:1457" ph="&lt;xml/&gt;" />
+            <marker date="1470946734443" expanded="true" signature="1601:2545" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="1626:2124" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="1752:2118" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="1864:2112" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="1990:2104" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="2137:2543" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="2200:2532" ph="&lt;xml/&gt;" />
+            <marker date="1470946734443" expanded="true" signature="2596:2634" ph="{...}" />
+            <marker date="1470946734443" expanded="true" signature="2610:2632" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/Chat/Chat.js">
+    <entry file="file://$PROJECT_DIR$/src/data/Mocks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="143" column="26" selection-start-line="143" selection-start-column="26" selection-end-line="143" selection-end-column="26" />
+        <state relative-caret-position="48">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
           <folding>
-            <element signature="e#0#146#0" expanded="true" />
+            <marker date="1470946928763" expanded="true" signature="14:64" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Chat/Chat.js">
+    <entry file="file://$PROJECT_DIR$/src/components/UserProfile/UserProfile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        <state relative-caret-position="216">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Chat/TextInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

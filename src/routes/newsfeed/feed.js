@@ -8,16 +8,14 @@
  */
 
 import React from 'react';
-import Home from './Home';
-import Content from '../content/Content.js'
-import fetch from '../../core/fetch';
-
+import NewsFeed from '../../components/NewsFeed';
 export default {
 
-  path: '/',
+    path: '/:article?/:uniquieid?',
 
-  async action({ path }) { // eslint-disable-line react/prop-types
-    return <Content {...data.content} />;
-  },
+    async action({params}) {
+        console.log(params);
+        return <NewsFeed />;
+    },
 
 };

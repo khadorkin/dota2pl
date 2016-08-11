@@ -12,11 +12,15 @@ import s from './UserProfile.css'
 import {connect} from 'react-redux';
 import React from 'react';
 import Paper from 'material-ui/Paper'
+import logo from './steam-logo.svg';
 
 
 let SteamSignIn = () => (<a className={s.SteamLogo} href="/auth/steam">
-  <h1>Zaloguj się za pomocą Steam</h1>
-  <p>Ta strona nie jest powiązana z Valve Corp.</p>
+    <img src={logo}></img>
+    <div>
+        <h1>Zaloguj się za pomocą Steam</h1>
+        <p>Ta strona nie jest powiązana z Valve Corp.</p>
+    </div>
 
 
 </a>)
@@ -24,9 +28,9 @@ let SteamSignIn = () => (<a className={s.SteamLogo} href="/auth/steam">
 
 let RegisterLogin = () => (
   <div>
-    <div className={s.Slug}>
-      <h1 >Dołącz do nas już dziś!</h1>
-    </div>
+      {/*<div className={s.Slug}>*/}
+      {/*<h1 >Dołącz do nas już dziś!</h1>*/}
+      {/*</div>*/}
     <SteamSignIn/>
   </div>
 )
@@ -47,7 +51,7 @@ class UserProfile extends React.Component {
   render() {
     return (
         <div className={s.Container}>
-          {this.props.user.userName ? <UserBox user={this.props.user}/> : <RegisterLogin/>}
+            {this.props.user.userName ? null : <RegisterLogin/>}
         </div>
     );
   }

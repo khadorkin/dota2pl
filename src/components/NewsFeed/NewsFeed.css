@@ -1,0 +1,33 @@
+@import '../../variables.css';
+
+.root {
+  width: 100%;
+
+}
+
+.content {
+  composes: contentWrapper;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.singleNews {
+  list-style: none;
+
+}
+
+.loadMore {
+  composes: contentWrapper;
+  margin: 0 auto;
+  cursor: default;
+  padding: 1em 0;
+  display: inline-flex;
+  color: #e53935;
+  font-size: 2em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+}
