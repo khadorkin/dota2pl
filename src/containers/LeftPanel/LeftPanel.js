@@ -8,27 +8,25 @@
  */
 
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import Drawer from 'material-ui/Drawer';
-import StreamFeed from '../../components/StreamFeed/StreamFeed.js'
+import StreamFeed from '../../components/StreamFeed/StreamFeed.js';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './LeftPanel.css';
 
 
-
-const LeftPanel = ({status}) => {
-  const containerClass= () => {
-    if(status.left) {
+const LeftPanel = ({ status }) => {
+  const containerClass = () => {
+    if (status.left) {
       return s.LeftContainerActive;
     }
     return s.LeftContainer;
-  }
+  };
   return (
     <div className={containerClass()}>
-      <StreamFeed/>
+      <StreamFeed />
     </div>
   );
-}
-export default connect(state => ({status: state.panels}))(withStyles(s)(LeftPanel));
-
+};
+export default connect(state => ({ status: state.panels }))(withStyles(s)(LeftPanel));
 

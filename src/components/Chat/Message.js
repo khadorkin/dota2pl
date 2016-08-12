@@ -2,8 +2,8 @@ import React from 'react';
 
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Chat.css';
-import {connect} from 'react-redux';
-import {compose} from 'redux';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
 import IconButton from 'material-ui/IconButton';
 import { deleteMessageRequest, timeoutUser, banUser } from '../../reducers/chat';
 import ReactMarkdown from 'react-markdown';
@@ -14,9 +14,9 @@ const MessageTools = ({
   timeoutUser,
   banUser,
   steamId,
-  ...props
+  ...props,
 }) => {
-  "use strict";
+  'use strict';
   return (<div className={s.MessageTools} {...props}>
     <div className={s.MessageToolsButton}>
       <i className="material-icons">arrow_back</i>
@@ -31,13 +31,13 @@ const MessageTools = ({
       <i className="material-icons">close</i><span>Ban</span>
     </div>
 
-  </div>)
-}
+  </div>);
+};
 
 
 const MessageToolsConnector = compose(
   withStyles(s),
-  connect(null, {deleteMessageRequest, timeoutUser, banUser })
+  connect(null, { deleteMessageRequest, timeoutUser, banUser })
 );
 
 const ConnectedMessageTools = MessageToolsConnector(MessageTools);
@@ -51,16 +51,16 @@ class Message extends React.Component {
   state = {
     active: false,
 
-}
+  }
   toggleMessage = () => {
-    this.setState({active: !this.state.active})
+    this.setState({ active: !this.state.active });
   }
 
 
-    render() {
-    const {userName, steamId, id, message, admin, time} = this.props;
-        moment.locale('pl');
-        const newTime = moment.unix(time).calendar();
+  render() {
+    const { userName, steamId, id, message, admin, time } = this.props;
+    moment.locale('pl');
+    const newTime = moment.unix(time).calendar();
     return (<div className={s.Message} >
         <div className={s.AuthorAndTime}>
             <span className={admin ? s.AuthorClickable : s.Author} onClick={this.toggleMessage}>{userName}</span>
@@ -69,11 +69,12 @@ class Message extends React.Component {
 
 
         <ReactMarkdown
-            source={message}
-            skipHtml={true}
-            className={s.Contents}/>
-           {admin && this.state.active ? <ConnectedMessageTools id={id} steamId={steamId} onClick={this.toggleMessage}/> : null}
-         </div>)
+          source={message}
+          skipHtml
+          className={s.Contents}
+        />
+           {admin && this.state.active ? <ConnectedMessageTools id={id} steamId={steamId} onClick={this.toggleMessage} /> : null}
+         </div>);
   }
 }
 
@@ -83,9 +84,8 @@ class Message extends React.Component {
 // </div>);
 
 
-
 const hoc = compose(
   withStyles(s),
-  connect(state => ({admin: state.auth.isAdmin})));
+  connect(state => ({ admin: state.auth.isAdmin })));
 
-export default hoc(Message)
+export default hoc(Message);

@@ -17,8 +17,8 @@ export function ErrorPage({ error }, context) {
   let errorMessage = null;
 
   if (error.status === 404) {
-      title = 'Tu nic nie ma';
-      content = '404 or some shit.';
+    title = 'Tu nic nie ma';
+    content = '404 or some shit.';
   } else if (process.env.NODE_ENV !== 'production') {
     errorMessage = <pre>{error.stack}</pre>;
   }

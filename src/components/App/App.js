@@ -18,11 +18,11 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import LeftPanel from '../../containers/LeftPanel/LeftPanel.js';
 import MainContent from '../../containers/MainContent/MainContent.js';
 import RightPanel from '../../containers/RightPanel/RightPanel.js';
-import rootSaga from '../../sagas/sagas'
+import rootSaga from '../../sagas/sagas';
 import Navigation from '../../containers/Navigation/Navigation';
-import {ApolloProvider} from 'react-apollo';
+import { ApolloProvider } from 'react-apollo';
 
-import prodotaTheme from './theme.js'
+import prodotaTheme from './theme.js';
 
 
 const muiTheme = getMuiTheme(prodotaTheme);
@@ -56,18 +56,16 @@ class App extends Component {
   }
 
   componentWillMount() {
-
     const { insertCss } = this.props.context;
     this.removeCss = insertCss(s);
 
     const store = this.props.context.store;
-    if(process.env.BROWSER) {
+    if (process.env.BROWSER) {
       console.log(`Runing sagas from: ${process.env.BROWSER ? 'client' : 'server'}`);
       store.runSaga(rootSaga);
     } else {
-      console.log(`In Server environment, we're not going to run sagas! (component\\App\\App.js)`);
+      console.log('In Server environment, we\'re not going to run sagas! (component\\App\\App.js)');
     }
-
   }
 
   componentWillUnmount() {
@@ -91,8 +89,8 @@ class App extends Component {
           <MainContent>
             {this.props.children}
           </MainContent>
-            <LeftPanel/>
-            <RightPanel/>
+            <LeftPanel />
+            <RightPanel />
             <Navigation />
           </div>
 

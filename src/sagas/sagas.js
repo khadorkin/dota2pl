@@ -7,23 +7,23 @@ import { eventChannel } from 'redux-saga';
 import { fork, take, call, put, cancel, select } from 'redux-saga/effects';
 import { seedChat, addMessage, deleteMessage } from '../reducers/chat';
 import { updateStreamList } from '../reducers/stream';
-import {PUSH_MESSAGE, DELETE_MESSAGE, SEED_CHAT, SEND_MESSAGE_SOCKET} from '../constants';
+import { PUSH_MESSAGE, DELETE_MESSAGE, SEED_CHAT, SEND_MESSAGE_SOCKET } from '../constants';
 
 
 const connectionPathFactory = (user) => {
-  const {userName} = user;
+  const { userName } = user;
   let host = null;
   let connectionPath = null;
   try {
     host = process.env.NODE_ENV === 'development' ? document.location.hostname + ':3000' : document.location.hostname;
-    connectionPath = `${document.location.protocol}//${host}/${userName ? 'authorized' : 'public'}`
-  } catch(e) {
-    connectionPath = `http://localhost:3000/${userName ? 'authorized' : 'public'}`
+    connectionPath = `${document.location.protocol}//${host}/${userName ? 'authorized' : 'public'}`;
+  } catch (e) {
+    connectionPath = `http://localhost:3000/${userName ? 'authorized' : 'public'}`;
   }
 
   console.log(process.env.NODE_ENV, connectionPath);
   return connectionPath;
-}
+};
 
 const connect = (user) => {
   const socket = io(connectionPathFactory(user));
@@ -33,10 +33,10 @@ const connect = (user) => {
       resolve(socket);
     });
   });
-}
+};
 
 function* readChat(socket) {
-  console.log(`[Chat] Opened socket channel`);
+  console.log('[Chat] Opened socket channel');
   const channel = yield call(subscribeChat, socket);
   socket.emit(SEED_CHAT);
   while (true) {
@@ -45,7 +45,7 @@ function* readChat(socket) {
   }
 }
 function* readStreams(socket) {
-  console.log(`[StreamService] Initialized`);
+  console.log('[StreamService] Initialized');
   const channel = yield call(subscribeStream, socket);
   socket.emit('stream:getInitial');
   while (true) {
@@ -55,10 +55,9 @@ function* readStreams(socket) {
 }
 
 
-
 function* write(socket) {
   while (true) {
-    let {type, payload} = yield take(action => action.remote);
+    let { type, payload } = yield take(action => action.remote);
     console.log(type, payload);
     socket.emit(type, payload);
   }
@@ -90,10 +89,10 @@ function subscribeChat(socket) {
       emit(seedChat(e));
     });
     socket.on(PUSH_MESSAGE, e => {
-      if(e) emit(addMessage(e));
+      if (e) emit(addMessage(e));
     });
     socket.on(DELETE_MESSAGE, e => {
-      if(e) emit(deleteMessage(e));
+      if (e) emit(deleteMessage(e));
     });
 
     return () => {};
@@ -102,7 +101,7 @@ function subscribeChat(socket) {
 
 
 export function* socketSaga() {
-  const selector = (state) => (state.auth)
+  const selector = (state) => (state.auth);
   const user = yield select(selector);
   const socket = yield call(connect, user);
   const task = yield fork(handleSockets, socket);
@@ -111,5 +110,4 @@ export function* socketSaga() {
 
 export default function* rootSaga() {
   yield fork(socketSaga);
-
-};
+}

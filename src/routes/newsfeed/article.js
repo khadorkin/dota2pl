@@ -8,19 +8,18 @@
  */
 
 import React from 'react';
-import Article from '../../components/Article/Article'
+import Article from '../../components/Article/Article';
 import Connector from '../../components/Article/ConnectedArticle';
 
 
 export default {
 
-    path: '/article/:id',
+  path: '/article/:id',
 
-    async action({params}) {
+  async action({ params }) {
+    const GraphQLConnectedComponent = Connector(params.id, true)(Article);
 
-        const GraphQLConnectedComponent = Connector(params.id, true)(Article);
-
-        return <GraphQLConnectedComponent/>;
-    },
+    return <GraphQLConnectedComponent />;
+  },
 
 };

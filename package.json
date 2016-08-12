@@ -47,6 +47,7 @@
     "pretty-error": "2.0.0",
     "react": "15.1.0",
     "react-apollo": "^0.3.20",
+    "react-custom-scrollbars": "^4.0.0",
     "react-dom": "15.1.0",
     "react-markdown": "^2.4.2",
     "react-motion": "^0.4.4",
@@ -167,6 +168,7 @@
     },
     "rules": {
       "no-confusing-arrow": 0,
+      "react/jsx-indent": 0,
       "react/jsx-quotes": 0,
       "jsx-quotes": [
         2,

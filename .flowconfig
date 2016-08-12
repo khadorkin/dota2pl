@@ -1,7 +1,11 @@
 [ignore]
 .*/build
 .*/config
-.*/node_modules
 .*/gulpfile.js
+.*/node_modules/fbjs/.*
 
 [include]
+
+[options]
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable

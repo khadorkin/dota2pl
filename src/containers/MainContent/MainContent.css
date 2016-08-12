@@ -1,41 +1,39 @@
 @import '../../variables.css';
-.Container{
-    flex: 1;
-    margin-left: 0;
-    margin-right: 0;
-    position: relative;
 
-    transition: .45s cubic-bezier(0.23, 1, 0.32, 1);
-    display: flex;
+.Container {
+  flex: 1;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  transition: .45s cubic-bezier(0.23, 1, 0.32, 1);
+  display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   align-content: flex-start;
-    overflow-y: scroll;
-    @media(--screen-m1440) {
-        overflow: hidden;
-      padding-top: 4em;
-        height: 100%;
-      box-sizing: border-box;
-    }
+  overflow: hidden;
+  box-sizing: border-box;
+  @media(--screen-m960){
+    top: 4em;
+    margin-bottom: 4em;
 
-
-}
-.pullLeft{
-    composes: Container;
-    @media(--screen-m1440) {
-        margin-left: 255px;
-
-    }
+  }
 }
 
+.pullLeft {
+  composes: Container;
+  @media(--screen-m1440) {
+    margin-left: 255px;
 
-.pullRight{
-    composes: Container;
-    @media(--screen-m1440) {
-        margin-right: 340px;
-    }
+  }
 }
 
-.pullBoth{
-    composes: Container pullLeft pullRight;
+.pullRight {
+  composes: Container;
+  @media(--screen-m1440) {
+    margin-right: 340px;
+  }
+}
+
+.pullBoth {
+  composes: Container pullLeft pullRight;
 }

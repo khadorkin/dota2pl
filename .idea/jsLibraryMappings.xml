@@ -2,7 +2,7 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$" libraries="{prodota_wierze node_modules}" />
-    <file url="PROJECT" libraries="{express-DefinitelyTyped, mongoose-DefinitelyTyped, react-DefinitelyTyped, react-redux-DefinitelyTyped, react-router-DefinitelyTyped, react-router-redux-DefinitelyTyped, redis-DefinitelyTyped, socket.io-DefinitelyTyped, socket.io-client-DefinitelyTyped}" />
+    <file url="PROJECT" libraries="{acl-DefinitelyTyped, css-DefinitelyTyped, express-DefinitelyTyped, express-graphql-DefinitelyTyped, mongoose-DefinitelyTyped, react-DefinitelyTyped, react-redux-DefinitelyTyped, react-router-DefinitelyTyped, react-router-redux-DefinitelyTyped, redis-DefinitelyTyped, socket.io-DefinitelyTyped, socket.io-client-DefinitelyTyped}" />
     <includedPredefinedLibrary name="ECMAScript 6" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>

@@ -1,15 +1,15 @@
 import React from 'react';
-import {findDOMNode } from 'react-dom';
+import { findDOMNode } from 'react-dom';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Chat.css';
-import {Editor, EditorState} from 'draft-js';
-import {connect} from 'react-redux';
-import {sendMessage} from '../../reducers/chat';
-import {toggleLeftPanel} from '../../actions/panels';
+import { Editor, EditorState } from 'draft-js';
+import { connect } from 'react-redux';
+import { sendMessage } from '../../reducers/chat';
+import { toggleLeftPanel } from '../../actions/panels';
 import FlatButton from 'material-ui/FlatButton';
 class TextInput extends React.Component {
   state = {
-    value: ''
+    value: '',
   }
 
   componentDidUpdate(prevProps, prevState, prevContext) {
@@ -17,29 +17,27 @@ class TextInput extends React.Component {
   }
 
 
-
-
   handleChange = (e) => {
-    this.setState({value: e.target.value})
+    this.setState({ value: e.target.value });
   };
 
   handleSend = (e) => {
-    if(e.keyCode == 13) {
+    if (e.keyCode == 13) {
       this.send();
       e.stopPropagation();
     }
   }
 
   send = () => {
-    if(this.state.value.length >= 3) {
+    if (this.state.value.length >= 3) {
       this.props.sendMessage(this.state.value);
-      this.setState({value: ''});
+      this.setState({ value: '' });
     }
     findDOMNode(this.refs.textInput).focus();
   }
 
   render() {
-    return <div className={s.BottomChat}>
+    return (<div className={s.BottomChat}>
       <input
         type="text"
         ref="textInput"
@@ -50,15 +48,16 @@ class TextInput extends React.Component {
       />
 
       <FlatButton label="Wyślij"
-                  style={{borderRadius: '0px', minHeight: '100%'}}
-                  backgroundColor="#e53935"
-                  hoverColor="#e53935"
-                  rippleColor="#480a09"
-                  labelStyle={{fontWeight: '700', textShadow: '0px 1px 1px rgba(0,0,0,.7)', color: 'white'}}
-                  onClick={this.send}/>
+        style={{ borderRadius: '0px', minHeight: '100%' }}
+        backgroundColor="#e53935"
+        hoverColor="#e53935"
+        rippleColor="#480a09"
+        labelStyle={{ fontWeight: '700', textShadow: '0px 1px 1px rgba(0,0,0,.7)', color: 'white' }}
+        onClick={this.send}
+      />
 
 
-    </div>
+    </div>);
   }
 }
-export default connect(null, {sendMessage, toggleLeftPanel})(withStyles(s)(TextInput))
+export default connect(null, { sendMessage, toggleLeftPanel })(withStyles(s)(TextInput));

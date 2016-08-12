@@ -27,7 +27,7 @@ async function copy({ watch } = {}) {
   await fs.writeFile('./build/package.json', JSON.stringify({
     private: true,
     engines: pkg.engines,
-    main: "server.js",
+    main: 'server.js',
     dependencies: pkg.dependencies,
     scripts: {
       start: 'node server.js',

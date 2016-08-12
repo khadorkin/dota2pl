@@ -7,9 +7,9 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import Register from './Register';
-import requiresAuth from '../../components/hoc/Authenticated'
+import requiresAuth from '../../components/hoc/Authenticated';
 
 
 export default {

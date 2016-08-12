@@ -1,6 +1,5 @@
-import  * as c  from 'material-ui/styles/colors';
+import * as c from 'material-ui/styles/colors';
 import { fade } from 'material-ui/utils/colorManipulator';
-
 
 
 export default {
@@ -13,5 +12,5 @@ export default {
 
 
     shadowColor: c.grey900,
-  }
-}
+  },
+};

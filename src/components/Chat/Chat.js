@@ -8,23 +8,23 @@
  */
 
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Chat.css'
+import s from './Chat.css';
 import React from 'react';
 import ChatMessages from './ChatMessages';
-import TextInput from './TextInput'
-import {connect} from 'react-redux';
+import TextInput from './TextInput';
+import { connect } from 'react-redux';
 
 class Chat extends React.Component {
   render() {
-    const {messages} = this.props;
+    const { messages } = this.props;
     // const messages = [];
     return (
       <div className={s.Container}>
-        <ChatMessages messages={messages}/>
-        <TextInput/>
+        <ChatMessages messages={messages} />
+        <TextInput />
       </div>
     );
   }
 }
 
-export default connect(state => ({messages: state.chat}))(withStyles(s)(Chat));
+export default connect(state => ({ messages: state.chat }))(withStyles(s)(Chat));

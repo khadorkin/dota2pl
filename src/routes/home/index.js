@@ -9,7 +9,7 @@
 
 import React from 'react';
 import Home from './Home';
-import Content from '../content/Content.js'
+import Content from '../content/Content.js';
 import fetch from '../../core/fetch';
 
 export default {

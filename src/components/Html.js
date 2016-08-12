@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { analytics } from '../config';
 
-function Html({ title, description, style, script, children, state}) {
+function Html({ title, description, style, script, children, state }) {
   return (
     <html className="no-js" lang="">
       <head>
@@ -16,7 +16,7 @@ function Html({ title, description, style, script, children, state}) {
         <style id="css" dangerouslySetInnerHTML={{ __html: style }} />
       </head>
       <body>
-        <div id="app" dangerouslySetInnerHTML={{ __html: children }} style={{minWidth: '100%'}} />
+        <div id="app" dangerouslySetInnerHTML={{ __html: children }} style={{ minWidth: '100%' }} />
         {script && (
           <script
             id="source"

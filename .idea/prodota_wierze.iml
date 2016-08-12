@@ -18,5 +18,8 @@
     <orderEntry type="library" name="socket.io-client-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="socket.io-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="redis-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="acl-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="css-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="express-graphql-DefinitelyTyped" level="application" />
   </component>
 </module>

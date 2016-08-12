@@ -9,63 +9,63 @@ import {
   BAN_REQUEST,
 } from '../constants';
 
-const initialState  = [];
+const initialState = [];
 
 
 const reducer = (state = initialState, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case PUSH_MESSAGE:
-      return [...state, action.payload]
+      return [...state, action.payload];
     case DELETE_MESSAGE:
-        return state.filter(m => !action.payload.includes(m.id));
+      return state.filter(m => !action.payload.includes(m.id));
     case SEED_CHAT:
-      return [...action.payload]
+      return [...action.payload];
     default:
       return state;
   }
-}
+};
 
 export const addMessage = (data) => ({
   type: PUSH_MESSAGE,
-  payload: data
+  payload: data,
 });
 
 export const deleteMessage = (data) => ({
   type: DELETE_MESSAGE,
-  payload: data
+  payload: data,
 });
 
 export const deleteMessageRequest = (data) => ({
   type: DELETE_MESSAGE_REQUEST,
   remote: true,
-  payload: data
+  payload: data,
 });
 
 export const timeoutUser = (data) => ({
   type: TIMEOUT_REQUEST,
   remote: true,
-  payload: data
+  payload: data,
 });
 
 export const banUser = (data) => ({
   type: BAN_REQUEST,
   remote: true,
-  payload: data
+  payload: data,
 });
 
 
 export const seedChat = (data) => {
   const object = {
     type: SEED_CHAT,
-    payload: data
+    payload: data,
   };
   return (object);
-}
+};
 
 export const sendMessage = (data) => ({
   type: SEND_MESSAGE_SOCKET,
   remote: true,
-  payload: data
-})
+  payload: data,
+});
 
 export default reducer;

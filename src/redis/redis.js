@@ -7,8 +7,8 @@ bluebird.promisifyAll(redis.Multi.prototype);
 const init = () => {
   const pub = redis.createClient();
   const sub = redis.createClient();
-  return {pub, sub};
-}
+  return { pub, sub };
+};
 
 
 export default init;

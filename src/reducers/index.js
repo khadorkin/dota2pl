@@ -13,8 +13,8 @@ export default combineReducers({
   panels,
   auth,
   chat,
-    stream,
-    apollo: client.reducer()
+  stream,
+  apollo: client.reducer(),
 
 
 });

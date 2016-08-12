@@ -3,69 +3,44 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Chat.css';
 import Message from './Message';
 import cx from 'classnames';
-// import perfectScrollbarCss from '!!isomorphic-style!css?modules=false!postcss-loader?pack=sass!sass-loader!perfect-scrollbar/src/css/main.scss'
-import perfectScrollbarCss from '!!isomorphic-style!css?modules=false!postcss-loader?pack=sass!sass-loader!./PerfectScrollbarStyle.scss'
+// import { Scrollbar } from 'react-custom-scrollbars';
+import perfectScrollbarCss from '!!isomorphic-style!css?modules=false!postcss-loader?pack=sass!sass-loader!./PerfectScrollbarStyle.scss';
 
+import { Scrollbars } from 'react-custom-scrollbars';
 
-const Enhancer = Component => class extends React.Component {
-
-
-  render() {
-    console.log(`Hello from wrapped!`);
-    return <Component {...this.props}
-                      style={{position: 'relative', overflow: 'hidden'}}
-
-    />
-  }
-}
-
-
-class ChatMessages extends React.Component{
-  componentDidMount() {
-    const container = this.refs.chatMessages;
-
-    if(process.env.BROWSER) {
-      if(container) {
-        const ps = require('perfect-scrollbar');
-        ps.initialize(container, {
-          handlers: ['click-rail', 'drag-scrollbar', 'keyboard', 'wheel', 'touch', 'selection'],
-        });
-      }
-    }
-  }
-
+class ChatMessages extends React.Component {
+  //
   componentWillUpdate() {
-    const node = this.refs.chatMessages;
-    this.shouldScrollBottom = node.scrollTop + node.offsetHeight === node.scrollHeight;
+    const node = this.refs.scrollbars;
+    this.shouldScrollBottom = node.getClientHeight() + node.getScrollTop() === node.getScrollHeight();
+    console.log(node.getClientHeight(), node.getScrollHeight(), node.getScrollTop());
   }
-
-
   componentDidUpdate() {
-    if(this.shouldScrollBottom) {
-      const node = this.refs.chatMessages;
-      node.scrollTop = node.scrollHeight
+    if (this.shouldScrollBottom) {
+      const node = this.refs.scrollbars;
+      node.scrollToBottom();
     }
-
   }
 
   render() {
-    const {messages} = this.props;
+    const { messages } = this.props;
 
     return (
-      <div className={cx(s.ChatMessagesWrapper)} ref="chatMessages" >
+      <Scrollbars
+        ref="scrollbars"
+        autoHide
+        renderThumbVertical={props => <div {...props} className={s.scrollbar} style={{ background: '#cc3432' }} />}
+        className={cx(s.ChatMessagesWrapper)}
+      >
         <div className={s.ChatMessages} >{messages.map((m) => {
-          const {time, ...rest} = m;
-          return (<Message key={time} time={time} {...rest}/>)
+          const { time, ...rest } = m;
+          return (<Message key={time} time={time} {...rest} />);
         })}</div>
 
-      </div>
+      </Scrollbars>
     );
   }
 }
 
 
-
-
-
-
-export default withStyles(s, perfectScrollbarCss)(ChatMessages)
+export default withStyles(s, perfectScrollbarCss)(ChatMessages);

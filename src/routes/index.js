@@ -27,7 +27,7 @@ export default {
   children: [
     prodota,
     ranking,
-      newsfeed,
+    newsfeed,
     error,
   ],
 

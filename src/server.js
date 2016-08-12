@@ -17,7 +17,7 @@ import expressJwt from 'express-jwt';
 /*
  * Graphql
  * */
-import {apolloExpress, graphiqlExpress} from 'apollo-server';
+import { apolloExpress, graphiqlExpress } from 'apollo-server';
 import expressGraphQL from 'express-graphql';
 
 import jwt from 'jsonwebtoken';
@@ -41,16 +41,13 @@ import assets from './assets'; // eslint-disable-line import/no-unresolved
 import configureStore from './store/configureStore';
 import { loginUser, logoutUser } from './reducers/auth';
 import { port, auth, dbConnectionOptions } from './config';
-import * as Models from './data/models'
-
-
+import * as Models from './data/models';
 
 global.Promise = BlueBird;
 mongoose.Promise = BlueBird;
 
 const app = express();
 const server = http.Server(app);
-
 
 
 // Tell any CSS tooling (such as Material UI) to use all vendor prefixes if the
@@ -68,22 +65,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-
 // const connection = mongoose.createConnection(dbConnectionOptions);
 mongoose.set('debug', true);
 mongoose.connect(dbConnectionOptions);
 
 // Session configuration
 const MongoStore = mongoConnect(session);
-const mongoSessionStore = new MongoStore({mongooseConnection: mongoose.connection});
+const mongoSessionStore = new MongoStore({ mongooseConnection: mongoose.connection });
 
 app.use(session({
   secret: auth.jwt.secret,
   store: mongoSessionStore,
   name: 'prodotaSession',
   resave: true,
-  saveUninitialized: true
-}))
+  saveUninitialized: true,
+}));
 import webSockets from './websockets/socketio';
 
 
@@ -94,54 +90,47 @@ const io = webSockets(server, mongoSessionStore);
 import redisConnection from './redis/redis';
 const redis = redisConnection();
 
-import Chat from './services/Chat/Chat'
+import Chat from './services/Chat/Chat';
 import Stream from './services/Chat/Stream';
 
 // Initialize services
-const dota2plStream = new Stream({redis, io});
-const prodotaChat = new Chat({redis, io});
-
-
-
-
-
-
+const dota2plStream = new Stream({ redis, io });
+const prodotaChat = new Chat({ redis, io });
 
 
 app.use(passport.initialize());
 app.use(passport.session());
 
 
-
 app.get('/auth/steam', passport.authenticate('steam'));
 app.get('/auth/steam/return',
   passport.authenticate('steam', { failureRedirect: '/' }),
-  function(req, res) {
+  function (req, res) {
     // Successful authentication, redirect home.
     res.redirect('/');
   });
 
 
-app.get("/auth/twitch", (req,res, next) => {
-  if(!req.user) {
+app.get('/auth/twitch', (req, res, next) => {
+  if (!req.user) {
     res.redirect('/');
     return;
-  } else if(req.user.twitchId) {
+  } else if (req.user.twitchId) {
     res.redirect('/');
     return;
   }
   next();
 });
-app.get("/auth/twitch", passport.authenticate("twitch"));
-app.get('/auth/twitch/return', async (req,res,next) => {
-  passport.authenticate('twitch', async (e,user,info) => {
-    if(e) {
+app.get('/auth/twitch', passport.authenticate('twitch'));
+app.get('/auth/twitch/return', async (req, res, next) => {
+  passport.authenticate('twitch', async (e, user, info) => {
+    if (e) {
       res.json(e.message);
       return;
     }
-    console.log(`[Twitch sync] Session user ID: `,req.user._id);
+    console.log('[Twitch sync] Session user ID: ', req.user._id);
     const userFromDb = await Models.User.findById(req.user._id);
-    console.log(`[Twitch sync] Got user from database: `,userFromDb);
+    console.log('[Twitch sync] Got user from database: ', userFromDb);
     userFromDb.twitchId = user.id;
     try {
       await userFromDb.save();
@@ -150,31 +139,31 @@ app.get('/auth/twitch/return', async (req,res,next) => {
     }
     console.log(`[Twitch sync] successfully synced ${req.user.userName} with ${user.id}`);
     req.login(userFromDb, (err) => {
-      if(err) {
+      if (err) {
         res.json(err.message);
         return;
       }
       return res.redirect('/');
     });
-  })(req,res,next);
+  })(req, res, next);
 });
 
 
 app.get('/logout', async (req, res) => {
-    req.logout();
+  req.logout();
   res.redirect('/');
-})
+});
 
 //
 // Register API middleware
 // -----------------------------------------------------------------------------
-import Mocks from './data/Mocks'
+import Mocks from './data/Mocks';
 app.use('/graphql', bodyParser.json(), apolloExpress(req => ({
-    schema: schema,
-    context: {user: req.user}
+  schema,
+  context: { user: req.user },
 })));
 app.use('/graphiql', graphiqlExpress({
-    endpointURL: '/graphql',
+  endpointURL: '/graphql',
 }));
 
 // app.use('/graphql', expressGraphQL(req => ({
@@ -199,12 +188,10 @@ app.get('*', async (req, res, next) => {
     });
 
     const user = req.user;
-    if(user) {
+    if (user) {
       store.dispatch(loginUser(user.userName, user.steamId, user.avatarUrl, user.admin, user.twitchId));
-
     } else {
       store.dispatch(logoutUser());
-
     }
 
 
@@ -268,13 +255,12 @@ app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
 
 // Connect to database
 // mongoose.connect(dbConnectionOptions , async () => {
-  server.listen(port, () => {
-    console.log(`The server is running at http://localhost:${port}/`);
-  });
+server.listen(port, () => {
+  console.log(`The server is running at http://localhost:${port}/`);
+});
 // })
 
 //
-
 
 
 // models.sync().catch(err => console.error(err.stack)).then(() => {

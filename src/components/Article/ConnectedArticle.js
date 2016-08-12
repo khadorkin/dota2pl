@@ -1,14 +1,14 @@
 import React from 'react';
-import {connect} from 'react-apollo';
-import gql from 'graphql-tag'
+import { connect } from 'react-apollo';
+import gql from 'graphql-tag';
 
 export default (id, comments = false) => (Component) => {
-    "use strict";
+  'use strict';
 
 
-    const mapQueriesToProps = ({ownProps, state}) => ({
-        article: {
-            query: gql`
+  const mapQueriesToProps = ({ ownProps, state }) => ({
+    article: {
+      query: gql`
 query($id: String!) {
   article(id: $id) {
     title,tags,content,date, publishDate, author {
@@ -18,15 +18,15 @@ query($id: String!) {
   }
 }
     `,
-            returnPartialData: true,
-            variables: {
-                id
-            }
-        }
-    })
+      returnPartialData: true,
+      variables: {
+        id,
+      },
+    },
+  });
 
 
-    class ConnectedComponent extends React.Component {
+  class ConnectedComponent extends React.Component {
 
         // render() {
         //   let data = {}
@@ -41,26 +41,25 @@ query($id: String!) {
         //   return typeof(article) ?  <Component {...data}/> : null };
 
 
-        render() {
-            const {article} = this.props.article;
+    render() {
+      const { article } = this.props.article;
 
-            if (typeof(article) === 'undefined')
-                return null
+      if (typeof(article) === 'undefined')
+        return null;
 
-            const {author, ...data} = article;
+      const { author, ...data } = article;
 
-            return <Component
-                single={true}
-                active={true}
-                comments={comments}
-                author={author.userName}
-                steamId={author.steamId}
-                {...data}/>;
-
-        }
+      return (<Component
+        single
+        active
+        comments={comments}
+        author={author.userName}
+        steamId={author.steamId}
+        {...data}
+      />);
+    }
 
     }
-    return connect({mapQueriesToProps})(ConnectedComponent);
-
-}
+  return connect({ mapQueriesToProps })(ConnectedComponent);
+};
 

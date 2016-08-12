@@ -8,23 +8,23 @@
  */
 
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import Drawer from 'material-ui/Drawer';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import Chat from '../../components/Chat/Chat'
-import s from './RightPanel.css'
-const RightPanel = ({status}) => {
-  const containerClass= () => {
-    if(status.right) {
+import Chat from '../../components/Chat/Chat';
+import s from './RightPanel.css';
+const RightPanel = ({ status }) => {
+  const containerClass = () => {
+    if (status.right) {
       return s.RightContainerActive;
     }
     return s.RightContainer;
-  }
+  };
   return (
     <div className={containerClass()}>
-      <Chat/>
+      <Chat />
     </div>
   );
-}
-export default connect(state => ({status: state.panels}))(withStyles(s)(RightPanel));
+};
+export default connect(state => ({ status: state.panels }))(withStyles(s)(RightPanel));
 

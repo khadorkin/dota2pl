@@ -7,18 +7,18 @@ import s from './Ranking.css';
 
 const tableOptions = {
   selectable: !1,
-  wrapperStyle: {padding: '0 0 2em'},
-}
+  wrapperStyle: { padding: '0 0 2em' },
+};
 
 const tableHeaderOptions = {
   displaySelectAll: !1,
   adjustForCheckbox: !1,
-  style: {borderBottom: 'none'}
-}
+  style: { borderBottom: 'none' },
+};
 
 const tableBodyOptions = {
-  displayRowCheckbox: !1
-}
+  displayRowCheckbox: !1,
+};
 
 class Ranking extends Component {
   render() {

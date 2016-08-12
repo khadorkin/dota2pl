@@ -2,11 +2,7 @@ import { Router } from 'express';
 const router = new Router();
 
 
-
-
-
 const handleSteamResponse = async (req, res) => {
-
   const authenticateSteamResponse = (req) => {
     return new Promise((res, rej) => {
       passport.authenticate('steam', (err, usr) => {
@@ -17,7 +13,7 @@ const handleSteamResponse = async (req, res) => {
         }
       })(req);
     });
-  }
+  };
 
   try {
     const user = await authenticateSteamResponse(req);
@@ -26,9 +22,9 @@ const handleSteamResponse = async (req, res) => {
   } catch (e) {
     res.json({ token: false });
   }
-}
+};
 
-router.route('/auth/steam').get(passportInstance.authenticate('steam'))
+router.route('/auth/steam').get(passportInstance.authenticate('steam'));
 
 
 app.get('/auth/steam', passport.authenticate('steam'));

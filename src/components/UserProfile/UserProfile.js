@@ -8,10 +8,10 @@
  */
 
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './UserProfile.css'
-import {connect} from 'react-redux';
+import s from './UserProfile.css';
+import { connect } from 'react-redux';
 import React from 'react';
-import Paper from 'material-ui/Paper'
+import Paper from 'material-ui/Paper';
 import logo from './steam-logo.svg';
 
 
@@ -23,22 +23,22 @@ let SteamSignIn = () => (<a className={s.SteamLogo} href="/auth/steam">
     </div>
 
 
-</a>)
+</a>);
 
 
 let RegisterLogin = () => (
   <div>
-      {/*<div className={s.Slug}>*/}
-      {/*<h1 >Dołącz do nas już dziś!</h1>*/}
-      {/*</div>*/}
-    <SteamSignIn/>
+      {/* <div className={s.Slug}>*/}
+      {/* <h1 >Dołącz do nas już dziś!</h1>*/}
+      {/* </div>*/}
+    <SteamSignIn />
   </div>
-)
+);
 
 
-let UserBox = ({user}) => (<div className={s.WelcomeMessage}>
+let UserBox = ({ user }) => (<div className={s.WelcomeMessage}>
   <h1 >Witaj {user.userName} </h1>
-  <img src={user.avatarUrl}/>
+  <img src={user.avatarUrl} />
 </div>);
 
 SteamSignIn = withStyles(s)(SteamSignIn);
@@ -51,10 +51,10 @@ class UserProfile extends React.Component {
   render() {
     return (
         <div className={s.Container}>
-            {this.props.user.userName ? null : <RegisterLogin/>}
+            {this.props.user.userName ? null : <RegisterLogin />}
         </div>
     );
   }
 }
 
-export default connect(state => ({user: state.auth}))(withStyles(s)(UserProfile));
+export default connect(state => ({ user: state.auth }))(withStyles(s)(UserProfile));

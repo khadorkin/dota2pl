@@ -1,74 +1,73 @@
 import {
     makeExecutableSchema,
-    addResolveFunctionsToSchema
+    addResolveFunctionsToSchema,
 } from 'graphql-tools';
 
 
-import * as Models  from './models'
+import * as Models from './models';
 
 const resolvers = {
   ArticleMutation: {
-    async createArticle(root, {title, content, tags}, ctx) {
-      "use strict";
-      const {user} = ctx;
-      console.log(`[GraphQL] createArticle mutation, fetching user from session....`);
+    async createArticle(root, { title, content, tags }, ctx) {
+      'use strict';
+      const { user } = ctx;
+      console.log('[GraphQL] createArticle mutation, fetching user from session....');
       try {
         const User = await Models.User.findById(user._id);
         if (!(User.publisher || User.admin)) {
           throw new Error('Not right access');
         }
-        const article = await Models.Article.create({_author: user._id, content, title, tags})
+        const article = await Models.Article.create({ _author: user._id, content, title, tags });
         await User.articles.push(article);
         await User.save();
         return article;
-
       } catch (e) {
-        console.warn(`[GraphQL] ERROR`, e.message);
+        console.warn('[GraphQL] ERROR', e.message);
         return e.message;
       }
-      console.log(`GraphQL fetched user: `, User.articles)
-    }
+      console.log('GraphQL fetched user: ', User.articles);
+    },
   },
 
   Query: {
-    async articles(root, {start, limit}) {
-      "use strict";
+    async articles(root, { start, limit }) {
+      'use strict';
       const articles = await Models.Article.find().skip(start).limit(limit);
       console.log(start, limit);
       return articles;
     },
-    async article(root, {id}) {
+    async article(root, { id }) {
       const Article = await Models.Article.findById(id);
       return Article;
-      return {title: 'random'}
-    }
+      return { title: 'random' };
+    },
   },
   Article: {
     tags(id) {
-      "use strict";
+      'use strict';
       return id.tags;
     },
     async author(id) {
-      "use strict";
+      'use strict';
       try {
         const response = await Models.Article.populate(id, '_author');
         // console.log(response._author);
-        const {userName, steamId} = response._author
+        const { userName, steamId } = response._author;
         // console.log(userName,steamId)
-        return {userName, steamId};
+        return { userName, steamId };
       } catch (e) {
         console.warn(e.message);
         return e.message;
       }
-    }
+    },
   },
   Tag: {
     articles(tagName) {
-      "use strict";
-      return {name: 'test', articles: []}
-    }
-  }
-}
+      'use strict';
+      return { name: 'test', articles: [] };
+    },
+  },
+};
 
 const typeDefs = [`
   schema {
@@ -112,10 +111,8 @@ const typeDefs = [`
 
 const schema = makeExecutableSchema({
   typeDefs,
-  resolvers
-})
-
-
+  resolvers,
+});
 
 
 export default schema;
