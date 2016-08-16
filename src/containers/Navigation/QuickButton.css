@@ -1,0 +1,48 @@
+@import '../../variables.css';
+
+
+
+
+.root {
+  flex: 1;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  user-select: none;
+  position: relative;
+  box-sizing: content-box;
+  width: 4em;
+  margin-right: -1px;
+
+  border-left: 1px solid #282828;
+  composes: navButton;
+
+}
+
+
+.rootActive{
+  composes: root;
+  background: var(--colorPrimary);
+}
+
+.counter{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(calc(-50% + 8px)) translateY(calc(-50% - 8px));
+  border: 2px solid #191a1e;
+  font-size: .8em;
+  font-weight: bold;
+  min-width: 1.2em;
+  min-height: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--colorPrimary);
+  border-radius: 100%;
+  line-height: 1;
+
+}

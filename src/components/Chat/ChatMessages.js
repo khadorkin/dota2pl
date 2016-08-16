@@ -24,7 +24,6 @@ class ChatMessages extends React.Component {
 
   render() {
     const { messages } = this.props;
-
     return (
       <Scrollbars
         ref="scrollbars"

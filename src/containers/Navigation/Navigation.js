@@ -8,53 +8,40 @@
  */
 
 import React, { PropTypes } from 'react';
-import cx from 'classnames';
+
+/* HOCS */
+import { connect } from 'react-redux';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+
 import s from './Navigation.css';
 import Link from '../Link';
-import { connect } from 'react-redux';
-import LeftPanelToggler from '../../components/LeftPanelToggler';
-import { RightPanelSmallControl } from '../../components/RightPanelToggler';
-import IconButton from 'material-ui/IconButton';
 import { toggleNavigation } from '../../actions/panels';
-
-const SteamSignIn = () => (<a href="/auth/steam">
-  <img src="https://steamcommunity-a.akamaihd.net/public/images/signinthroughsteam/sits_01.png"></img>
-  </a>);
+import QuickAccess from './QuickAccess';
 
 function Navigation(props) {
   const { panels, toggleNavigation } = props;
   const containerClass = () => {
-    if (panels.left && panels.right) {
-      return s.pullBoth;
-    }
-    if (panels.left) {
-      return s.pullLeft;
-    }
-    if (panels.right) {
-      return s.pullRight;
-    }
+    // if (panels.left && panels.right) {
+    //   return s.pullBoth;
+    // }
+    // if (panels.left) {
+    //   return s.pullLeft;
+    // }
+    // if (panels.right) {
+    //   return s.pullRight;
+    // }
     return s.root;
   };
   return (
     <div className={containerClass()} role="navigation">
         <div className={s.navigationItems}>
-      <LeftPanelToggler />
             <div className={panels.nav ? s.navigationActive : s.navigation} onClick={toggleNavigation}>
                 <Link className={s.link} activeClass={s.linkActive} to="/">DotaFeed</Link>
                 <Link className={s.link} activeClass={s.linkActive} to="/ranking">Ranking</Link>
                 <Link className={s.link} activeClass={s.linkActive} to="/prodota">proDota</Link>
                 <a className={s.link} href="http://forum.dota2.pl">Forum</a>
             </div>
-      <IconButton
-        iconClassName="material-icons"
-        iconStyle={{ color: 'white' }}
-        className={s.navToggle}
-        onClick={toggleNavigation}
-      >
-        menu
-      </IconButton>
-      <RightPanelSmallControl />
+            <QuickAccess/>
         </div>
 
     </div>

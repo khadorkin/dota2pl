@@ -13,9 +13,10 @@ import Drawer from 'material-ui/Drawer';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import Chat from '../../components/Chat/Chat';
 import s from './RightPanel.css';
-const RightPanel = ({ status }) => {
+import SIDEBAR_CHATROOM from '../../constants';
+const RightPanel = ({status}) => {
   const containerClass = () => {
-    if (status.right) {
+    if (status) {
       return s.RightContainerActive;
     }
     return s.RightContainer;
@@ -26,5 +27,5 @@ const RightPanel = ({ status }) => {
     </div>
   );
 };
-export default connect(state => ({ status: state.panels }))(withStyles(s)(RightPanel));
+export default connect(state => ({ status: state.chat.SIDEBAR_CHATROOM.active }))(withStyles(s)(RightPanel));
 

@@ -10,41 +10,54 @@
 @import '../../variables.css';
 
 .root {
-  font-family: var(--font-family-headers);
-  transition: .45s cubic-bezier(0.23, 1, 0.32, 1);
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  background: rgb(17, 19, 24);
 
+
+  /* Common styles for navigation */
+  font-family: var(--font-family-headers);
+  background: #191a1e;
+
+
+
+  /* Bottom fixed navigation on mobile */
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  min-height: 4em;
-  //margin-left: 0;
-  //margin-right: 0;
   z-index: 3000;
+
+  /* No padding on desktop, start from left */
   padding: 0 .5em;
+  @media(--screen-m960) {
+    padding: 0;
+  }
+
+
+
+  /* Navigation grows on desktop */
+  min-height: 3em;
+  @media(--screen-m960){
+    min-height: 4em;
+  }
+
+  /* Mobile position for navigation */
+
   box-shadow: 0px -1px 7px 0px rgb(12, 13, 16);
-  @media(--screen-m1440) {
+  @media(--screen-m960){
     bottom: unset;
     top: 0;
-    box-shadow: 0px 3px 7px 0px rgba(12, 13, 16, 0.73);
   }
-  @media(--screen-m1600) {
-    background: rgb(17, 19, 24);
-    bottom: unset;
-    top:0;
-  }
+
+
+
+
 
 }
 
 .navigation{
-
-
   display: none;
+  align-items: stretch;
   @media(--screen-m960) {
     display: flex;
   }
@@ -57,27 +70,6 @@
 }
 .navigationActive{
   composes: navigation;
-  display: flex;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 4rem;
-  padding: 2rem;
-  display: flex;
-  flex-flow: column-reverse nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-size: 1.5em;
-  background: rgb(17, 19, 24);
-  right: 0;
-  @media(--screen-m960) {
-    background: unset;
-    position: static;
-    font-size: 1em;
-    flex-flow: row wrap;
-    padding: 0;
-  }
-
 }
 
 
@@ -98,72 +90,47 @@
 
 
 .link {
-  display: inline-block;
-  margin: 3px 10px;
-  padding: 3px 9px;
+  display: inline-flex;
+  align-items: center;
+
+  /* Needed for pseudo elements */
+  position: relative;
+
+
+  /* Border related */
+  border-right: 1px solid #282828;
+  margin-left: -1px;
+  padding: 0 1em;
+
+  font-family: 'Roboto';
+  text-transform: uppercase;
+
   text-decoration: none;
   font-weight: 500;
   transition: .15s ease-in;
-  text-transform: capitalize;
   font-weight: 500;
-  font-size: 1.05em; /* ~18px */
+
+  &, &:active, &:visited{
+    color: rgba(255, 255, 255, 1);
+  }
+
+  composes: navButton;
 }
 
-.link,
-.link:active,
-.link:visited {
-  position: relative;
-  color: rgba(255, 255, 255, 1);
+.linkActive{
+  composes: link;
+  background: var(--colorPrimary);
+
 }
 
 .navigationItems {
   display: flex;
   flex: 1;
   justify-content: space-between;
-  align-items: center;
-  composes: contentWrapper;
+  align-items: stretch;
 }
 
 
-.link:active{
-  &:before{
-    background: rgba(255,255,255, .28);
-
-  }
-
-}
-
-.link:before{
-  content: '';
-  position: absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  top:0;
-  //border-right:1px solid white;
-  z-index:-1;
-  background: rgba(255,255,255, .20);
-  transform: translateX(0px) translateY(3px);
-  opacity: 0;
-  transform-origin: 100% 50%;
-
-  transition: var(--animation);
-
-}
-
-.link:hover:before {
-  transform: translate(0);
-  opacity: 1;
-
-}
-.linkActive{
-  composes: link;
-
-  &:before{
-    opacity: 1;
-    transform: translate(0);
-  }
-}
 
 
 .highlight {

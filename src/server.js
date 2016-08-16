@@ -157,7 +157,6 @@ app.get('/logout', async (req, res) => {
 //
 // Register API middleware
 // -----------------------------------------------------------------------------
-import Mocks from './data/Mocks';
 app.use('/graphql', bodyParser.json(), apolloExpress(req => ({
   schema,
   context: { user: req.user },

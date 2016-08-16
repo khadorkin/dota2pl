@@ -7,6 +7,8 @@ import { connect } from 'react-redux';
 import { sendMessage } from '../../reducers/chat';
 import { toggleLeftPanel } from '../../actions/panels';
 import FlatButton from 'material-ui/FlatButton';
+
+import { SIDEBAR_CHATROOM } from '../../constants';
 class TextInput extends React.Component {
   state = {
     value: '',
@@ -30,7 +32,9 @@ class TextInput extends React.Component {
 
   send = () => {
     if (this.state.value.length >= 3) {
-      this.props.sendMessage(this.state.value);
+
+      // 1 is room id, should be set programatically
+      this.props.sendMessage(this.state.value, SIDEBAR_CHATROOM);
       this.setState({ value: '' });
     }
     findDOMNode(this.refs.textInput).focus();

@@ -13,18 +13,21 @@ import React from 'react';
 import ChatMessages from './ChatMessages';
 import TextInput from './TextInput';
 import { connect } from 'react-redux';
+import { SIDEBAR_CHATROOM } from '../../constants';
 
 class Chat extends React.Component {
   render() {
-    const { messages } = this.props;
-    // const messages = [];
+    const { channel } = this.props;
+    // const { messages } = channel;
+    // console.log(`Messages from parent:`, messages)
+
     return (
       <div className={s.Container}>
-        <ChatMessages messages={messages} />
+        <ChatMessages messages={ channel ? channel.messages : []} />
         <TextInput />
       </div>
     );
   }
 }
 
-export default connect(state => ({ messages: state.chat }))(withStyles(s)(Chat));
+export default connect(state => ({ channel: state.chat[SIDEBAR_CHATROOM] }))(withStyles(s)(Chat));

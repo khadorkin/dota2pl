@@ -1,4 +1,4 @@
-import { SEND_MESSAGE_SOCKET, DELETE_MESSAGE_REQUEST, DELETE_MESSAGE, PUSH_MESSAGE, SEED_CHAT, TIMEOUT_REQUEST, BAN_REQUEST } from '../../constants';
+import { SEND_MESSAGE_SOCKET, DELETE_MESSAGE_REQUEST, DELETE_MESSAGE, PUSH_MESSAGE, SEED_CHAT, TIMEOUT_REQUEST, BAN_REQUEST, SIDEBAR_CHATROOM } from '../../constants';
 import moment from 'moment';
 import uuid from 'node-uuid';
 
@@ -36,9 +36,14 @@ export default class Chat {
   _attachUserHandlers(s, user) {
     console.log('Attaching private handlers to the connection!');
 
-    s.on(SEND_MESSAGE_SOCKET, (m) => this.addMessage(m, user));
+    s.on(SEND_MESSAGE_SOCKET, (m) => {
+      this.addMessage(m, user);
+    });
 
-    s.on(DELETE_MESSAGE_REQUEST, (m) => this.deleteMessages(m, user));
+    s.on(DELETE_MESSAGE_REQUEST, (m) => {
+      const { id, room } = m;
+      this.deleteMessages(id, user, room);
+    });
     s.on(BAN_REQUEST, (m) => this.banUser(m, user));
 
     s.on(TIMEOUT_REQUEST, (m) => this.timeoutUser(m, user));
@@ -46,12 +51,11 @@ export default class Chat {
 
   async timeoutUser(steamId, user) {
     if (!user.admin) return;
-    const roomId = 1;
+    const roomId = SIDEBAR_CHATROOM;
     // Creates new auto-expiring value, cannot submit message if timed out.
     this.pub.setex(`${TIMEOUT}:${steamId}`, TIMEOUT_TIME, steamId);
     const channel = `${CHATROOM}:${roomId}`;
     // Get all users messages and delete them.
-    console.log;
     const messages = await this.getMessagesFromRedis(channel, 0);
     const messagesOfTimedOutUser = messages.filter(m => m.steamId === steamId).map(m => m.id);
     this.deleteMessages(messagesOfTimedOutUser, user);
@@ -60,7 +64,7 @@ export default class Chat {
 
   async banUser(steamId, user) {
     if (!user.admin) return;
-    const roomId = 1;
+    const roomId = SIDEBAR_CHATROOM;
     // Creates new auto-expiring value, cannot submit message if timed out.
     const channel = `${CHATROOM}:${roomId}`;
     this.pub.sadd(`${BAN}:${channel}`, steamId);
@@ -80,13 +84,12 @@ export default class Chat {
     return txt;
   }
 
-  deleteMessages(messages, user) {
+  deleteMessages(messages, user, room = SIDEBAR_CHATROOM) {
     if (!user.admin) return; // only admins can delete messages
     if (typeof messages === 'string') {
       messages = [messages];
     }
-    const channelId = 1;
-    const key = `${CHATROOM}:${channelId}`;
+    const key = `${CHATROOM}:${room}`;
 
     const removedMessages = messages.filter((messageId) => {
       const message = `${MESSAGE}:${messageId}`;
@@ -96,7 +99,7 @@ export default class Chat {
       return resultFromList && resultFromHash;
     });
     console.log(`[Chat] Removed ${removedMessages.length} message${removedMessages.length > 1 ? 's' : ''}.`);
-    this.pub.publish(DELETE_MESSAGE, JSON.stringify(removedMessages));
+    this.pub.publish(DELETE_MESSAGE, JSON.stringify({removedMessages, room}));
   }
 
 
@@ -112,8 +115,8 @@ export default class Chat {
   // }
 
   async addMessage(message, user) {
-    const roomId = 1;
-    const key = `${CHATROOM}:${roomId}`;
+    const { data, room } = message;
+    const key = `${CHATROOM}:${room}`;
 
 
     const isTimedOut = await this.pub.existsAsync(`${TIMEOUT}:${user.steamId}`);
@@ -124,17 +127,21 @@ export default class Chat {
     if (isTimedOut) return;
 
     moment.locale('pl');
-    message = this.sanitize(message);
+    message = this.sanitize(data);
       // const time = new Date();
     const time = Date.now() / 1000;
     const t = moment.unix(time);
     console.log(`[Chat] (${t.format('hh:mm:ss')}) ${user.userName}: ${message}`);
     const generatedId = uuid.v1();
 
-    const flatMessageObject = { message, time, userName: user.userName, steamId: user.steamId, id: generatedId };
+    const flatMessageObject = {
+      message, time,
+      userName: user.userName,
+      steamId: user.steamId,
+      id: generatedId };
 
 
-    const str = JSON.stringify(flatMessageObject);
+    const str = JSON.stringify({ message: flatMessageObject, room });
     // Push message to redis
     const messageInList = `${MESSAGE}:${generatedId}`;
     this.pub.hmset(messageInList, flatMessageObject);
@@ -206,14 +213,14 @@ export default class Chat {
   async _getInitialMessages(s) {
     try {
       // TODO: get channelId from socket channel
-      const roomId = 1;
+      const room = SIDEBAR_CHATROOM;
       const numberOfMessages = -200;
-      const channel = `${CHATROOM}:${roomId}`;
+      const channel = `${CHATROOM}:${room}`;
       const results = await this.getMessagesFromRedis(channel, numberOfMessages);
       // const chatMessages =  await this.pub.lrangeAsync(`${CHATROOM}:${roomId}`,-50, -1);
       // const promises = chatMessages.map(async (m) => this.pub.hgetallAsync(m));
       // const results = await Promise.all(promises);
-      s.emit(SEED_CHAT, results);
+      s.emit(SEED_CHAT, {results, room});
     } catch (e) {
       console.error(e);
     }

@@ -8,6 +8,8 @@ import IconButton from 'material-ui/IconButton';
 import { deleteMessageRequest, timeoutUser, banUser } from '../../reducers/chat';
 import ReactMarkdown from 'react-markdown';
 import moment from 'moment';
+import { SIDEBAR_CHATROOM } from '../../constants';
+
 const MessageTools = ({
   id,
   deleteMessageRequest,
@@ -21,7 +23,7 @@ const MessageTools = ({
     <div className={s.MessageToolsButton}>
       <i className="material-icons">arrow_back</i>
     </div>
-    <div className={s.MessageToolsButton} onClick={() => deleteMessageRequest(id)}>
+    <div className={s.MessageToolsButton} onClick={() => deleteMessageRequest({id, room: SIDEBAR_CHATROOM})}>
       <i className="material-icons">remove_circle_outline</i><span>Delete</span>
     </div>
     <div className={s.MessageToolsButton} onClick={() => timeoutUser(steamId)}>
@@ -43,10 +45,6 @@ const MessageToolsConnector = compose(
 const ConnectedMessageTools = MessageToolsConnector(MessageTools);
 
 
-// const Message = ({user, message, admin})  => (<div className={s.Message}>
-//   <span className={s.Author}>{user.userName}</span><span className={s.Contents}>{message}</span>
-//   {admin ? <MessageTools id={3}/> : null}
-// </div>);
 class Message extends React.Component {
   state = {
     active: false,
@@ -77,11 +75,6 @@ class Message extends React.Component {
          </div>);
   }
 }
-
-// const Message = ({user, message, admin})  => (<div className={s.Message}>
-//   <span className={s.Author}>{user.userName}</span><span className={s.Contents}>{message}</span>
-//   {admin ? <MessageTools id={3}/> : null}
-// </div>);
 
 
 const hoc = compose(

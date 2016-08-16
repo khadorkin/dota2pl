@@ -12,6 +12,10 @@
   flex-flow: column nowrap;
   transform: translateX(100%);
   transition: var(--animation);
+  @media(--screen-m960) {
+    top: 4em;
+  }
+
 }
 
 .RightContainerActive {

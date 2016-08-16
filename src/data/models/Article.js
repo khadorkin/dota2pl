@@ -4,6 +4,15 @@ import BlueBird from 'bluebird';
 mongoose.Promise = BlueBird;
 const Schema = mongoose.Schema;
 
+const slugify = (t) => t.toString().toLowerCase()
+    .replace(/\s+/g, '-')        // Replace spaces with -
+    .replace(/[^\w\-]+/g, '')   // Remove all non-word chars
+    .replace(/\-\-+/g, '-')      // Replace multiple - with single -
+    .replace(/^-+/, '')          // Trim - from start of text
+    .replace(/-+$/, '');         // Trim - from end of text
+
+
+
 const articleSchema = new Schema({
   _author: { type: Schema.ObjectId, ref: 'User' },
   title: { type: String, required: true },
@@ -15,8 +24,11 @@ const articleSchema = new Schema({
 });
 
 articleSchema.pre('remove', (next) => {
-  'use strict';
-  console.log('called before articleRemoval');
+  next();
+});
+
+articleSchema.pre('save', (next) => {
+  this.slug = slugify(this.title);
   next();
 });
 

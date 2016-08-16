@@ -1,0 +1,6 @@
+.root{
+  min-height: 100%;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  align-items: stretch;
+}

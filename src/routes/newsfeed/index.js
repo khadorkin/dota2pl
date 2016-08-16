@@ -8,20 +8,13 @@
  */
 
 import React from 'react';
-import feed from './feed';
-import article from './article';
+import NewsFeed from './NewsFeed';
 
 export default {
 
   path: '/',
 
-  children: [
-    feed,
-  ],
-
-  async action({ next, render, context }) {
-    const Component = await next();
-    if (Component === undefined) return Component;
-    return Component;
+  action() {
+    return <NewsFeed />;
   },
 };
