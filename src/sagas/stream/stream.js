@@ -8,8 +8,6 @@ function subscribeStream(socket) {
       // console.log(`[Stream] received list from server:`,e);
       emit(updateStreamList(e));
     });
-
-
     return () => {};
   });
 }

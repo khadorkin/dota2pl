@@ -229,11 +229,11 @@ p {
   flex-flow: row nowrap;
   position: absolute;
   top: 0;
-  bottom: 4em;
+  bottom: 3em;
   left: 0;
   right: 0;
   overflow: hidden;
-  @media(--screen-m1440) {
+  @media(--screen-m960) {
     bottom: 0;
     top: 0em;
   }

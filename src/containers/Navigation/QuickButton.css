@@ -20,6 +20,8 @@
   border-left: 1px solid #282828;
   composes: navButton;
 
+  transform: translateZ(0);
+
 }
 
 

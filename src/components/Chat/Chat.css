@@ -2,6 +2,7 @@
 
 :root {
     --input-height: 3em;
+    font-family: var(--font-family-headers)
 }
 
 .Container{

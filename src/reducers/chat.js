@@ -1,4 +1,3 @@
-
 import {
   PUSH_MESSAGE,
   DELETE_MESSAGE,
@@ -10,9 +9,14 @@ import {
   SIDEBAR_CHATROOM,
   TOGGLE_CHANNEL,
 } from '../constants';
-import { combineReducers } from 'redux';
+import { createSelector } from 'reselect';
+
+
 
 const initialState = [];
+
+export const unreadMessagesSelector = (state, room) => state.chat[room].messages.filter(m => !m.viewed).length;
+
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -30,13 +34,22 @@ const reducer = (state = initialState, action) => {
 const room = (state = { active: false, messages: [] }, action) => {
   switch (action.type) {
     case TOGGLE_CHANNEL:
-      return { ...state, active: !state.active };
+      return {
+        ...state,
+        active: !state.active,
+        messages: state.active ? state.messages : state.messages.map(m => ({...m, viewed: true}))
+      };
     case PUSH_MESSAGE:
       action.payload.data = {
         ...action.payload.data,
         viewed: state.active ? state.active : false,
       };
-      return { ...state, messages: reducer(state.messages, action) };
+      console.log(state.active, action.payload.data.viewed)
+
+      return {
+        ...state,
+        messages: reducer(state.messages, action),
+      };
     case SEED_CHAT:
       return { ...state, messages: reducer(state.messages, action) };
     case DELETE_MESSAGE:
@@ -65,8 +78,6 @@ const active = (state = false, action) => {
 const channel = (state = initialChannelsState, action) => {
   switch (action.type) {
     case TOGGLE_CHANNEL:
-      console.log(`hello`);
-      console.log(action.payload);
       return { ...state, [action.payload.room]: room(state[action.payload.room], action) };
     case PUSH_MESSAGE:
       return { ...state, [action.payload.room]: room(state[action.payload.room], action) };
@@ -123,7 +134,7 @@ export const seedChat = (data, room) => {
 export const sendMessage = (data, room) => ({
   type: SEND_MESSAGE_SOCKET,
   remote: true,
-  payload: {data, room},
+  payload: { data, room },
 });
 
 export default channel;

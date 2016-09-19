@@ -1,6 +1,7 @@
 import io from 'socket.io-client';
 import { take } from 'redux-saga/effects';
-
+import logger from 'utils/logger';
+const log = logger('sagas:socketio-connect');
 
 const connectionPathFactory = (user) => {
   const { userName } = user;
@@ -23,7 +24,7 @@ export const connect = (user) => {
   const socket = io(connectionPathFactory(user));
   return new Promise(resolve => {
     socket.on('connect', () => {
-      console.log(`Eastblished ${user.userName ? 'private' : 'public'} wS connection!`);
+      log.log(`Eastblished ${user.userName ? 'private' : 'public'} wS connection!`);
       resolve(socket);
     });
   });
@@ -32,7 +33,7 @@ export const connect = (user) => {
 export function* write(socket) {
   while (true) {
     let { type, payload } = yield take(action => action.remote);
-    console.log(type, payload);
+    log.info(type, payload);
     socket.emit(type, payload);
   }
 }

@@ -35,6 +35,16 @@ const GLOBALS = {
 // -----------------------------------------------------------------------------
 
 const config = {
+
+  resolve: {
+
+    alias: {
+      "~": path.resolve(__dirname, '../src'),
+    },
+    modulesDirectories: ['src', 'node_modules'],
+    extensions: ['', '.js', '.webpack.js', '.web.js', '.jsx', '.json'],
+  },
+
   context: path.resolve(__dirname, '../src'),
 
   output: {
@@ -121,12 +131,6 @@ const config = {
         },
       },
     ],
-  },
-
-  resolve: {
-    root: path.resolve(__dirname, '../src'),
-    modulesDirectories: ['node_modules'],
-    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx', '.json'],
   },
 
   cache: DEBUG,
@@ -269,13 +273,21 @@ const serverConfig = extend(true, {}, config, {
 
   externals: [
     /^\.\/assets$/,
-    function filter(context, request, cb) {
-      const isExternal =
-        request.match(/^[@a-z][a-z\/\.\-0-9]*$/i) &&
-        !request.match(/^react-routing/) &&
-        !context.match(/[\\/]react-routing/);
-      cb(null, Boolean(isExternal));
-    },
+    function(context, request, callback) {
+      // Absolute & Relative paths are not externals
+      if (request.match(/^(\.{0,2})\//)) {
+        return callback();
+      }
+
+      try {
+        // Attempt to resolve the module via Node
+        require.resolve(request);
+        callback(null, request);
+      } catch(e) {
+        // Node couldn't find it, so it must be user-aliased
+        callback();
+      }
+    }
   ],
 
   plugins: [
@@ -301,5 +313,7 @@ const serverConfig = extend(true, {}, config, {
 
   devtool: 'source-map',
 });
+
+console.log('START:', serverConfig.resolve);
 
 export default [clientConfig, serverConfig];

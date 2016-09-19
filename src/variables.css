@@ -7,11 +7,8 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&subset=latin-ext';
-@import 'https://fonts.googleapis.com/css?family=Raleway|Roboto:500,700&subset=latin-ext';
-@import 'https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,700i&subset=latin-ext';
-@import 'https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,500&subset=latin-ext';
-@import 'https://fonts.googleapis.com/css?family=Amiko|Hind|Noto+Sans|Work+Sans&subset=latin-ext';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,600,700&subset=latin-ext';
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i&subset=latin-ext';
 
 @custom-media --screen-m480 (width >= 30em);
 @custom-media --screen-m600 (width >= 37.5em);
@@ -26,25 +23,25 @@
 :root {
 
     --colorPrimary: #e53935;
-
+    --darkBlue: #13151a;
   /*
    * Typography
    * ======================================================================== */
 
-  --font-family-base: 'Open Sans', sans-serif;
-  --font-family-headers: 'Roboto', sans-serif;
+  --font-family-base: 'Merriweather', serif;
+  --font-family-headers: 'Open Sans', sans-serif;
 
   /*
    * Layout
    * ======================================================================== */
   --animation: .45s cubic-bezier(0.23, 1, 0.32, 1);
-  --max-content-width: 60em;
+  --max-content-width: 44rem;
 
   /*
    * Media queries breakpoints
    * ======================================================================== */
 
-  --screen-xs-min: 480px;  /* Extra small screen / phone */
+  --screen-xs-min: 48 0px;  /* Extra small screen / phone */
   --screen-sm-min: 768px;  /* Small screen / tablet */
   --screen-md-min: 992px;  /* Medium screen / desktop */
   --screen-lg-min: 1200px; /* Large screen / wide desktop */
@@ -116,13 +113,19 @@
 
 
 .contentWrapper {
+  padding: 0 .3em;
+
+
+  @media(--screen-m1280) {
+    padding: 0;
+  }
+
   max-width: var(--max-content-width);
   @media(--screen-m1600) {
     max-width: calc(var(--max-content-width) * 1.1);
 
   }
   box-sizing: border-box;
-  margin: 0 auto;
 }
 
 .mediumCard{

@@ -14,7 +14,7 @@ import Transition from 'react-motion-ui-pack';
 import { spring, TransitionMotion } from 'react-motion';
 
 // @flow
-const qwe : numer = 'asd';
+const qwe : string = 'asd';
 
 const AnimationWrapper = ({ children }) => <div style={{ flex: '0 0 100%' }}>{children}</div>;
 

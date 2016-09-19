@@ -1,5 +1,6 @@
+// @flow
+
 import React from 'react';
-import Toggle from 'material-ui/Toggle';
 import { connect } from 'react-redux';
 import * as PanelAC from '../actions/panels';
 import IconButton from 'material-ui/IconButton';
