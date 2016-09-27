@@ -18,21 +18,6 @@ class MainContent extends React.Component {
 
   render() {
     const { status } = this.props;
-    console.log(status);
-/*    const containerClass = () => {
-      if (panels.left && panels.right) {
-        return s.pullBoth;
-      } else if (panels.left) {
-        return s.pullLeft;
-      } else if (panels.right) {
-        return s.pullRight;
-      } else {
-        return s.Container;
-      }
-    };*/
-
-
-
     const containerClass = () => {
       if (status) {
         return s.pullRight;

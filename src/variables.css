@@ -100,13 +100,13 @@
     background: #0a0e10;
     transition: .13s ease-out;
     //transform: rotate(45deg);
-    transform: translateX(-100%) translateY(-50%) rotate(45deg) scale(3);
+    transform: translateX(-100%) translateY(-50%) rotate(45deg) scale(4);
     transform-origin: 100% 50%;
     z-index: -1;
   }
   &:hover{
     &:before{
-      transform: translateX(0%) translateY(50%) rotate(45deg) scale(3);
+      transform: translateX(0%) translateY(50%) rotate(45deg) scale(4);
     }
   }
 }

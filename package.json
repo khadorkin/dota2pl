@@ -5,8 +5,9 @@
     "npm": ">=3.3 <4"
   },
   "dependencies": {
-    "apollo-client": "^0.4.11",
-    "apollo-server": "^0.2.3",
+    "apollo-client": "^0.4.15",
+    "apollo-server": "^0.3.0",
+    "babel-plugin-transform-react-jsx-source": "^6.9.0",
     "babel-polyfill": "6.9.1",
     "babel-runtime": "6.9.2",
     "bluebird": "^3.4.1",
@@ -49,7 +50,7 @@
     "perfect-scrollbar": "^0.6.12",
     "pretty-error": "2.0.0",
     "react": "^15.1.0",
-    "react-apollo": "^0.4.6",
+    "react-apollo": "^0.5.5",
     "react-custom-scrollbars": "^4.0.0",
     "react-dom": "15.1.0",
     "react-markdown": "^2.4.2",
@@ -155,6 +156,9 @@
       "stage-0"
     ],
     "env": {
+      "development": {
+        "plugins": ["transform-react-jsx-source"]
+      },
       "test": {
         "plugins": [
           "rewire"
@@ -168,7 +172,6 @@
     "plugins": [
       "import"
     ],
-
     "globals": {
       "__DEV__": true
     },

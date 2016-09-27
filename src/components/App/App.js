@@ -79,7 +79,6 @@ class App extends Component {
 
     const store = this.props.context.store;
 
-
     return (
         <ApolloProvider store={store} client={store.apolloClient}>
         <MuiThemeProvider muiTheme={muiTheme}>

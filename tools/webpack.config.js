@@ -26,6 +26,7 @@ const AUTOPREFIXER_BROWSERS = [
 ];
 const GLOBALS = {
   'process.env.NODE_ENV': DEBUG ? '"development"' : '"production"',
+  'process.env.BABEL_ENV': DEBUG ? '"development"' : '"production"',
   __DEV__: DEBUG,
 };
 
@@ -254,7 +255,7 @@ const clientConfig = extend(true, {}, config, {
 
   // Choose a developer tool to enhance debugging
   // http://webpack.github.io/docs/configuration.html#devtool
-  devtool: DEBUG ? 'cheap-module-eval-source-map' : false,
+  devtool: DEBUG ? 'eval' : false,
 });
 
 //
@@ -283,7 +284,7 @@ const serverConfig = extend(true, {}, config, {
         // Attempt to resolve the module via Node
         require.resolve(request);
         callback(null, request);
-      } catch(e) {
+      } catch (e) {
         // Node couldn't find it, so it must be user-aliased
         callback();
       }
@@ -311,7 +312,6 @@ const serverConfig = extend(true, {}, config, {
     __dirname: false,
   },
 
-  devtool: 'source-map',
 });
 
 console.log('START:', serverConfig.resolve);
