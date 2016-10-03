@@ -45,6 +45,7 @@ async function start() {
 
           // Wraps all React components into arbitrary transforms
           // https://github.com/gaearon/babel-plugin-react-transform
+
           plugins: [
             ...(x.query ? x.query.plugins : []),
             ['react-transform', {
@@ -74,6 +75,7 @@ async function start() {
 
       // Pretty colored output
       stats: webpackConfig[0].stats,
+
 
       // For other settings see
       // https://webpack.github.io/docs/webpack-dev-middleware

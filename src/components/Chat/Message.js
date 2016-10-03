@@ -18,7 +18,7 @@ const MessageTools = ({
   steamId,
   ...props,
 }) => {
-  'use strict';
+
   return (<div className={s.MessageTools} {...props}>
     <div className={s.MessageToolsButton}>
       <i className="material-icons">arrow_back</i>

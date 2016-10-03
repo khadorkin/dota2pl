@@ -51,16 +51,13 @@ class TextInput extends React.Component {
         onKeyDown={this.handleSend}
       />
 
-      <FlatButton label="Wyślij"
-        style={{ borderRadius: '0px', minHeight: '100%' }}
-        backgroundColor="#e53935"
-        hoverColor="#e53935"
-        rippleColor="#480a09"
-        labelStyle={{ fontWeight: '700', textShadow: '0px 1px 1px rgba(0,0,0,.7)', color: 'white' }}
+      <button
         onClick={this.send}
-      />
+        className={s.Button}>Wyślij</button>
 
-
+      <div className={s.pleaseLogin}>
+        Zaloguj się, aby napisać wiadomość
+      </div>
     </div>);
   }
 }

@@ -36,9 +36,9 @@ function Navigation(props) {
     <div className={containerClass()} role="navigation">
         <div className={s.navigationItems}>
             <div className={panels.nav ? s.navigationActive : s.navigation} onClick={toggleNavigation}>
-                <Link className={s.link} activeClass={s.linkActive} to="/">DotaFeed</Link>
+                <Link className={s.link} activeClass={s.linkActive} to="/">dota2pl</Link>
                 <Link className={s.link} activeClass={s.linkActive} to="/ranking">Ranking</Link>
-                <Link className={s.link} activeClass={s.linkActive} to="/prodota">proDota</Link>
+                <Link className={s.link} activeClass={s.linkActive} to="/prodota">proDotaas</Link>
                 <a className={s.link} href="http://forum.dota2.pl">Forum</a>
             </div>
             <QuickAccess/>

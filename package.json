@@ -48,6 +48,7 @@
     "passport-twitch": "^1.0.3",
     "passport.socketio": "^3.6.2",
     "perfect-scrollbar": "^0.6.12",
+    "postcss-flexbugs-fixes": "^2.0.0",
     "pretty-error": "2.0.0",
     "react": "^15.1.0",
     "react-apollo": "^0.5.5",
@@ -157,7 +158,9 @@
     ],
     "env": {
       "development": {
-        "plugins": ["transform-react-jsx-source"]
+        "plugins": [
+          "transform-react-jsx-source"
+        ]
       },
       "test": {
         "plugins": [

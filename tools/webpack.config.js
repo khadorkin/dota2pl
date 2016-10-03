@@ -60,7 +60,6 @@ const config = {
         test: /\.jsx?$/,
         loader: 'babel-loader',
         include: [
-          path.resolve(__dirname, '../node_modules/react-routing/src'),
           path.resolve(__dirname, '../src'),
         ],
         query: {
@@ -76,7 +75,9 @@ const config = {
           ],
           plugins: [
             'transform-runtime',
-            ...DEBUG ? [] : [
+            ...DEBUG ? [
+              'transform-react-jsx-source',
+            ] : [
               'transform-react-remove-prop-types',
               'transform-react-constant-elements',
               'transform-react-inline-elements',
@@ -162,6 +163,11 @@ const config = {
         // https://github.com/postcss/postcss-custom-media
         require('postcss-custom-media')(),
         // CSS4 Media Queries, e.g. @media screen and (width >= 500px) and (width <= 1200px) { }
+
+
+        // Postcss flexbox bug fixer
+        // https://github.com/luisrudge/postcss-flexbugs-fixes
+        require('postcss-flexbugs-fixes')(),
         // https://github.com/postcss/postcss-media-minmax
         require('postcss-media-minmax')(),
         // W3C CSS Custom Selectors, e.g. @custom-selector :--heading h1, h2, h3, h4, h5, h6;
@@ -266,7 +272,9 @@ const serverConfig = extend(true, {}, config, {
   entry: './server.js',
 
   output: {
-    filename: '../../server.js',
+    path: path.resolve(__dirname, '../build'),
+    filename: 'server.js',
+    chunkFilename: 'server.[name].js',
     libraryTarget: 'commonjs2',
   },
 

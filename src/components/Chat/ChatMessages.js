@@ -13,7 +13,7 @@ class ChatMessages extends React.Component {
   componentWillUpdate() {
     const node = this.refs.scrollbars;
     this.shouldScrollBottom = node.getClientHeight() + node.getScrollTop() === node.getScrollHeight();
-    console.log(node.getClientHeight(), node.getScrollHeight(), node.getScrollTop());
+    // console.log(node.getClientHeight(), node.getScrollHeight(), node.getScrollTop());
   }
   componentDidUpdate() {
     if (this.shouldScrollBottom) {
