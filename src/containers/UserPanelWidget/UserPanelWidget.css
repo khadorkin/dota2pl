@@ -1,0 +1,91 @@
+@import '../../variables.css';
+
+
+@keyframes slideToBottom{
+  from {
+    transform: translateY(-110%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideToTop{
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+.root{
+  position: absolute;
+  will-change: transform;
+}
+
+
+
+.container:before {
+  display: none;
+  @media(--screen-m960) {
+    display: block;
+  }
+  top: -.7em;
+  right: 4.2em;
+  position: absolute;
+  z-index: 3;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: .7em solid transparent;
+  border-right: .7em solid transparent;
+  border-bottom: .7em solid rgb(19, 21, 26);
+}
+
+.container:after {
+  display: none;
+  @media(--screen-m960) {
+    display: block;
+  }
+  position: absolute;
+  top: -.7em;
+  content: '';
+  right: 4.2em;
+  width: 0;
+  height: 0;
+  border-left: .7em solid transparent;
+  border-right: .7em solid transparent;
+  border-bottom: .7em solid #747373;
+}
+
+.container {
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  margin: 0;
+  animation: slideToTop .28s cubic-bezier(.27,1.8,.4,.56) forwards;
+
+  @media(--screen-m960) {
+    left: auto;
+    bottom: auto;
+    top: 3rem;
+    right: 0;
+    margin: 1em;
+    min-width: 20em;
+    max-width: 25em;
+    animation: slideToBottom .28s cubic-bezier(.27,1.8,.4,.56) forwards;
+
+  }
+
+  font-family: var(--font-family-navigation);
+  position: absolute;
+  background: linear-gradient(to bottom, rgb(19, 21, 26), rgb(12, 13, 16));
+  border: 1px solid #272626;
+  box-shadow: 0px 3px 5px 2px rgba(0, 4, 8, 0.65);
+
+
+  display: flex;
+  justify-content: center;
+}

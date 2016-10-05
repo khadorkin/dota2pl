@@ -26,8 +26,9 @@
 
 
 .rootActive{
-  composes: root;
+  composes: root navButtonActive;
   background: var(--colorPrimary);
+  background: linear-gradient(to bottom, var(--colorPrimary), color(var(--colorPrimary) blackness(+30%)));
 }
 
 .counter{

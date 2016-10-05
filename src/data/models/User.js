@@ -8,6 +8,7 @@ const userSchema = new Schema({
 
   steamId: { type: String, required: true },
   twitchId: { type: String, default: null },
+  twitchName: { type: String, default: null },
   userName: { type: String, required: true },
   country: { type: String },
   admin: { type: Boolean, default: false },

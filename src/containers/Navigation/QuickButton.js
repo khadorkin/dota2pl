@@ -5,7 +5,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import { TransitionMotion, spring, Motion, presets } from 'react-motion';
 
 
-const QuickButton = ({ onClick, count, icon, active }) => (<div
+const QuickButton = ({ onClick, count, icon, active, children}) => (<div
   onClick={onClick}
   className={active ? s.rootActive : s.root}
 >
@@ -32,6 +32,7 @@ const QuickButton = ({ onClick, count, icon, active }) => (<div
 
 
     <i className="material-icons">{icon}</i>
+  { children }
 </div>);
 
 QuickButton.propTypes = {

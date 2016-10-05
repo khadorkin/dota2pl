@@ -54,7 +54,7 @@ const server = http.Server(app);
 // user agent is not known.
 // -----------------------------------------------------------------------------
 global.navigator = global.navigator || {};
-global.navigator.userAgent = global.navigator.userAgent || 'all';
+global.navigator.userAgent = global.navigator.userAgent || 'false';
 
 //
 // Register Node.js middleware
@@ -132,6 +132,7 @@ app.get('/auth/twitch/return', async (req, res, next) => {
     const userFromDb = await Models.User.findById(req.user._id);
     console.log('[Twitch sync] Got user from database: ', userFromDb);
     userFromDb.twitchId = user.id;
+    userFromDb.twitchName = user.username;
     try {
       await userFromDb.save();
     } catch (err) {
@@ -165,14 +166,6 @@ app.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql',
 }));
 
-// app.use('/graphql', expressGraphQL(req => ({
-//   schema,
-//   graphiql: true,
-//   rootValue: { request: req },
-//   pretty: process.env.NODE_ENV !== 'production',
-// })));
-
-
 //
 // Register server-side rendering middleware
 // -----------------------------------------------------------------------------
@@ -188,7 +181,8 @@ app.get('*', async (req, res, next) => {
 
     const user = req.user;
     if (user) {
-      store.dispatch(loginUser(user.userName, user.steamId, user.avatarUrl, user.admin, user.twitchId));
+      console.log(user);
+      store.dispatch(loginUser(user.userName, user.steamId, user.avatarUrl, user.admin, user.twitchId, user.twitchName));
     } else {
       store.dispatch(logoutUser());
     }

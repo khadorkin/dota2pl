@@ -158,7 +158,7 @@
 
 
 .Button{
-  background: var(--colorPrimary);
+  background: var(--colorPrimaryGradient);
   color: white;
   outline: none;
   flex: 0;

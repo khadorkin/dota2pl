@@ -11,21 +11,14 @@ import React, { Component, PropTypes } from 'react';
 import emptyFunction from 'fbjs/lib/emptyFunction';
 import s from './App.css';
 import { Provider } from 'react-redux';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
-import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import LeftPanel from '../../containers/LeftPanel/LeftPanel.js';
+import UserPanelWidget from 'containers/UserPanelWidget'; //eslint-disable-line
 import MainContent from '../../containers/MainContent/MainContent.js';
 import RightPanel from '../../containers/RightPanel/RightPanel.js';
 import rootSaga from '../../sagas/sagas';
 import Navigation from '../../containers/Navigation/Navigation';
 import { ApolloProvider } from 'react-apollo';
 
-import prodotaTheme from './theme.js';
-
-
-const muiTheme = getMuiTheme(prodotaTheme);
 
 class App extends Component {
 
@@ -81,21 +74,15 @@ class App extends Component {
 
     return (
         <ApolloProvider store={store} client={store.apolloClient}>
-        <MuiThemeProvider muiTheme={muiTheme}>
-
-
           <div className={s.Main}>
           <MainContent>
             {this.props.children}
           </MainContent>
             <LeftPanel />
             <RightPanel />
+            <UserPanelWidget />
             <Navigation />
           </div>
-
-
-        </MuiThemeProvider>
-
         </ApolloProvider>
     );
   }

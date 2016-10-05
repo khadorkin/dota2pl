@@ -5,13 +5,17 @@
   background: rgb(15, 19, 22);
   right: 0;
 
-  width: 340px;
+  width: 100vw;
   top: 0;
   bottom: 0;
   display: flex;
   flex-flow: column nowrap;
   transform: translateX(100%);
   transition: var(--animation);
+  @media(--screen-m600) {
+    width: 340px;
+  }
+
   @media(--screen-m960) {
     top: 3em;
   }

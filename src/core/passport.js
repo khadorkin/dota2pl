@@ -50,11 +50,11 @@ passport.deserializeUser(function (obj, done) {
 passport.use(new SteamStrategy(steamOptions,
   async (identifier, profile, done) => {
       // asynchronous verification, for effect...
-    console.log('[Login/Register] Request hit back from steam, awaiting database response...');
+    // console.log('[Login/Register] Request hit back from steam, awaiting database response...');
     let user = await Models.User.findOne({ steamId: profile.id });
-    console.log('[Login/Register] User returned from the database..');
+    // console.log('[Login/Register] User returned from the database..');
     if (!user) {
-      console.log('[Login/Register] Didn\'t find user, trying to create');
+      // console.log('[Login/Register] Didn\'t find user, trying to create');
       try {
         user = await Models.User.create({
           steamId: profile.id,
@@ -69,7 +69,7 @@ passport.use(new SteamStrategy(steamOptions,
         console.log('Error: ', e);
       }
     }
-    console.log('[Login/Register] Fetched user from the database: ', user.userName);
+    // console.log('[Login/Register] Fetched user from the database: ', user.userName);
     profile.identifier = identifier;
     return done(null, user);
   }

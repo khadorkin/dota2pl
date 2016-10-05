@@ -8,8 +8,8 @@
  */
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,600,700&subset=latin-ext';
-@import 'https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i&subset=latin-ext';
-
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,&subset=latin-ext';
+@import 'https://fonts.googleapis.com/css?family=Rubik:400,500,500i,700&subset=latin-ext';
 @custom-media --screen-m480 (width >= 30em);
 @custom-media --screen-m600 (width >= 37.5em);
 @custom-media --screen-m840 (width >= 52.5em);
@@ -24,12 +24,14 @@
 
     --colorPrimary: #e53935;
     --darkBlue: #13151a;
+    --colorPrimaryGradient: linear-gradient(to bottom, var(--colorPrimary), color(var(--colorPrimary) blackness(+30%)));
   /*
    * Typography
    * ======================================================================== */
 
-  --font-family-base: 'Merriweather', serif;
+  --font-family-base: 'Open Sans', sans-serif;
   --font-family-headers: 'Open Sans', sans-serif;
+  --font-family-navigation: 'Rubik', sans-serif;
 
   /*
    * Layout
@@ -100,13 +102,21 @@
     background: #0a0e10;
     transition: .13s ease-out;
     //transform: rotate(45deg);
-    transform: translateX(-100%) translateY(-50%) rotate(45deg) scale(4);
+    transform: translateX(-100%) translateY(-50%) rotate(45deg) scale(5);
     transform-origin: 100% 50%;
     z-index: -1;
   }
   &:hover{
     &:before{
-      transform: translateX(0%) translateY(50%) rotate(45deg) scale(4);
+      transform: translateX(0%) translateY(50%) rotate(45deg) scale(5);
+    }
+  }
+}
+
+.navButtonActive{
+  &:hover{
+    &:before{
+      transform: translateX(-100%) translateY(-50%) rotate(45deg) scale(5);
     }
   }
 }

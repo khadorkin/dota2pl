@@ -6,7 +6,6 @@ import { Editor, EditorState } from 'draft-js';
 import { connect } from 'react-redux';
 import { sendMessage } from '../../reducers/chat';
 import { toggleLeftPanel } from '../../actions/panels';
-import FlatButton from 'material-ui/FlatButton';
 
 import { SIDEBAR_CHATROOM } from '../../constants';
 class TextInput extends React.Component {
@@ -41,6 +40,8 @@ class TextInput extends React.Component {
   }
 
   render() {
+    const { auth } = this.props;
+    console.log('Auth', auth, this.props);
     return (<div className={s.BottomChat}>
       <input
         type="text"
@@ -55,10 +56,10 @@ class TextInput extends React.Component {
         onClick={this.send}
         className={s.Button}>Wyślij</button>
 
-      <div className={s.pleaseLogin}>
+      { !auth.userId && <div className={s.pleaseLogin}>
         Zaloguj się, aby napisać wiadomość
-      </div>
+      </div>}
     </div>);
   }
 }
-export default connect(null, { sendMessage, toggleLeftPanel })(withStyles(s)(TextInput));
+export default connect(state => ({ auth: state.auth }), { sendMessage, toggleLeftPanel })(withStyles(s)(TextInput));

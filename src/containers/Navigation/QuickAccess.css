@@ -3,4 +3,11 @@
   display: flex;
   flex-flow: row-reverse wrap;
   align-items: stretch;
+  position: relative;
+}
+
+.popup{
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }

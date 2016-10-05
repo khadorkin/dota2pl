@@ -7,7 +7,7 @@ import ArticleList from 'components/ArticleList'; //eslint-disable-line
 
 class NewsFeed extends React.Component {
   render() {
-    return <Article />;
+    return <Article key="xD" />;
   }
 }
 

@@ -1,4 +1,6 @@
 import { TOGGLE_LEFT, TOGGLE_RIGHT, TOGGLE_NAV } from '../constants';
+import { createAction } from 'redux-actions';
+export const toggleNav = createAction(TOGGLE_NAV);
 
 const reducer = (state = { left: false, right: false, nav: false }, action) => {
   switch (action.type) {

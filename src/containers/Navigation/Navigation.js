@@ -34,11 +34,12 @@ function Navigation(props) {
   };
   return (
     <div className={containerClass()} role="navigation">
-        <div className={s.navigationItems}>
+        <div className={s.navigationItems} onClick={e => e.stopPropagation()}>
             <div className={panels.nav ? s.navigationActive : s.navigation} onClick={toggleNavigation}>
-                <Link className={s.link} activeClass={s.linkActive} to="/">dota2pl</Link>
+                <Link className={s.link} activeClass={s.linkActive} to="/">dota2.pl</Link>
                 <Link className={s.link} activeClass={s.linkActive} to="/ranking">Ranking</Link>
-                <Link className={s.link} activeClass={s.linkActive} to="/prodota">proDotaas</Link>
+                <Link className={s.link} activeClass={s.linkActive} to="/prodota">proDota</Link>
+
                 <a className={s.link} href="http://forum.dota2.pl">Forum</a>
             </div>
             <QuickAccess/>

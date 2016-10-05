@@ -4,6 +4,10 @@ export const TOGGLE_RIGHT = 'TOGGLE_RIGHT';
 export const TOGGLE_NAV = 'TOGGLE_NAV';
 
 
+// User control panel constants
+export const TOGGLE_USER_PANEL = 'TOGGLE_USER_PANEL';
+
+
 // Auth related constants
 export const LOGIN_USER = 'LOGIN_USER ';
 export const LOGOUT_USER = 'LOGOUT_USER';
